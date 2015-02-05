@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arian&#39;s Portfolio</title>
+    <link>http://arianv.com/</link>
+    <description>Recent content on Arian&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    
+    
+    <lastBuildDate>Thu, 01 Jan 2015 13:38:37 &#43;0800</lastBuildDate>
+    <atom:link href="http://arianv.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Programming Ability</title>
+      <link>http://arianv.com/about/codesample/</link>
+      <pubDate>Thu, 01 Jan 2015 13:38:37 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/about/codesample/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;portfolio-about-container&#34;&gt;
+  &lt;div class=&#34;portfolio-about-item&#34;&gt;
+  &lt;p&gt;&lt;h1&gt;Solid Software Engineering Skills.&lt;/h1&gt;&lt;/p&gt;
+
+&lt;p&gt;Familiar with numerous programming paradigms such as Object-Oriented, Functional, and Asynchronous Programming.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;portfolio-about-item&#34;&gt;
+  &lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #75715e&#34;&gt;#dev-ops&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;workflow&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;gulp&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;or&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;grunt&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;workflow&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;stylus&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;or&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;sass&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;or&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;less&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;workflow&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;imagemin&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;#agile&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;listenTo(SpecChange,&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;applyChanges()&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Space Shooter</title>
+      <link>http://arianv.com/projects/Space%20Shooter/</link>
+      <pubDate>Tue, 27 Jan 2015 13:38:37 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/Space%20Shooter/</guid>
+      <description>&lt;p&gt;Mobile Friendly Shooter built on top of the Phaser Framework. Features powerups and an online leaderboard.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Match 3</title>
+      <link>http://arianv.com/projects/Match%203/</link>
+      <pubDate>Wed, 28 Jan 2015 13:38:37 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/Match%203/</guid>
+      <description>&lt;p&gt;HTML5 Matching 3 Game. Set up to communicate with PHP backend for point based earning on Virtual Economy Sites&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Orb Knight</title>
+      <link>http://arianv.com/projects/Orb%20Knight/</link>
+      <pubDate>Wed, 28 Jan 2015 13:38:37 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/Orb%20Knight/</guid>
+      <description>&lt;p&gt;Orb Knight-RPG, Featuring pets and a Realtime Battle System. Made for Google HTML5 Game Making Contest&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scratch Wars</title>
+      <link>http://arianv.com/projects/Scratch%20Wars/</link>
+      <pubDate>Wed, 28 Jan 2015 13:38:37 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/Scratch%20Wars/</guid>
+      <description>&lt;p&gt;Control your forces in this epic battle between Red and Blue!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>VirtuaPet</title>
+      <link>http://arianv.com/projects/VirtuaPet/</link>
+      <pubDate>Fri, 30 Jan 2015 19:41:26 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/VirtuaPet/</guid>
+      <description>&lt;p&gt;A Modern Virtual Pet Site where players collect, train, and take care of pets! Written in PHP, made with Love.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Journey East</title>
+      <link>http://arianv.com/projects/Journey%20East/</link>
+      <pubDate>Fri, 30 Jan 2015 19:45:31 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/Journey%20East/</guid>
+      <description>&lt;p&gt;An epic MMO set in an original world, featuring Crafting, Raids, and PvP! Coordinated with a team of developers. Responsible for Client and Server Development. (AS3 and Java)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PiRPG</title>
+      <link>http://arianv.com/projects/PiRPG/</link>
+      <pubDate>Fri, 30 Jan 2015 19:47:44 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/PiRPG/</guid>
+      <description>&lt;p&gt;JRPG with a uniquely dynamic card based system. Project Manager, integrated development, art and QA, organizing workload and direction. Responsible for entire engine creation. Code followed best OOP practices to make card functions easily extendable.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RUPP</title>
+      <link>http://arianv.com/projects/RUPP/</link>
+      <pubDate>Fri, 30 Jan 2015 19:48:53 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/RUPP/</guid>
+      <description>&lt;p&gt;Fluid Web App built with AngularJS. Complete Route Based Navigations lend to a fluid user experience. NodeJS backend on top of SailsJS&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Zombie Shooting Game</title>
+      <link>http://arianv.com/projects/Zombie%20Shooting%20Game/</link>
+      <pubDate>Fri, 30 Jan 2015 19:52:30 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/Zombie%20Shooting%20Game/</guid>
+      <description>&lt;p&gt;GPU Accelerated flash game developed with Starling.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Big Issues</title>
+      <link>http://arianv.com/projects/Big%20Issues/</link>
+      <pubDate>Fri, 30 Jan 2015 19:53:25 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/Big%20Issues/</guid>
+      <description>&lt;p&gt;A &amp;lsquo;Begging Game&amp;rsquo; showing the issues of poverty and world hunger. Developed for the Charity Game Jam.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ghoul Feeder</title>
+      <link>http://arianv.com/projects/Ghoul%20Feeder/</link>
+      <pubDate>Fri, 30 Jan 2015 19:54:06 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/Ghoul%20Feeder/</guid>
+      <description>&lt;p&gt;Powerup your ghoul in this kid-centric flash game!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GSOC 2014 - Wordpress</title>
+      <link>http://arianv.com/projects/GSOC/</link>
+      <pubDate>Fri, 30 Jan 2015 19:55:18 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/GSOC/</guid>
+      <description>&lt;p&gt;Worked with the Wordpress Organization on the Google Summer of Code Program to gamify and improve Glotpress&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Merc 01</title>
+      <link>http://arianv.com/projects/Merc%2001/</link>
+      <pubDate>Fri, 30 Jan 2015 19:55:18 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/Merc%2001/</guid>
+      <description>&lt;p&gt;A fast paced, action-packed twin stick shooter made in pyglet with custom direct GL drawing for fast performance.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>jSolar</title>
+      <link>http://arianv.com/projects/jSolar/</link>
+      <pubDate>Fri, 30 Jan 2015 19:55:18 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/jSolar/</guid>
+      <description>&lt;p&gt;A 3d simulation of the copernican solar system model, where users can move the camera as well as affix it to the different planets. Made with Three.js&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
