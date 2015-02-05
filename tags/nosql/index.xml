@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nosql on my new hugo site</title>
+    <link>http://arianv.com/tags/nosql/</link>
+    <description>Recent content in Nosql on my new hugo site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    
+    
+    <lastBuildDate>Fri, 30 Jan 2015 19:48:53 &#43;0800</lastBuildDate>
+    <atom:link href="http://arianv.com/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>RUPP</title>
+      <link>http://arianv.com/projects/RUPP/</link>
+      <pubDate>Fri, 30 Jan 2015 19:48:53 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/RUPP/</guid>
+      <description>&lt;p&gt;Fluid Web App built with AngularJS. Complete Route Based Navigations lend to a fluid user experience. NodeJS backend on top of SailsJS&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Journey East</title>
+      <link>http://arianv.com/projects/Journey%20East/</link>
+      <pubDate>Fri, 30 Jan 2015 19:45:31 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/projects/Journey%20East/</guid>
+      <description>&lt;p&gt;An epic MMO set in an original world, featuring Crafting, Raids, and PvP! Coordinated with a team of developers. Responsible for Client and Server Development. (AS3 and Java)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on my new hugo site</title>
+    <link>http://arianv.com/about/</link>
+    <description>Recent content in Abouts on my new hugo site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    
+    
+    <lastBuildDate>Sun, 01 Mar 2015 13:38:37 &#43;1000</lastBuildDate>
+    <atom:link href="http://arianv.com/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Excellent Communicator</title>
+      <link>http://arianv.com/about/communicator/</link>
+      <pubDate>Sun, 01 Mar 2015 13:38:37 &#43;1000</pubDate>
+      
+      <guid>http://arianv.com/about/communicator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spontaneous and Fast Learner</title>
+      <link>http://arianv.com/about/fastlearner/</link>
+      <pubDate>Sun, 01 Feb 2015 13:38:37 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/about/fastlearner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming Ability</title>
+      <link>http://arianv.com/about/codesample/</link>
+      <pubDate>Thu, 01 Jan 2015 13:38:37 &#43;0800</pubDate>
+      
+      <guid>http://arianv.com/about/codesample/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
