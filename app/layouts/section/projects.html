@@ -1,0 +1,147 @@
+{{ partial "head.html" . }}
+<div class="content container">
+  <section class="portfolio-personal">
+    <a href="#portfolio-personal" class="portfolio-title">
+      <strong class="ribbon-content">
+        Personal Info
+      </strong>
+    </a>
+    <div class="portfolio-avatar">
+      <img class="avatar" width="167" height="167" alt="Arian, software developper" src="/media/avatar.png">
+    </div>
+    <div class="portfolio-avatar-desc">
+      <h1>Hi, I'm Arian!</h1>
+      <h2>I create lucid digital experiences through code.</h2>
+    </div>
+  </section>
+  <section id="portfolio-projects">
+    <a href="#portfolio-projects" class="portfolio-title">
+      <strong class="ribbon-content">
+        Projects
+      </strong>
+    </a>
+    <div class="portfolio-card-holder">
+      {{ range where .Data.Pages.ByDate "Section" "projects" }}
+        <div class="portfolio-card-outer">
+          <div class="portfolio-card">
+            <div class="portfolio-card-inner">
+              <img src="{{ .Params.image }}">
+              <div class="portfolio-card-details">
+                <div class="portfolio-card-tags">
+                  {{ range .Params.tags }}
+                    <a href="#{{ . }}">{{ . }}</a>
+                  {{ end }}
+                </div>
+                <!--href="{{ .Permalink }}"-->
+                <h2><a>{{ .Title }}</a></h2>
+                <h3>
+                  {{ .Summary }}
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+  <section id="portfolio-skill-set">
+    <a href="#portfolio-skill-set" class="portfolio-title">
+      <strong class="ribbon-content">
+        Skill Set
+      </strong>
+    </a>
+    <div>
+      <h3 style="text-align:center">A small sampling of technologies I have worked with...</h3>
+      <ul class="portfolio-skill-cards">
+        <li class="html5">
+          <div class="head">HTML5</div>
+          <div class="content">
+            <div>PhaserJS</div>
+            <div>Canvas</div>
+            <div>WebGL</div>
+          </div>
+        </li>
+        <li class="js">
+          <div class="head">Javascript</div>
+          <div class="content">
+            <div>AngularJS</div>
+            <div>ReactJS</div>
+            <div>Coffeescript</div>
+          </div>
+        </li>
+        <li class="nodejs">
+          <div class="head">Node.js</div>
+          <div class="content">
+            <div>MeteorJS</div>
+            <div>Express</div>
+            <div>Sails.js</div>
+          </div>
+        </li>
+        <li class="css">
+          <div class="head">CSS</div>
+          <div class="content">
+            <div>CSS3</div>
+            <div>Animation</div>
+            <div>Transitions</div>
+          </div>
+        </li>
+        <li class="java">
+          <div class="head">Java</div>
+          <div class="content">
+            <div>LibGdx</div>
+            <div>Smartfox</div>
+          </div>
+        </li>
+        <li class="as3">
+          <div class="head">Actionscript 3</div>
+          <div class="content">
+            <div>Starling</div>
+            <div>Citrus Engine</div>
+          </div>
+        </li>
+        <li class="php">
+          <div class="head">PHP</div>
+          <div class="content">
+            <div>Laravel</div>
+            <div>CodeIgniter</div>
+          </div>
+        </li>
+        <li class="mysql">
+          <div class="head">RDBMS</div>
+          <div class="content">
+            <div>MySQL</div>
+            <div>PostgreSQL</div>
+          </div>
+        </li>
+        <li class="nosql">
+          <div class="head">NoSQL</div>
+          <div class="content">
+            <div>MongoDB</div>
+            <div>CouchDB</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="portfolio-about">
+    <a href="#portfolio-about" class="portfolio-title">
+      <strong class="ribbon-content">
+        About Me
+      </strong>
+    </a>
+    {{ range where .Site.Pages.ByDate "Section" "about"}}
+      {{ .Content }}
+    {{ end }}
+  </section>
+  <section id="portfolio-contact">
+    <a href="#portfolio-contact" class="portfolio-title">
+      <strong class="ribbon-content">
+        Get in Touch
+      </strong>
+    </a>
+    <div>
+      <h2 class="title">Feel free to contact me @arian</h2>
+    </div>
+  </section>
+</div>
+{{ partial "foot.html" . }}
