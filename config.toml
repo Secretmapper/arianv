@@ -1,6 +1,6 @@
 baseurl = "http://arianv.com/"
 languageCode = "en-us"
-title = "my new hugo site"
+title = "Arian's Portfolio"
 pygmentsstyle = "monokai"
 canonifyurls = true
 theme = "secretfolio"
