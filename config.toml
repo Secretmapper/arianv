@@ -4,3 +4,4 @@ title = "Arian's Portfolio"
 pygmentsstyle = "monokai"
 canonifyurls = true
 theme = "secretfolio"
+disqusShortname = "arianv"

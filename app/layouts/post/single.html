@@ -9,8 +9,8 @@
     {{ range .Params.categories }}<a class="label" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
     {{ end }}</span>
     <article>{{ .Content }}</article>
+    {{ if .Site.DisqusShortname }}<div id="disqus_thread"></div>{{ end }}
   </div>
-  {{ if .Site.DisqusShortname }}<div id="disqus_thread"></div>{{ end }}
 </div>
 
 {{ with .Site.DisqusShortname }}
