@@ -5,3 +5,6 @@ pygmentsstyle = "monokai"
 canonifyurls = true
 theme = "secretfolio"
 disqusShortname = "arianv"
+
+[params]
+  googleAnalytics = "UA-60507502-1"
