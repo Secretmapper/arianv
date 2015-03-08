@@ -4,7 +4,9 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var jeet = require('jeet');
-var folio = 'themes/secretfolio/'
+var pngquant = require('pngquant');
+var jpegtran = require('imagemin-jpegtran');
+var folio = 'themes/secretfolio/';
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.styl')
@@ -12,6 +14,7 @@ gulp.task('styles', function () {
     .pipe($.plumber())
     .pipe($.stylus({use: [jeet()]}))
     .pipe($.autoprefixer({browsers: ['last 1 version']}))
+    .pipe($.minifyCss())
     .pipe(gulp.dest(folio + 'static/css'));
 });
 
@@ -31,7 +34,7 @@ gulp.task('html', ['styles'], function () {
     .pipe($.if('*.css', $.csso()))
     .pipe(assets.restore())
     .pipe($.useref())
-    //.pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
+    .pipe($.if('*.html', $.htmlclean()))
     .pipe(gulp.dest(folio + 'layouts'));
 });
 
@@ -44,17 +47,30 @@ gulp.task('partials', ['styles'], function () {
     .pipe($.if('*.css', $.csso()))
     .pipe(assets.restore())
     .pipe($.useref())
-    //.pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
+    .pipe($.if('*.html', $.htmlclean()))
     .pipe(gulp.dest(folio + 'layouts/'));
 });
 
 gulp.task('images', function () {
-  return gulp.src('app/images/**/*')
+  return gulp.src('srcstatic/media/**/*')
+    .pipe($.responsive({
+      '**/*' : [{
+        width: 270,
+        withoutEnlargement: false
+      },
+      {
+        rename: {
+          suffix: '@feature'
+        },
+        width: 460,
+        withoutEnlargement: false
+      }]
+    }))
     .pipe($.cache($.imagemin({
-      progressive: true,
-      interlaced: true
+      interlaced: true,
+      //use: [jpegtran, pngquant]
     })))
-    .pipe(gulp.dest('../static/images'));
+    .pipe(gulp.dest('static/media/'));
 });
 
 gulp.task('fonts', function () {
@@ -94,6 +110,10 @@ gulp.task('watch', function () {
   gulp.watch('bower.json', ['wiredep']);
 });
 
+gulp.task('clearcache', function() {
+  $.cache.clearAll();
+});
+
 gulp.task('build', ['jshint', 'html', 'partials', 'images', 'fonts'], function () {
   return gulp.src(folio + '**/*').pipe($.size({title: 'build', gzip: true}));
 });
@@ -101,5 +121,5 @@ gulp.task('build', ['jshint', 'html', 'partials', 'images', 'fonts'], function (
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
   gulp.start('watch');
-  gulp.src('').pipe($.shell(['hugo server --watch --theme=secretfolio --buildDrafts']))
+  gulp.src('').pipe($.shell(['hugo server --watch --theme=secretfolio --buildDrafts']));
 });
