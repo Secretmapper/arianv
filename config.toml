@@ -6,5 +6,9 @@ canonifyurls = true
 theme = "secretfolio"
 disqusShortname = "arianv"
 
+[Taxonomies]
+  series = "series"
+  series-desc = "series-desc"
+
 [params]
   googleAnalytics = "UA-60507502-1"
