@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Three.Js on Arian&#39;s Portfolio</title>
-    <link>http://arianv.com/tags/three/index.js/</link>
+    <link>http://localhost:1313/tags/three/index.js/</link>
     <description>Recent content in Three.Js on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     
     
     <lastBuildDate>Fri, 30 Jan 2015 19:55:18 &#43;0800</lastBuildDate>
-    <atom:link href="http://arianv.com/tags/three.js/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/three.js/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>jSolar</title>
-      <link>http://arianv.com/projects/jSolar/</link>
+      <link>http://localhost:1313/portfolio/jSolar/</link>
       <pubDate>Fri, 30 Jan 2015 19:55:18 &#43;0800</pubDate>
       
-      <guid>http://arianv.com/projects/jSolar/</guid>
+      <guid>http://localhost:1313/portfolio/jSolar/</guid>
       <description>&lt;p&gt;A 3d simulation of the copernican solar system model, where users can move the camera as well as affix it to the different planets. Made with Three.js&lt;/p&gt;
 </description>
     </item>

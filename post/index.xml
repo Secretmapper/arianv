@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Arian&#39;s Portfolio</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Arian&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    
+    
+    <lastBuildDate>Wed, 06 May 2015 17:13:53 &#43;0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Create Pong with phaser.js</title>
+      <link>http://localhost:1313/post/create-pong-with-phaser.js/</link>
+      <pubDate>Wed, 06 May 2015 17:13:53 &#43;0800</pubDate>
+      
+      <guid>http://localhost:1313/post/create-pong-with-phaser.js/</guid>
+      <description>&lt;p&gt;In this tutorial, we are going to create a complete Pong game using Phaser.js&lt;/p&gt;
+
+&lt;p&gt;Setting up the project&lt;/p&gt;
+
+&lt;p&gt;The first thing we need to do is to initialize our Phaser game instance. This is done by adding the line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var game = new Phaser.Game(400, 300, Phaser.AUTO);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first parameter is the width of your game, while the second one is the height.
+In this case 400 x 300 pixels. The third one decides which rendering context to use.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ve created the game instance! If you run the code above, you should see a black box. Great, but we need to do more!&lt;/p&gt;
+
+&lt;p&gt;The next thing we need is to do is to add a state. We add states with the method &lt;code&gt;game.state.add&lt;/code&gt;, the first parameter being &amp;lsquo;play&amp;rsquo;, which the name of our state, while the second parameter is an object that contains three important functions: &lt;code&gt;preload&lt;/code&gt;, &lt;code&gt;create&lt;/code&gt;, &lt;code&gt;update&lt;/code&gt;. We will get into more detail about these functions later on.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var playState = {};
+game.state.add(&#39;play&#39;, playState);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We then need to call the &lt;code&gt;game.state.start&lt;/code&gt; method to actually start our state, passing the name parameter we used a while ago.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;game.state.start(&#39;play&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Our Phaser Game Instance now has a state, and it starts it, but it doesn&amp;rsquo;t really do anything yet. Let&amp;rsquo;s change the Background Color of the game first.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var playState = {
+  preload: function() {
+    game.stage.backgroundColor = &#39;#71c5cf&#39;;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;div&gt;&lt;div class=&#34;editor-container&#34;&gt;&lt;div id=&#34;ace-editor&#34;&gt;var game = new Phaser.Game(400, 300, Phaser.AUTO);
+
+var playState = {
+  preload: function() {
+    game.load.baseURL = &#39;/media/images/pong/&#39;;
+
+    game.stage.backgroundColor = &#39;#71c5cf&#39;;
+    game.load.image(&#39;paddle&#39;, &#39;paddle.png&#39;);
+  },
+  create: function() {
+    game.add.sprite(0, 0, &#39;paddle&#39;);
+
+  },
+  update: function() {
+
+  },
+  restartGame: function() {
+    game.state.start(&#39;play&#39;);
+  }
+};
+
+game.state.add(&#39;play&#39;, playState)
+game.state.start(&#39;play&#39;);&lt;/div&gt;&lt;div id=&#34;game&#34;&gt;&lt;iframe id=&#34;game-iframe&#34; srcdoc=&#34;&#34; seamless=&#39;seamless&#39; frameBorder=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;div&gt;&lt;/div&gt;&lt;script src=&#34; https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.9/ace.js&#34; type=&#34;text/javascript&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;script&gt;
+var gameFrame = document.getElementById(&#34;game-iframe&#34;);
+var editor = ace.edit(&#34;ace-editor&#34;);
+editor.setTheme(&#34;ace/theme/solarized_light&#34;);
+editor.getSession().setMode(&#34;ace/mode/javascript&#34;);
+editor.getSession().setUseWrapMode(true);
+editor.setOptions({
+  maxLines: Infinity,
+  minLines: 19 
+});
+editor.commands.addCommand({
+  name: &#39;saveFile&#39;,
+  bindKey: {
+    win: &#39;Ctrl-S&#39;,
+    mac: &#39;Command-S&#39;,
+    sender: &#39;editor|cli&#39;
+  },
+  exec: function(env, args, request) {
+    var phaserScript = &#34;&lt;script type=&#39;text/javascript&#39; src=&#39;https://cdnjs.cloudflare.com/ajax/libs/phaser/2.2.2/custom/phaser-arcade-physics.min.js&#39;&gt;&lt;\/script&gt;&#34; 
+    var myScript = &#34;&lt;script type=&#39;text/javascript&#39;&gt;//&lt;![CDATA[\nwindow.onload=function(){&#34; 
+      + editor.getSession().getValue() + &#34;}//]]&gt;&lt;\/script&gt;&#34;;
+
+    gameFrame.srcdoc = phaserScript + myScript + &#34;&lt;style&gt;body{margin:0px}&lt;/style&gt;&lt;div id=&#39;game&#39;&gt;&lt;/div&gt;&#34;; 
+  }
+});
+&lt;/script&gt;&lt;div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GSOC 2015 Introduction</title>
+      <link>http://localhost:1313/post/GSOC-2015-Introduction/</link>
+      <pubDate>Tue, 28 Apr 2015 18:52:11 &#43;0800</pubDate>
+      
+      <guid>http://localhost:1313/post/GSOC-2015-Introduction/</guid>
+      <description>&lt;p&gt;Hello Everyone!&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m Arian, a Computer Science student. I’m one of the students accepted in the Google Summer of Code program, and my project will be for OpenStreetMap! I’ll be working on developing an integrated Learning Platform for the Overpass API.&lt;/p&gt;
+
+&lt;p&gt;As it is right now, learning resources for the Overpass API is quite limited, and this project aims to fix that.
+Here&amp;rsquo;s a short list of features to be implemented:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Learning platform&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

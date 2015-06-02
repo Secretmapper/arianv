@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gsoc 2015 on Arian&#39;s Portfolio</title>
+    <link>http://localhost:1313/series/gsoc-2015/</link>
+    <description>Recent content in Gsoc 2015 on Arian&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    
+    
+    <lastBuildDate>Tue, 28 Apr 2015 18:52:11 &#43;0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/series/gsoc-2015/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>GSOC 2015 Introduction</title>
+      <link>http://localhost:1313/post/GSOC-2015-Introduction/</link>
+      <pubDate>Tue, 28 Apr 2015 18:52:11 &#43;0800</pubDate>
+      
+      <guid>http://localhost:1313/post/GSOC-2015-Introduction/</guid>
+      <description>&lt;p&gt;Hello Everyone!&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m Arian, a Computer Science student. I’m one of the students accepted in the Google Summer of Code program, and my project will be for OpenStreetMap! I’ll be working on developing an integrated Learning Platform for the Overpass API.&lt;/p&gt;
+
+&lt;p&gt;As it is right now, learning resources for the Overpass API is quite limited, and this project aims to fix that.
+Here&amp;rsquo;s a short list of features to be implemented:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Learning platform&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
