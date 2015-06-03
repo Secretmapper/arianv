@@ -2,32 +2,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gsoc 2015 on Arian&#39;s Portfolio</title>
-    <link>http://localhost:1313/series/gsoc-2015/</link>
+    <link>http://arianv.com/series/gsoc-2015/</link>
     <description>Recent content in Gsoc 2015 on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    
-    
-    
-    <lastBuildDate>Tue, 28 Apr 2015 18:52:11 &#43;0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/series/gsoc-2015/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 May 2015 18:52:11 +0800</lastBuildDate>
+    <atom:link href="http://arianv.com/series/gsoc-2015/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>GSOC 2015 Introduction</title>
-      <link>http://localhost:1313/post/GSOC-2015-Introduction/</link>
-      <pubDate>Tue, 28 Apr 2015 18:52:11 &#43;0800</pubDate>
+      <title>GSOC 2015 Introduction: LearnOverpass</title>
+      <link>http://arianv.com/post/GSOC-2015-Introduction/</link>
+      <pubDate>Sat, 02 May 2015 18:52:11 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/GSOC-2015-Introduction/</guid>
-      <description>&lt;p&gt;Hello Everyone!&lt;/p&gt;
+      <guid>http://arianv.com/post/GSOC-2015-Introduction/</guid>
+      <description>
 
-&lt;p&gt;I&amp;rsquo;m Arian, a Computer Science student. I’m one of the students accepted in the Google Summer of Code program, and my project will be for OpenStreetMap! I’ll be working on developing an integrated Learning Platform for the Overpass API.&lt;/p&gt;
+&lt;p&gt;Last year, I worked with the Wordpress organization to integrate socialization and gamification features to the Glotpress translation platform. It&amp;rsquo;s been a fun fulfilling ride, and there are definitely a lot of things that I learned during the project.&lt;/p&gt;
 
-&lt;p&gt;As it is right now, learning resources for the Overpass API is quite limited, and this project aims to fix that.
-Here&amp;rsquo;s a short list of features to be implemented:&lt;/p&gt;
+&lt;p&gt;This year, I&amp;rsquo;ve been accepted to Google&amp;rsquo;s Summer of Code Program again and I&amp;rsquo;m working with the OpenStreetMap organization to create LearnOverpass!&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Learning platform&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h1 id=&#34;what-is-learnoverpass-https-github-com-osmlab-learnoverpass:90d0b09821fe4c855d3c97303ce53d06&#34;&gt;What is &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide&#34;&gt;The Overpass API&lt;/a&gt; is a robust API for querying map data, but it&amp;rsquo;s use is still limited due to its beginner-unfriendly documentation and scarce tutorials. With the Query Language&amp;rsquo;s specialized semantics and a usage audience that can include non-developers, the lack or learning resources is a opt-put problem of the API.&lt;/p&gt;
+
+&lt;p&gt;LearnOverpass is a project that aims to solve that problem, by creating a complete, one stop, learning resource for the overpass API. We aim to make it easier for newcomers to learn and use the Overpass API for querying OSM data.&lt;/p&gt;
+
+&lt;p&gt;The Overpass API has an existing language guide found in the &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide&#34;&gt;Open Street Map wiki&lt;/a&gt;. It&amp;rsquo;s pretty comprehensive, and it&amp;rsquo;s all right.&lt;/p&gt;
+
+&lt;p&gt;But it&amp;rsquo;s not &lt;em&gt;great&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re familiar with the Google Summer of Code program, you will probably know that documentation cannot be accepted as a project.&lt;/p&gt;
+
+&lt;p&gt;Because this is not just a documentation project - we are creating something more. We aim to create a &lt;strong&gt;great&lt;/strong&gt; learning platform for beginners.&lt;/p&gt;
+
+&lt;p&gt;Flat documentation is boring.&lt;/p&gt;
+
+&lt;p&gt;How much more fun would it be to &lt;strong&gt;learn by playing with an interactive tutorial&lt;/strong&gt; instead of passively reading a wiki page?&lt;/p&gt;
+
+&lt;h2 id=&#34;a-bid-on-interactivity:90d0b09821fe4c855d3c97303ce53d06&#34;&gt;A bid on interactivity&lt;/h2&gt;
+
+&lt;p&gt;One of my favorite video on education is Bret Victor&amp;rsquo;s talk on &amp;lsquo;Inventing on Principle&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/PUv66718DII&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Engaging and interactively seeing how the programming language, in this case the Overpass Query Language, directly interacts with the output data will provide a powerful learning model to learners. Due to the possibly visual nature of the Overpass API&amp;rsquo;s output, adding a dash of interactivity allows API users to more easily and understand the execution of their queries.&lt;/p&gt;
+
+&lt;p&gt;We aim to create a learning resource more user friendly than the documentation in the OSM Wiki. We want to create a platform where users can easily answer their own questions by searching, and playing, with the documentation. A platform that that can be referred to by anyone in the world, from OSM users with zero programming background, to experienced, developers looking to utilize the API.&lt;/p&gt;
+
+&lt;p&gt;LearnOverpass in short, will fulfill it&amp;rsquo;s goal by providing a &lt;strong&gt;fun, interactive platform&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Concretely, it will include this three main features:
+- A beautiful API Documentation interface. Reference for syntax, detailing description, parameter types, etc. of Overpass queries.
+- An embedded interface to test out queries, allowing users to experiment with parameters/methods inside the API Documentation page themselves.
+- A set of Interactive Exercises that allows beginners to learn the different facets of the Overpass API in a fun and easy way.&lt;/p&gt;
+
+&lt;h2 id=&#34;current-progress:90d0b09821fe4c855d3c97303ce53d06&#34;&gt;Current Progress&lt;/h2&gt;
+
+&lt;p&gt;The project has officially started, and you can visit &lt;a href=&#34;http://osmlab.github.io/learnoverpass/en/&#34;&gt;LearnOverpass live&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Right now, the project has only been bootstrapped - adding the frameworks/preprocessors needed, as well as including initial layout and styles.&lt;/p&gt;
+
+&lt;p&gt;LearnOverpass is powered by the Static Site Generator &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. Since Hugo doesn&amp;rsquo;t include any features for the asset pipeline, I use &lt;a href=&#34;http://gulpjs.com&#34;&gt;Gulp&lt;/a&gt; as a task manager, responsible for minifying my html files, compiling source such as &lt;code&gt;stylus&lt;/code&gt; to &lt;code&gt;css&lt;/code&gt;, etc. Hugo doesn&amp;rsquo;t natively support i18n so I also had to do a few things to work around this.&lt;/p&gt;
+
+&lt;p&gt;However, Hugo&amp;rsquo;s lack of an asset pipeline works to the project&amp;rsquo;s advantage: decoupling it with content means that potential content contributors only need to install hugo to test out and run a local copy of the site.&lt;/p&gt;
+
+&lt;p&gt;That pretty much ends my update for the week.&lt;/p&gt;
+
+&lt;p&gt;Development has been on schedule, and for next week, I&amp;rsquo;ll be working on integrating Martin&amp;rsquo;s &lt;a href=&#34;http://overpass-turbo.eu&#34;&gt;Overpass Turbo&lt;/a&gt; to the site&amp;rsquo;s API reference page. This brings the concept of interactivity to the site - allowing, and even encouraging users, to experiment with the paramaters as they view the API documentation itself.&lt;/p&gt;
+
+&lt;p&gt;Martin Raifer (@tyr_asd) apart from creating Overpass Turbo, also acts as my mentor for this project. This project would not have come to fruitition without him and his initial project writeup, as well as his continued guides and advice for the project&amp;rsquo;s direction.&lt;/p&gt;
+
+&lt;h2 id=&#34;am-i-crazy-see-anything-wrong:90d0b09821fe4c855d3c97303ce53d06&#34;&gt;Am I crazy? See anything wrong?&lt;/h2&gt;
+
+&lt;p&gt;If you have any reactions/comments, reach me out through email, the comments below, or on &lt;a href=&#34;https://twitter.com/secretmapper&#34;&gt;twitter&lt;/a&gt;. I can also be found on the Overpass API mailing list.&lt;/p&gt;
+
+&lt;p&gt;If you spot a bug, or think the project could really use a feature, feel free to create an issue in the project&amp;rsquo;s github page.&lt;/p&gt;
+
+&lt;p&gt;Ideas and/or contributions/opinion for content are heavily accepted! Shout out to Alex Morega who freely contributed his &lt;a href=&#34;https://github.com/mgax/workshop-geocj2015-overpass/blob/master/README.md&#34;&gt;resources&lt;/a&gt; from his Overpass API Workshop, Pierre Beland for outlining sections for Overpass, and John for pointing out the Overpass by Example Wiki page.&lt;/p&gt;
+
+&lt;p&gt;Thank you! I&amp;rsquo;m really excited about this project, and I hope the community will have as much fun using the project as I had developing. Let&amp;rsquo;s create LearnOverpass, the best learning resource for the Overpass API together!&lt;/p&gt;
 </description>
     </item>
     
