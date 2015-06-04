@@ -66,6 +66,6 @@ If you have any reactions/comments, reach me out through email, the comments bel
 
 If you spot a bug, or think the project could really use a feature, feel free to create an issue in the project's github page.
 
-Ideas and/or contributions/opinion for content are heavily accepted! Shout out to Alex Morega who freely contributed his [resources](https://github.com/mgax/workshop-geocj2015-overpass/blob/master/README.md) from his Overpass API Workshop, Pierre Beland for outlining sections for Overpass, and John for pointing out the Overpass by Example Wiki page. 
+Ideas and/or contributions/opinion for content are heavily accepted! Shout out to Alex Morega who freely contributed his [resources](https://github.com/mgax/workshop-geocj2015-overpass/blob/master/README.md) from his Overpass API Workshop, Pierre Béland for outlining sections for Overpass, and mmd for pointing out the Overpass by [Example Wiki page](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_API_by_Example). 
 
 Thank you! I'm really excited about this project, and I hope the community will have as much fun using the project as I had developing. Let's create LearnOverpass, the best learning resource for the Overpass API together!
