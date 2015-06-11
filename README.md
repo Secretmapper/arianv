@@ -1,6 +1,6 @@
 # Arian Valdez' Website
 
-This is the source for my blog/portfolio http://arianallensonv.com.
+This is the source for my blog/portfolio http://arianv.com.
 
 Built on top of hugo.
 
