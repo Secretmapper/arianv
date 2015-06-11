@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gsoc 2015 on Arian&#39;s Portfolio</title>
+    <link>http://arianv.com/series/gsoc-2015/</link>
+    <description>Recent content in Gsoc 2015 on Arian&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Jun 2015 15:50:28 +0800</lastBuildDate>
+    <atom:link href="http://arianv.com/series/gsoc-2015/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Embedding Overpass Turbo: GSOC Weekly Update 2</title>
+      <link>http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2/</link>
+      <pubDate>Thu, 11 Jun 2015 15:50:28 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2/</guid>
+      <description>&lt;p&gt;This is the second weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
+
+&lt;p&gt;This week&amp;rsquo;s deliverable is to integrate &lt;a href=&#34;http://overpass-turbo.eu&#34;&gt;Overpass Turbo&lt;/a&gt; inside the learning platform.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/overpass-turbo.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;From the get go, we knew we wanted to bring out a REPL-like interface to LearnOverpass - we want to encourage users to actively try and experiment with the Query Language.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;cf&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GSOC 2015 Introduction: LearnOverpass</title>
+      <link>http://arianv.com/post/GSOC-2015-Introduction/</link>
+      <pubDate>Sat, 02 May 2015 18:52:11 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/GSOC-2015-Introduction/</guid>
+      <description>
+
+&lt;p&gt;Last year, I worked with the Wordpress organization to integrate socialization and gamification features to the Glotpress translation platform. It&amp;rsquo;s been a fun fulfilling ride, and there are definitely a lot of things that I learned during the project.&lt;/p&gt;
+
+&lt;p&gt;This year, I&amp;rsquo;ve been accepted to Google&amp;rsquo;s Summer of Code Program again and I&amp;rsquo;m working with the OpenStreetMap organization to create LearnOverpass!&lt;/p&gt;
+
+&lt;h1 id=&#34;what-is-learnoverpass-https-github-com-osmlab-learnoverpass:90d0b09821fe4c855d3c97303ce53d06&#34;&gt;What is &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide&#34;&gt;The Overpass API&lt;/a&gt; is a robust API for querying map data, but it&amp;rsquo;s use is still limited due to its beginner-unfriendly documentation and scarce tutorials. With the Query Language&amp;rsquo;s specialized semantics and a usage audience that can include non-developers, the lack or learning resources is a opt-put problem of the API.&lt;/p&gt;
+
+&lt;p&gt;LearnOverpass is a project that aims to solve that problem, by creating a complete, one stop, learning resource for the overpass API. We aim to make it easier for newcomers to learn and use the Overpass API for querying OSM data.&lt;/p&gt;
+
+&lt;p&gt;The Overpass API has an existing language guide found in the &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide&#34;&gt;Open Street Map wiki&lt;/a&gt;. It&amp;rsquo;s pretty comprehensive, and it&amp;rsquo;s all right.&lt;/p&gt;
+
+&lt;p&gt;But it&amp;rsquo;s not &lt;em&gt;great&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re familiar with the Google Summer of Code program, you will probably know that documentation cannot be accepted as a project.&lt;/p&gt;
+
+&lt;p&gt;Because this is not just a documentation project - we are creating something more. We aim to create a &lt;strong&gt;great&lt;/strong&gt; learning platform for beginners.&lt;/p&gt;
+
+&lt;p&gt;Flat documentation is boring.&lt;/p&gt;
+
+&lt;p&gt;How much more fun would it be to &lt;strong&gt;learn by playing with an interactive tutorial&lt;/strong&gt; instead of passively reading a wiki page?&lt;/p&gt;
+
+&lt;h2 id=&#34;a-bid-on-interactivity:90d0b09821fe4c855d3c97303ce53d06&#34;&gt;A bid on interactivity&lt;/h2&gt;
+
+&lt;p&gt;One of my favorite video on education is Bret Victor&amp;rsquo;s talk on &amp;lsquo;Inventing on Principle&amp;rsquo;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
