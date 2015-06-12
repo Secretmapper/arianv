@@ -1,0 +1,109 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us"><head><link href="http://gmpg.org/xfn/11" rel="profile"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><meta property="og:title" content="Arian Allenson's Portfolio"/><meta property="og:type" content="website" /><meta property="og:image" content="http://arianv.com/media/avatar.png"/><meta property="og:site_name" content="Arian Allenson's Portfolio"/><meta property="og:description" content="Game Developer a.k.a. Secretmapper"/><title>Embedding Overpass Turbo: GSOC Weekly Update 2</title><link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'><link rel="stylesheet" href="http://arianv.com//css/main.css"> <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://arianv.com/apple-touch-icon-144-precomposed.png"><link href="http://arianv.com/favicon.png" rel="icon"><link href="" rel="alternate" type="application/rss+xml" title="Arian&#39;s Portfolio &middot; " /><meta name="description" content=""><meta name="keywords" content=""> </head><body><div class="content container"><div class="post"><h1 id="post-title">Embedding Overpass Turbo: GSOC Weekly Update 2</h1> <span class="post-date">Jun 11, 2015 &middot; 3 minute read &middot; <a href="http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2/#disqus_thread">Comments</a> </span><article> 
+
+<p>This is the second weekly update for the <a href="https://github.com/osmlab/learnoverpass">LearnOverpass</a> Project.</p>
+
+<p>This week&rsquo;s deliverable is to integrate <a href="http://overpass-turbo.eu">Overpass Turbo</a> inside the learning platform.</p>
+
+<p>
+<figure >
+    
+        <img src="http://arianv.com/media/images/gsoc-2015/overpass-turbo.jpg" />
+    
+    
+</figure>
+</p>
+
+<p>From the get go, we knew we wanted to bring out a REPL-like interface to LearnOverpass - we want to encourage users to actively try and experiment with the Query Language.</p>
+
+<div class="cf">
+<div class='g6'> <p>The Overpass API guide in the wiki already knew that seeing the results of the query is useful. Code snippets always contained an overpass turbo link that would automatically insert the code snippet to the overpass turbo page.</p>
+
+<p>It&rsquo;s a functional setup, but it&rsquo;s clunky - it&rsquo;ll require the user to navigate to another tab/window and lose the context of the snippet (the wiki page).</p>
+</div>
+<aside class="g6">
+  
+<figure >
+    
+        <img src="http://arianv.com/media/images/gsoc-2015/turbo-btn.png" />
+    
+    
+</figure>
+
+</aside>
+</div>
+
+<p>Embedding the Overpass Turbo interface directly to the documentation makes the most sense, so that&rsquo;s what we did.</p>
+
+<p>
+<figure >
+    
+        <img src="http://arianv.com/media/images/gsoc-2015/turbo-embed.png" alt="Overpass Turbo embedded inside LearnOverpass" />
+    
+    
+    <figcaption>
+        <p>
+        Overpass Turbo embedded inside LearnOverpass
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</p>
+
+<p>The embedded interface would be present in most of the language&rsquo;s <em>statements</em> reference, serving to show its usage. In the example capture in the image above, the query above shows the results of a Difference Block Statement. The result is visually striking - the nodes in the middle are removed by the difference statement.</p>
+
+<p>Of course, the results of some statements cannot be adequately seen visually. In that case, the JSON results are shown.</p>
+
+<p>There are a lot of ways we can play with this embedded interface. As an example, the <code>union</code> statement may show different colored nodes, emphasizing that it is the union of its substatements. The <code>poly</code> statement may take the form of a star, and the user can easily <strong>experiment with the query directly on the page</strong>.</p>
+
+<h2 id="technical-details:da8f17cd6a288334f07428cd66d8dfa5">Technical Details</h2>
+
+<p>Embedding an Overpass Turbo from an iframe was the way to go.</p>
+
+<p>The documentation reference only needed the output map - the coding editor instance would be placed in the site itself. I then dove into writing scripts that would do remove the editor part of Overpass Turbo. This was not particularly tricky, as Overpass Turbo had a toggle wide map feature, which would remove the coding interface. By then, only scrolling the contents of the iframe was necessary to remove the top bar, and we would have hit gold.</p>
+
+<p>However, Martin informed me that Overpass Turbo included a standalone map output - it was obvious then this is what I&rsquo;ve been aiming for from the start! Martin pointing this out feature greatly accelerated development, as that meant I only had to embed this page and pass the user&rsquo;s input from CodeMirror through a GET request.</p>
+
+<p>The initial plan for the site was to use React for the coding interface. It makes sense - it&rsquo;s a &lsquo;hot&rsquo; framework (right now at least) and I have experience with it.</p>
+
+<p>Programming the coding interface however, it was evident that this might not have been the best idea. React would require me to write my templates using jsx (or use their API), which did not make sense as I could already use Hugo for templating. It introduced too much overhead for what was essentially changing the src url (sending the GET parameters).</p>
+
+<p>It was obvious - I was overengineering.</p>
+
+<p>So I went ahead and programmed the whole thing in plain javascript, and it could not have been easier.</p>
+
+<p>It wasn&rsquo;t all a waste though - I did not get out of this experience empty handed. A more complete framework will be useful once we start integrating interactive exercises in LearnOverpass, and integrating webpack/dependencies.</p>
+
+<p>This early though, Occam&rsquo;s Razor very much applies. <a href="http://http://vanilla-js.com">VanillaJS ftw</a>.</p>
+
+<h2 id="next-week:da8f17cd6a288334f07428cd66d8dfa5">Next Week</h2>
+
+<p>For the next 1 <sup>1</sup>&frasl;<sub>2</sub> weeks or so, the focus of the project will be the creation of the API Documentation/Reference. The important thing here is to make the pages standalone and to utilize good code snippet samples to show a statement&rsquo;s use.</p>
+
+<p>Till next time!</p>
+  <hr/><div class="post-series-desc"><p>This is a post in the <a href="http://arianv.com//series/gsoc-2015" id="series"><b>GSOC 2015</b></a> series.<br/> Other posts in this series:</p>  <ul class="series"> <li>Jun 11, 2015 - <a href="http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2/">Embedding Overpass Turbo: GSOC Weekly Update 2</a></li> <li>May 02, 2015 - <a href="http://arianv.com/post/GSOC-2015-Introduction/">GSOC 2015 Introduction: LearnOverpass</a></li> </ul></div> </article> <div id="disqus_thread"></div></div></div> <script type="text/javascript">
+var disqus_shortname = "arianv";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>  <script type="text/javascript">
+    var disqus_shortname = "arianv";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  <footer>Copyright &#169; Arian Allenson M. Valdez | CC-BY-SA</footer>  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', "UA-60507502-1", 'auto');
+  ga('send', 'pageview');
+</script> </body></html>
