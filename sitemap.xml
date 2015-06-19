@@ -3,7 +3,7 @@
   
   <url>
     <loc>http://arianv.com/</loc>
-    <lastmod>2015-06-11T15:50:28+08:00</lastmod>
+    <lastmod>2015-06-18T13:46:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -105,6 +105,11 @@
   <url>
     <loc>http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2/</loc>
     <lastmod>2015-06-11T15:50:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://arianv.com/post/Porting-API-Reference-Weekly-Update-3/</loc>
+    <lastmod>2015-06-18T13:46:54+08:00</lastmod>
   </url>
   
 </urlset>

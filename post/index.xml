@@ -6,8 +6,81 @@
     <description>Recent content in Posts on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jun 2015 15:50:28 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2015 13:46:54 +0800</lastBuildDate>
     <atom:link href="http://arianv.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Porting API Reference: GSOC Weekly Update 3</title>
+      <link>http://arianv.com/post/Porting-API-Reference-Weekly-Update-3/</link>
+      <pubDate>Thu, 18 Jun 2015 13:46:54 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/Porting-API-Reference-Weekly-Update-3/</guid>
+      <description>
+
+&lt;p&gt;This is the third weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
+
+&lt;p&gt;This week&amp;rsquo;s deliverable is to &amp;lsquo;port&amp;rsquo; the API reference to the learning platform.&lt;/p&gt;
+
+&lt;h2 id=&#34;existing-resources:f134b74e78c386ba684142a6899fbf89&#34;&gt;Existing Resources&lt;/h2&gt;
+
+&lt;p&gt;The &amp;lsquo;sales pitch&amp;rsquo; of LearnOverpass has always been &lt;em&gt;&amp;lsquo;a one stop, learning resource for the overpass API&amp;rsquo;&lt;/em&gt; - we wanted the site to be the de facto page for learning the Query Language.&lt;/p&gt;
+
+&lt;p&gt;To do this properly, we need to make use of, and expand, &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL&#34;&gt;existing resources&lt;/a&gt; of the language.&lt;/p&gt;
+
+&lt;h2 id=&#34;query-goodness:f134b74e78c386ba684142a6899fbf89&#34;&gt;Query Goodness&lt;/h2&gt;
+
+&lt;p&gt;To get my project specification accepted, I had to write a solid plan, a set of goals, etc. One of the things I needed to have was to create a mockup of the application, and one of those was this little gem:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#39;post-width post-all-center&#39;&gt; &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Query&lt;/th&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;poly&lt;/td&gt;
+&lt;td&gt;space delimited coordinates&lt;/td&gt;
+&lt;td&gt;an Array of points for the bounding polygon&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;pre&gt;&lt;code&gt;  node(poly:&amp;quot;x1 y1 x2 y2 x... y... xn yn&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Expand the queries and methods, decompose how they work, and make them standalone enough. Just like standard documentation pages.&lt;/p&gt;
+
+&lt;p&gt;But this model of a query + parameter combo reference wouldn&amp;rsquo;t really work for the project - the Overpass QL is not a framework or a library with a &lt;em&gt;set of methods&lt;/em&gt;, it is it&amp;rsquo;s own &lt;strong&gt;Query Language&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Because of this, it was evident that there is a better way to create the reference page. the more sensible way was to document it how Query Languages are documented, like MySQL does.&lt;/p&gt;
+
+&lt;p&gt;As an example, you can see how the &lt;a href=&#34;http://dev.mysql.com/doc/refman/5.6/en/create-table.html&#34;&gt;&lt;code&gt;CREATE TABLE&lt;/code&gt;&lt;/a&gt; statement is documented in the MySQL reference manual. Much like the Query Language in the reference wiki - the syntax and form was shown as to how to properly use the statement.&lt;/p&gt;
+
+&lt;h2 id=&#34;learning-by-example:f134b74e78c386ba684142a6899fbf89&#34;&gt;Learning By Example&lt;/h2&gt;
+
+&lt;p&gt;With the &lt;a href=&#34;http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2&#34;&gt;embedded overpass turbo interface added last week&lt;/a&gt;, we were able to create conclusive visual examples per statement&amp;rsquo;s usage. Properly crafting the right queries that show the different uses of the statement and it&amp;rsquo;s quirks took up the bulk of this week&amp;rsquo;s task.&lt;/p&gt;
+
+&lt;p&gt;To make the examples more interesting, statements that would query in famous landmarks were used: in the reference pages we see the stonehenge, the peak to Christ the Redeemer Statue&amp;rsquo;s Mountain, and others more.&lt;/p&gt;
+
+&lt;h2 id=&#34;next-week:f134b74e78c386ba684142a6899fbf89&#34;&gt;Next Week&lt;/h2&gt;
+
+&lt;p&gt;The next week will be dedicated to polishing and fleshing out the API reference, as there are still a few statements that could have better examples. Since the reference now support multiple examples per page, we&amp;rsquo;re also looking into creative uses to this - currently it&amp;rsquo;s only being used to differentiate the &lt;code&gt;out;&lt;/code&gt; and &lt;code&gt;out meta;&lt;/code&gt; statements, but we could further use it to show the different &lt;code&gt;By tag&lt;/code&gt; filters for example
+.&lt;/p&gt;
+
+&lt;p&gt;There is also going to be a couple of improvements coming in the way of Overpass Turbo. Currently the interactive map &lt;a href=&#34;https://github.com/tyrasd/overpass-turbo/issues/23&#34;&gt;doesn&amp;rsquo;t support&lt;/a&gt; a few features that would be integral to the coming interactive exercises feature, so I&amp;rsquo;m looking into implementing this and doing a pull request.&lt;/p&gt;
+
+&lt;p&gt;This feature would also be useful to make the examples more visual - imagine a &lt;code&gt;union&lt;/code&gt; statement with different colored nodes powered by MapCSS!&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s it for this week! Again, feel free to let me know if you see anything that could be improved by commenting below!&lt;/p&gt;
+
+&lt;p&gt;Till next time!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Embedding Overpass Turbo: GSOC Weekly Update 2</title>
