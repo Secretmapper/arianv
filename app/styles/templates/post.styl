@@ -1,3 +1,14 @@
+.post-all-center
+  text-align center
+  table
+    margin-left auto
+    margin-right auto
+
+.post-width
+  margin-left auto
+  margin-right auto
+  max-width md_size
+  
 .post
   margin auto
   h1#post-title
@@ -6,9 +17,7 @@
     font-size 5em
     margin-bottom 0px
   h1, h2, h3, p, ul, ol, #disqus_thread
-    margin-left auto
-    margin-right auto
-    max-width md_size
+    @extend .post-width
   h1, h2, h3
     max-width md_size + 50px 
     font-family 'Fjalla One',serif
@@ -37,15 +46,27 @@
       font-style italic
   .video-player
     text-align center
-
-.g6
-  column(1/2)
-
-.cf
-  cf()
+  table
+    th, td
+      padding 0.5em
+  thead
+    background-color bg_accent 
 
 .term-desc
   p
     margin-top 0px
     line-height 1.2em
     color text_muted
+
+.cf
+  cf()
+
+@media (min-width md_size)
+  .g2
+    column(2/12)
+
+  .g6
+    column(6/12)
+
+  .g8
+    column(8/12)
