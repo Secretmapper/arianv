@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gsoc 2015 on Arian&#39;s Portfolio</title>
-    <link>http://localhost:1313/series-desc/gsoc-2015/</link>
+    <link>http://arianv.com/series-desc/gsoc-2015/</link>
     <description>Recent content in Gsoc 2015 on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 06 May 2015 11:09:35 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/series-desc/gsoc-2015/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://arianv.com/series-desc/gsoc-2015/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>series gsoc2015</title>
-      <link>http://localhost:1313/desc/series-GSOC-2015/</link>
+      <link>http://arianv.com/desc/series-GSOC-2015/</link>
       <pubDate>Wed, 06 May 2015 11:09:35 +0000</pubDate>
       
-      <guid>http://localhost:1313/desc/series-GSOC-2015/</guid>
+      <guid>http://arianv.com/desc/series-GSOC-2015/</guid>
       <description>&lt;p&gt;In 2015, I worked on the Overpass&amp;rsquo; Learning Platform for Google Summer Of Code 2015. This series details the creation of the project, from the initial project proposal, to the design, technical considerations, implementation, and user feedback.&lt;/p&gt;
 </description>
     </item>

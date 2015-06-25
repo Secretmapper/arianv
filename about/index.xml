@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on Arian&#39;s Portfolio</title>
-    <link>http://localhost:1313/about/</link>
+    <link>http://arianv.com/about/</link>
     <description>Recent content in Abouts on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Mar 2015 13:38:37 +1000</lastBuildDate>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://arianv.com/about/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Excellent Communicator</title>
-      <link>http://localhost:1313/about/communicator/</link>
+      <link>http://arianv.com/about/communicator/</link>
       <pubDate>Sun, 01 Mar 2015 13:38:37 +1000</pubDate>
       
-      <guid>http://localhost:1313/about/communicator/</guid>
+      <guid>http://arianv.com/about/communicator/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;portfolio-about-container&#34;&gt; &lt;div class=&#34;portfolio-about-item&#34;&gt; &lt;p&gt;&lt;h1&gt;Excellent Communicator&lt;/h1&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m a very chill guy to talk to, and I always try to put myself in other people&amp;rsquo;s shoes.&lt;/p&gt;
@@ -48,11 +48,11 @@
     
     <item>
       <title>Spontaneous and Fast Learner</title>
-      <link>http://localhost:1313/about/fastlearner/</link>
+      <link>http://arianv.com/about/fastlearner/</link>
       <pubDate>Sun, 01 Feb 2015 13:38:37 +0800</pubDate>
       
-      <guid>http://localhost:1313/about/fastlearner/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;portfolio-about-container&#34;&gt; &lt;div class=&#34;portfolio-about-item&#34;&gt; &lt;p&gt;&lt;img src=&#34;http://localhost:1313/media/journey_east@feature.png&#34;&gt;
+      <guid>http://arianv.com/about/fastlearner/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;portfolio-about-container&#34;&gt; &lt;div class=&#34;portfolio-about-item&#34;&gt; &lt;p&gt;&lt;img src=&#34;http://arianv.com/media/journey_east@feature.png&#34;&gt;
   &lt;i&gt;In Journey East, I was tasked to learn a language I&amp;rsquo;m unfamiliar with (Java) and learn how to develop APIs in a short amount of time so I could be brought to work on the server.&lt;/i&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;portfolio-about-item&#34;&gt; &lt;p&gt;&lt;h1&gt;Spontaneous and Fast Learner&lt;/h1&gt;&lt;/p&gt;
@@ -67,10 +67,10 @@
     
     <item>
       <title>Programming Ability</title>
-      <link>http://localhost:1313/about/codesample/</link>
+      <link>http://arianv.com/about/codesample/</link>
       <pubDate>Thu, 01 Jan 2015 13:38:37 +0800</pubDate>
       
-      <guid>http://localhost:1313/about/codesample/</guid>
+      <guid>http://arianv.com/about/codesample/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;portfolio-about-container&#34;&gt; &lt;div class=&#34;portfolio-about-item&#34;&gt; &lt;p&gt;&lt;h1&gt;Solid Software Engineering Skills.&lt;/h1&gt;&lt;/p&gt;
 
 &lt;p&gt;Familiar with numerous programming paradigms such as Object-Oriented, Functional, and Asynchronous Programming.&lt;/p&gt;

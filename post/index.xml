@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Arian&#39;s Portfolio</title>
-    <link>http://localhost:1313/post/</link>
+    <link>http://arianv.com/post/</link>
     <description>Recent content in Posts on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Jun 2015 11:27:49 +0801</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://arianv.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Polishing API Reference: GSOC Weekly Update 4</title>
-      <link>http://localhost:1313/post/Polishing-API-Reference-Weekly-Update-4/</link>
+      <link>http://arianv.com/post/Polishing-API-Reference-Weekly-Update-4/</link>
       <pubDate>Wed, 24 Jun 2015 11:27:49 +0801</pubDate>
       
-      <guid>http://localhost:1313/post/Polishing-API-Reference-Weekly-Update-4/</guid>
+      <guid>http://arianv.com/post/Polishing-API-Reference-Weekly-Update-4/</guid>
       <description>
 
 &lt;p&gt;This is the fourth weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
@@ -29,11 +29,11 @@
 
 &lt;p&gt;As the line-height issue was fixed, I also decided to pick a more modern typeface to go along with the site. I went with Google&amp;rsquo;s &lt;a href=&#34;https://www.google.com/fonts/specimen/Roboto&#34;&gt;Roboto font&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/overpass-compare.png&#34; alt=&#34;Old typeface on the left, new on the right&#34; style=&#34; width:600px &#34;/&gt;  &lt;figcaption&gt; &lt;p&gt; Old typeface on the left, new on the right   &lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/overpass-compare.png&#34; alt=&#34;Old typeface on the left, new on the right&#34; style=&#34; width:600px &#34;/&gt;  &lt;figcaption&gt; &lt;p&gt; Old typeface on the left, new on the right   &lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt;&lt;/p&gt;
 
 &lt;p&gt;The redesign also features a more minimal menu, that now supports &amp;lsquo;active&amp;rsquo; links.&lt;/p&gt;
 
-&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/overpass-menu-compare.png&#34;  style=&#34; width:600px &#34;/&gt;  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/overpass-menu-compare.png&#34;  style=&#34; width:600px &#34;/&gt;  &lt;/figure&gt;&lt;/p&gt;
 
 &lt;p&gt;Syntax Highliting is also added to the site, to both the overpass editor instances and all the sample code blocks. This is done by using codemirror to make code blocks read only, using it for ad-hoc syntax highliting. There are a few performance implications of this, but offset by the advantage of not importing another library.&lt;/p&gt;
 
@@ -59,10 +59,10 @@
     
     <item>
       <title>Porting API Reference: GSOC Weekly Update 3</title>
-      <link>http://localhost:1313/post/Porting-API-Reference-Weekly-Update-3/</link>
+      <link>http://arianv.com/post/Porting-API-Reference-Weekly-Update-3/</link>
       <pubDate>Thu, 18 Jun 2015 13:46:54 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/Porting-API-Reference-Weekly-Update-3/</guid>
+      <guid>http://arianv.com/post/Porting-API-Reference-Weekly-Update-3/</guid>
       <description>
 
 &lt;p&gt;This is the third weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
@@ -111,7 +111,7 @@
 
 &lt;h2 id=&#34;learning-by-example:f134b74e78c386ba684142a6899fbf89&#34;&gt;Learning By Example&lt;/h2&gt;
 
-&lt;p&gt;With the &lt;a href=&#34;http://localhost:1313/post/Embedding-Overpass-Turbo-Weekly-Update-2&#34;&gt;embedded overpass turbo interface added last week&lt;/a&gt;, we were able to create conclusive visual examples per statement&amp;rsquo;s usage. Properly crafting the right queries that show the different uses of the statement and it&amp;rsquo;s quirks took up the bulk of this week&amp;rsquo;s task.&lt;/p&gt;
+&lt;p&gt;With the &lt;a href=&#34;http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2&#34;&gt;embedded overpass turbo interface added last week&lt;/a&gt;, we were able to create conclusive visual examples per statement&amp;rsquo;s usage. Properly crafting the right queries that show the different uses of the statement and it&amp;rsquo;s quirks took up the bulk of this week&amp;rsquo;s task.&lt;/p&gt;
 
 &lt;p&gt;To make the examples more interesting, statements that would query in famous landmarks were used: in the reference pages we see the stonehenge, the peak to Christ the Redeemer Statue&amp;rsquo;s Mountain, and others more.&lt;/p&gt;
 
@@ -132,10 +132,10 @@
     
     <item>
       <title>Embedding Overpass Turbo: GSOC Weekly Update 2</title>
-      <link>http://localhost:1313/post/Embedding-Overpass-Turbo-Weekly-Update-2/</link>
+      <link>http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2/</link>
       <pubDate>Thu, 11 Jun 2015 15:50:28 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/Embedding-Overpass-Turbo-Weekly-Update-2/</guid>
+      <guid>http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2/</guid>
       <description>
 
 &lt;p&gt;This is the second weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
@@ -145,7 +145,7 @@
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/overpass-turbo.jpg&#34; /&gt;
+        &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/overpass-turbo.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -162,7 +162,7 @@
   
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/turbo-btn.png&#34; /&gt;
+        &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/turbo-btn.png&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -175,7 +175,7 @@
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/turbo-embed.png&#34; alt=&#34;Overpass Turbo embedded inside LearnOverpass&#34; /&gt;
+        &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/turbo-embed.png&#34; alt=&#34;Overpass Turbo embedded inside LearnOverpass&#34; /&gt;
     
     
     &lt;figcaption&gt;
@@ -226,10 +226,10 @@
     
     <item>
       <title>GSOC 2015 Introduction: LearnOverpass</title>
-      <link>http://localhost:1313/post/GSOC-2015-Introduction/</link>
+      <link>http://arianv.com/post/GSOC-2015-Introduction/</link>
       <pubDate>Sat, 02 May 2015 18:52:11 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/GSOC-2015-Introduction/</guid>
+      <guid>http://arianv.com/post/GSOC-2015-Introduction/</guid>
       <description>
 
 &lt;p&gt;Last year, I worked with the Wordpress organization to integrate socialization and gamification features to the Glotpress translation platform. It&amp;rsquo;s been a fun fulfilling ride, and there are definitely a lot of things that I learned during the project.&lt;/p&gt;
