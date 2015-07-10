@@ -1,7 +1,7 @@
 +++
 date = "2015-01-30T19:45:31+08:00"
 title = "Journey East"
-image = "/media/journey_east.png"
+image = "/media/portfolio/journey_east.png"
 tags = ["AS3", "Java", "NoSQL"]
 
 +++

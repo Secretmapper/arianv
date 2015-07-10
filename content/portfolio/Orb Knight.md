@@ -1,7 +1,7 @@
 +++
 date = "2015-01-28T13:38:37+08:00"
 title = "Orb Knight"
-image = "/media/orb_knight.png"
+image = "/media/portfolio/orb_knight.png"
 tags = ["JS", "HTML5"]
 
 +++

@@ -1,7 +1,7 @@
 +++
 date = "2015-01-30T19:53:25+08:00"
 title = "Big Issues"
-image = "/media/bigissues.png"
+image = "/media/portfolio/bigissues.png"
 tags = ["AS3"]
 
 +++

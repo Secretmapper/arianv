@@ -1,7 +1,7 @@
 +++
 date = "2015-01-27T13:38:37+08:00"
 title = "Space Shooter"
-image = "/media/space_wars.png"
+image = "/media/portfolio/space_wars.png"
 tags = ["JS", "HTML5"]
 
 +++

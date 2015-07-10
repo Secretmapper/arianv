@@ -1,7 +1,7 @@
 +++
 date = "2015-01-30T19:47:44+08:00"
 title = "PiRPG"
-image = "/media/pirpg.png"
+image = "/media/portfolio/pirpg.png"
 tags = ["AS3"]
 
 +++

@@ -1,7 +1,7 @@
 +++
 date = "2015-01-30T19:55:18+08:00"
 title = "Merc 01"
-image = "/media/merc_01.png"
+image = "/media/portfolio/merc_01.png"
 tags = ["Python", "Pyglet"]
 
 +++
