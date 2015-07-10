@@ -1,5 +1,4 @@
 {{ partial "head.html" . }}
-<div class="content container">
   {{ $root := .}}
     {{ $page := (index .Data.Pages 0) }}
     {{ range $taxonomy, $value := .Data }}
@@ -26,5 +25,4 @@
     {{end}}
     </ul>
 
-</div>
 {{ partial "foot.html" . }}

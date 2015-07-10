@@ -43,10 +43,10 @@ a
     background: #fafafa;
   color: #3498db;
   text-decoration: none;
-  -webkit-transition: all 0.25s ease-in;
-  -moz-transition: all 0.25s ease-in;
-  -ms-transition: all 0.25s ease-in;
-  transition: all 0.25s ease-in;
+  -webkit-transition: background 0.25s ease-in;
+  -moz-transition: background 0.25s ease-in;
+  -ms-transition: background 0.25s ease-in;
+  transition: background 0.25s ease-in;
   border-radius: 7px;
   padding: 1px 3px 3px 3px;
 
@@ -57,10 +57,37 @@ hr
   margin 1em 0
   padding 0
   
+nav.ribbon
+  margin-top 1em
+  padding 0.75em 1em
+  div
+    display inline
+
+.nav-inner
+  display inline
+  ul
+    display inline
+    padding 0em
+    margin 0em
+    text-align center
+    list-style none
+    li
+      a
+        &:hover
+          background none
+          border-bottom 0.2em solid white
+          border-radius 0px
+        color white
+      margin 0em 1em
+      display inline
+      font-size 1.25em
+      font-weight 500
+      font-family 'Fjalla One',serif
+  
 .container
   margin-right auto
   margin-left auto
-  padding 15px
+  padding 0em 15px 15px
   
 .title
   text-align center
@@ -86,7 +113,8 @@ hr
   p
     font-size 1.1em
   .container
-    padding 2.618em
+    padding 0em 2.618em
+    padding-bottom 1em
   .entry-avatar
     column(1/3)
     text-align right
