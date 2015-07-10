@@ -51,16 +51,8 @@ gulp.task('partials', ['styles'], function () {
     .pipe(gulp.dest(folio + 'layouts/'));
 });
 
-gulp.task('fonts', function () {
-  return gulp.src(require('main-bower-files')().concat('fonts/**/*'))
-    .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
-    .pipe($.flatten())
-    .pipe(gulp.dest('static/fonts'));
-});
-
 gulp.task('clean', require('del').bind(null, [folio + 'layouts', folio + 'static/assets/css/*.css', folio + 'static/assets/*.js']));
 
-// inject bower components
 gulp.task('wiredep', function () {
   var wiredep = require('wiredep').stream;
 
@@ -84,14 +76,13 @@ gulp.task('watch', function () {
   gulp.watch('app/styles/**/*.styl', ['styles']);
   gulp.watch('app/**/*.html', ['html']);
   gulp.watch('app/**/*.html', ['partials']);
-  gulp.watch('bower.json', ['wiredep']);
 });
 
 gulp.task('clearcache', function() {
   $.cache.clearAll();
 });
 
-gulp.task('build', ['jshint', 'html', 'partials', 'fonts'], function () {
+gulp.task('build', ['jshint', 'html', 'partials'], function () {
   return gulp.src(folio + '**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
