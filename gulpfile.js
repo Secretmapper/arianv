@@ -51,28 +51,6 @@ gulp.task('partials', ['styles'], function () {
     .pipe(gulp.dest(folio + 'layouts/'));
 });
 
-gulp.task('images', function () {
-  return gulp.src('srcstatic/media/*.png')
-    .pipe($.responsive({
-      '**/*' : [{
-        width: 270,
-        withoutEnlargement: false
-      },
-      {
-        rename: {
-          suffix: '@feature'
-        },
-        width: 460,
-        withoutEnlargement: false
-      }]
-    }))
-    .pipe($.cache($.imagemin({
-      interlaced: true,
-      //use: [jpegtran, pngquant]
-    })))
-    .pipe(gulp.dest('static/media/'));
-});
-
 gulp.task('fonts', function () {
   return gulp.src(require('main-bower-files')().concat('fonts/**/*'))
     .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
