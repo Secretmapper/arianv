@@ -2,6 +2,7 @@
 date = "2015-06-11T15:50:28+08:00"
 title = "Embedding Overpass Turbo: GSOC Weekly Update 2"
 series = ["GSOC 2015"]
+tags = ["JS", "Go", "Webdev"]
 
 +++
 

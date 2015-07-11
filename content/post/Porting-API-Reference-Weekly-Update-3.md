@@ -2,6 +2,7 @@
 date = "2015-06-18T13:46:54+08:00"
 title = "Porting API Reference: GSOC Weekly Update 3"
 series = ["GSOC 2015"]
+tags = ["JS", "Go", "Webdev"]
 
 +++
 
