@@ -1,13 +1,25 @@
 {{ partial "head.html" . }}
-  <ul class="posts">
+  <div class="posts">
   {{ range .Data.Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a>
-    {{ if isset .Params "categories" }}
-    &middot;
-    {{ $baseUrl := .Site.BaseURL }}
-    {{ range .Params.categories }}<a class="label" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
-    {{ end }}</span>
-    &middot; <time>{{ .Date.Format "Jan 2, 2006" }}</time></li>
+    <article>
+      <p class="post-info">
+        <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+        {{ if isset .Params "tags" }}
+        {{ $baseUrl := .Site.BaseURL }}
+          {{ range .Params.tags }}
+            <strong class="post-category">
+              <a class="label"
+                href="{{ $baseUrl }}/tags/{{ . | urlize }}">
+                {{ . }}
+              </a>
+            </strong>
+          {{ end }}
+        {{ end }}
+      </p>
+      <h2>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h2>
+    </article>
   {{ end }}
-  </ul>
+  </div>
 {{ partial "foot.html" . }}

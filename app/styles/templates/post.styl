@@ -1,3 +1,34 @@
+.posts
+  max-width md_size
+  margin 0 auto
+  article
+    margin-bottom 1.5em
+    h2
+      line-height 1.65em
+      a
+        color text_color
+        &:hover
+          color ribbon_color
+          background none
+        padding 0em
+  .post-info
+    font-size 0.875em
+    color #b1b1b1
+    &:hover
+      color #242424
+    margin 0em
+    float right
+    text-align right
+    time
+      display block
+
+strong.post-category
+  a
+    color #b1b1b1
+    &:hover
+      color ribbon_color
+      background none
+
 .post-all-center
   text-align center
   table
@@ -26,9 +57,16 @@
   article
     padding 2% 0%
   p
-    line-height 2em
-  .post-date
-    color text_muted
+    line-height 2em 
+  .post-info
+    padding-top 1em
+    margin 0 auto
+    max-width md_size + 50px 
+    .post-date
+      color text_muted
+    .post-tags
+      text-align right
+      float right
   .post-series-desc
     color text_muted
     font-size 0.9em
