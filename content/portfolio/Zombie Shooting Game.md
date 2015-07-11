@@ -2,7 +2,7 @@
 date = "2015-01-30T19:52:30+08:00"
 title = "Zombie Shooting Game"
 image = "/media/portfolio/zombie_starling.png"
-tags = ["AS3"]
+port_tags = ["AS3"]
 
 +++
 

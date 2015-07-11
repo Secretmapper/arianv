@@ -2,7 +2,7 @@
 date = "2015-01-30T19:41:26+08:00"
 title = "VirtuaPet"
 image = "/media/portfolio/virtua_pet.png"
-tags = ["JS", "HTML5", "CSS"]
+port_tags = ["JS", "HTML5", "CSS"]
 
 +++
 

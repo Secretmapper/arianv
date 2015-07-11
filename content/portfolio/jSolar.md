@@ -2,7 +2,7 @@
 date = "2015-01-30T19:55:18+08:00"
 title = "jSolar"
 image = "/media/portfolio/jSolar.png"
-tags = ["JS", "THREE.js"]
+port_tags = ["JS", "THREEjs"]
 
 +++
 

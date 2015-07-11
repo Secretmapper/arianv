@@ -9,6 +9,7 @@ disqusShortname = "arianv"
 [Taxonomies]
   series = "series"
   series-desc = "series-desc"
+  port_tag = "port_tags"
 
 [params]
   googleAnalytics = "UA-60507502-1"

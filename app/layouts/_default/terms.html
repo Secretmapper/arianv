@@ -14,7 +14,13 @@
     {{ $page := index $pages 0 }}
     {{ $friendly := index $page.Page.Params $taxname 0 }}
     {{ $pageCount := len $pages }}
-    <a href="{{$base}}/{{$data.Plural}}/{{$name}}"> {{ $friendly }} </a> &nbsp;({{ $pageCount }} {{ if eq $pageCount 1 }}entry{{ else }}entries{{ end }})
+    <div>
+      <a href="{{$base}}/{{$data.Plural}}/{{$name}}">
+        {{ $name }}
+      </a> &nbsp;
+      ({{ $pageCount }}
+      {{ if eq $pageCount 1 }}entry{{ else }}entries{{ end }})
+    </div>
 
     {{ $descpages := index $desctax $name }}
     {{ if len $descpages }}
