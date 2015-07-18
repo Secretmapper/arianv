@@ -299,5 +299,57 @@
 </description>
     </item>
     
+    <item>
+      <title>My First Month with Vim</title>
+      <link>http://arianv.com/post/My-First-Month-with-Vim/</link>
+      <pubDate>Sun, 15 Mar 2015 10:48:18 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/My-First-Month-with-Vim/</guid>
+      <description>
+
+&lt;p&gt;Today celebrates my first month with vim.&lt;/p&gt;
+
+&lt;p&gt;It also marks the first time I did a custom configuration on my &lt;code&gt;.vimrc&lt;/code&gt;. When I said &amp;lsquo;custom&amp;rsquo; it means that it was not just some snippet I found from the internet, it was an actual, personal configuration that made &amp;lsquo;vim&amp;rsquo; my own flavor of &amp;lsquo;vim&amp;rsquo;. This, I think, is the point when someone can say they have graduated from vim noob, to vim user.&lt;/p&gt;
+
+&lt;h1 id=&#34;hipster-coding:c0f0488411cf8fe53e5c18f05ae3dc22&#34;&gt;Hipster Coding&lt;/h1&gt;
+
+&lt;p&gt;Vim is &lt;em&gt;the&lt;/em&gt; editor. Not just any editor. &lt;strong&gt;THE&lt;/strong&gt; editor. You know for &lt;a href=&#34;https://xkcd.com/378/&#34;&gt;real programmers&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Just a couple month ago I made the switch from Windows to OSX, biting the bullet and buying myself a 13&amp;rdquo; rMBP. I&amp;rsquo;ve come to enjoy the transition so far, finally having the versatility of UNIX on my machine.&lt;/p&gt;
+
+&lt;p&gt;The more than positive experience of switching OS made me want to experiment with my tools more, and seeing &lt;a href=&#34;https://www.youtube.com/watch?v=UTqZNujQOlA&#34;&gt;Jonathan Blow programming on Emacs&lt;/a&gt; inspired me to switch to these classic editors. I already used Emacs back in the day, and while it is a good editor, I was looking for something a little more lightweight and nimble. Working with Javascriptmost of the time, I would much prefer a speedy editor like Vim against fancy IDE features that Emacs could offer.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-learning-curve-and-progressive-hacking:c0f0488411cf8fe53e5c18f05ae3dc22&#34;&gt;The Learning Curve and Progressive Hacking&lt;/h1&gt;
+
+&lt;p&gt;I was intimidated at first. Vim is well known to have a pretty brutal learning curve, and I had contracts whose deadlines won&amp;rsquo;t extend to account for me learning a new editor. This was a potential show-stopper right from the get go.&lt;/p&gt;
+
+&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://arianv.com/media/images/editor-learning-curve.png&#34; alt=&#34;This image is as classic as the editors themselves&#34; style=&#34;&#34;/&gt;  &lt;figcaption&gt; &lt;p&gt; This image is as classic as the editors themselves   &lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;I figured though - when would I ever just commit to learning vim? I&amp;rsquo;ve programmed enough to know that perfect opportunities to learn things never really present themselves, so I decided to learn it like how frameworks or languages are learned, &lt;em&gt;just effin&amp;rsquo; use it&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I started using vim just like how I used any other editor. My first day was spend scrolling around and clicking on things, all to no avail (I was running on a terminal, and vim doesn&amp;rsquo;t support mouse events by default). I pretty much never touched normal mode at all, spending most of my time in insert mode and moving along with the arrow keys. Searching for a string in my project involved a (rather pathethic) workflow of having sublime text running in the background, where I could quickly use &amp;lsquo;find in files&amp;rsquo; in the familiar GUI.&lt;/p&gt;
+
+&lt;p&gt;After a few days, I switched from using cursor keys to &lt;code&gt;hjkl&lt;/code&gt; keys, and I learned how to use &lt;code&gt;:edit&lt;/code&gt; to switch files without closing and reoping vim all the time. Eventually I installed my first ever plugin, &lt;code&gt;NERDTree&lt;/code&gt; which adds the much needed file navigation system.&lt;/p&gt;
+
+&lt;p&gt;You see, I made it a point to progressively learn vim, and that involved grabbing packages and learning things only when I found that I &amp;lsquo;needed&amp;rsquo; them.&lt;/p&gt;
+
+&lt;p&gt;This philosophy pretty much defined how I learned vim. Editing properties in &lt;code&gt;json&lt;/code&gt; files made me learn &lt;code&gt;ci&lt;/code&gt;, and looking into more efficient insert commands made me learn &lt;code&gt;o&lt;/code&gt;, &lt;code&gt;I&lt;/code&gt;, and &lt;code&gt;A&lt;/code&gt;. Maintaining a javascript codebase with variable indent widths made me learn the very first big trick that made me go wow - &lt;code&gt;gg=G&lt;/code&gt; (indent the whole file). The idea that the whole thing relies on individual commands made it more awesome - &lt;code&gt;gg&lt;/code&gt; goes to the start of the file, &lt;code&gt;=&lt;/code&gt; indents, and &lt;code&gt;G&lt;/code&gt; goes to the end of the file. After learning that, I found myself using &lt;code&gt;=&lt;/code&gt; more, such as with &lt;code&gt;v&lt;/code&gt; and &lt;code&gt;%&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Vim had an admittedly steep learning curve, but I don&amp;rsquo;t really think it is as hard as a lot of people claim it to be, as long as you take it in incrementally.&lt;/p&gt;
+
+&lt;p&gt;I went on adding more and more features I needed one by one.&lt;/p&gt;
+
+&lt;p&gt;As a slave to aesthetics, I added the Solarized theme. This also made me switched to iTerm, which, apart from supporting 256 colors, also had an excellent show/hide feature that can be keybinded. This, with the fullscreen gave me an unparalleled productivity boost.&lt;/p&gt;
+
+&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://arianv.com/media/images/vim.gif&#34; alt=&#34;My editor is an `alt space` away&#34; style=&#34;&#34;/&gt;  &lt;figcaption&gt; &lt;p&gt; My editor is an &lt;code&gt;alt space&lt;/code&gt; away   &lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;YouCompleteMe provided some much needed auto complete. I used Fugitive for Git, and I finally learned how to use Ack to search for things. Linters? Syntastic. Code expand? Emmet. Et cetera, et cetera.&lt;/p&gt;
+
+&lt;p&gt;I found my slow growth of skill in vim incredibly exciting. Eventually, I found myself more productive than my previous Atom/Sublime using self.&lt;/p&gt;
+
+&lt;p&gt;It is certainly one of the best investments I ever made.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

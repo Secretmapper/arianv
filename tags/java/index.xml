@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Arian&#39;s Portfolio</title>
+    <link>http://localhost:1313/tags/java/</link>
+    <description>Recent content in Java on Arian&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Jan 2015 19:45:31 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Journey East</title>
+      <link>http://localhost:1313/portfolio/Journey%20East/</link>
+      <pubDate>Fri, 30 Jan 2015 19:45:31 +0800</pubDate>
+      
+      <guid>http://localhost:1313/portfolio/Journey%20East/</guid>
+      <description>&lt;p&gt;An epic MMO set in an original world, featuring Crafting, Raids, and PvP! Coordinated with a team of developers. Responsible for Client and Server Development. (AS3 and Java)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

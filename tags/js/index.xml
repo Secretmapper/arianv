@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Js on Arian&#39;s Portfolio</title>
+    <link>http://arianv.com/tags/js/</link>
+    <description>Recent content in Js on Arian&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Jun 2015 11:27:49 +0801</lastBuildDate>
+    <atom:link href="http://arianv.com/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Polishing API Reference: GSOC Weekly Update 4</title>
+      <link>http://arianv.com/post/Polishing-API-Reference-Weekly-Update-4/</link>
+      <pubDate>Wed, 24 Jun 2015 11:27:49 +0801</pubDate>
+      
+      <guid>http://arianv.com/post/Polishing-API-Reference-Weekly-Update-4/</guid>
+      <description>
+
+&lt;p&gt;This is the fourth weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
+
+&lt;p&gt;This week&amp;rsquo;s deliverable is to polish the learning platform&amp;rsquo;s API reference.&lt;/p&gt;
+
+&lt;h2 id=&#34;modern-sensibilities:5519fb765641110f6979f62e6533b06f&#34;&gt;Modern Sensibilities&lt;/h2&gt;
+
+&lt;p&gt;The changes required for this week required me to flex my design muscles a bit.&lt;/p&gt;
+
+&lt;p&gt;Martin&amp;rsquo;s &lt;a href=&#34;https://github.com/osmlab/learnoverpass/pull/2&#34;&gt;pull request&lt;/a&gt; showed my lack of eye for the site&amp;rsquo;s typography, with what me using a 2.5em line-height.&lt;/p&gt;
+
+&lt;p&gt;As the line-height issue was fixed, I also decided to pick a more modern typeface to go along with the site. I went with Google&amp;rsquo;s &lt;a href=&#34;https://www.google.com/fonts/specimen/Roboto&#34;&gt;Roboto font&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/overpass-compare.png&#34; alt=&#34;Old typeface on the left, new on the right&#34; style=&#34; width:600px &#34;/&gt;  &lt;figcaption&gt; &lt;p&gt; Old typeface on the left, new on the right   &lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;The redesign also features a more minimal menu, that now supports &amp;lsquo;active&amp;rsquo; links.&lt;/p&gt;
+
+&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/overpass-menu-compare.png&#34;  style=&#34; width:600px &#34;/&gt;  &lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Syntax Highliting is also added to the site, to both the overpass editor instances and all the sample code blocks. This is done by using codemirror to make code blocks read only, using it for ad-hoc syntax highliting. There are a few performance implications of this, but offset by the advantage of not importing another library.&lt;/p&gt;
+
+&lt;h2 id=&#34;future-proofing:5519fb765641110f6979f62e6533b06f&#34;&gt;Future-proofing&lt;/h2&gt;
+
+&lt;p&gt;The Learning Platform utilizes Martin&amp;rsquo;s excellent Overpass Turbo, but it&amp;rsquo;s interactive map feature has &lt;a href=&#34;https://github.com/tyrasd/overpass-turbo/issues/23&#34;&gt;fallen behind&lt;/a&gt; a bit.&lt;/p&gt;
+
+&lt;p&gt;Since some of these features are going to be essential for the platform, I devoted a bit of my time this week to expand on these.&lt;/p&gt;
+
+&lt;p&gt;A pull request have sucessfully been accepted, and &lt;a href=&#34;https://github.com/tyrasd/overpass-turbo/pull/173&#34;&gt;mapCSS&lt;/a&gt; is now in the interactive map!&lt;/p&gt;
+
+&lt;p&gt;A dedicated JS API will soon be pushed to the repo too :)&lt;/p&gt;
+
+&lt;h2 id=&#34;next-week:5519fb765641110f6979f62e6533b06f&#34;&gt;Next Week&lt;/h2&gt;
+
+&lt;p&gt;Now that the API reference is complete, we&amp;rsquo;re moving to a very exciting part of the project.&lt;/p&gt;
+
+&lt;p&gt;Two words: &amp;lsquo;Interative Exercises&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;Thanks, as always, till next time!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Porting API Reference: GSOC Weekly Update 3</title>
+      <link>http://arianv.com/post/Porting-API-Reference-Weekly-Update-3/</link>
+      <pubDate>Thu, 18 Jun 2015 13:46:54 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/Porting-API-Reference-Weekly-Update-3/</guid>
+      <description>
+
+&lt;p&gt;This is the third weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
+
+&lt;p&gt;This week&amp;rsquo;s deliverable is to &amp;lsquo;port&amp;rsquo; the API reference to the learning platform.&lt;/p&gt;
+
+&lt;h2 id=&#34;existing-resources:f134b74e78c386ba684142a6899fbf89&#34;&gt;Existing Resources&lt;/h2&gt;
+
+&lt;p&gt;The &amp;lsquo;sales pitch&amp;rsquo; of LearnOverpass has always been &lt;em&gt;&amp;lsquo;a one stop, learning resource for the overpass API&amp;rsquo;&lt;/em&gt; - we wanted the site to be the de facto page for learning the Query Language.&lt;/p&gt;
+
+&lt;p&gt;To do this properly, we need to make use of, and expand, &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL&#34;&gt;existing resources&lt;/a&gt; of the language.&lt;/p&gt;
+
+&lt;h2 id=&#34;query-goodness:f134b74e78c386ba684142a6899fbf89&#34;&gt;Query Goodness&lt;/h2&gt;
+
+&lt;p&gt;To get my project specification accepted, I had to write a solid plan, a set of goals, etc. One of the things I needed to have was to create a mockup of the application, and one of those was this little gem:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#39;post-width post-all-center&#39;&gt; &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Query&lt;/th&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;poly&lt;/td&gt;
+&lt;td&gt;space delimited coordinates&lt;/td&gt;
+&lt;td&gt;an Array of points for the bounding polygon&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;pre&gt;&lt;code&gt;  node(poly:&amp;quot;x1 y1 x2 y2 x... y... xn yn&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Expand the queries and methods, decompose how they work, and make them standalone enough. Just like standard documentation pages.&lt;/p&gt;
+
+&lt;p&gt;But this model of a query + parameter combo reference wouldn&amp;rsquo;t really work for the project - the Overpass QL is not a framework or a library with a &lt;em&gt;set of methods&lt;/em&gt;, it is it&amp;rsquo;s own &lt;strong&gt;Query Language&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Because of this, it was evident that there is a better way to create the reference page. the more sensible way was to document it how Query Languages are documented, like MySQL does.&lt;/p&gt;
+
+&lt;p&gt;As an example, you can see how the &lt;a href=&#34;http://dev.mysql.com/doc/refman/5.6/en/create-table.html&#34;&gt;&lt;code&gt;CREATE TABLE&lt;/code&gt;&lt;/a&gt; statement is documented in the MySQL reference manual. Much like the Query Language in the reference wiki - the syntax and form was shown as to how to properly use the statement.&lt;/p&gt;
+
+&lt;h2 id=&#34;learning-by-example:f134b74e78c386ba684142a6899fbf89&#34;&gt;Learning By Example&lt;/h2&gt;
+
+&lt;p&gt;With the &lt;a href=&#34;http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2&#34;&gt;embedded overpass turbo interface added last week&lt;/a&gt;, we were able to create conclusive visual examples per statement&amp;rsquo;s usage. Properly crafting the right queries that show the different uses of the statement and it&amp;rsquo;s quirks took up the bulk of this week&amp;rsquo;s task.&lt;/p&gt;
+
+&lt;p&gt;To make the examples more interesting, statements that would query in famous landmarks were used: in the reference pages we see the stonehenge, the peak to Christ the Redeemer Statue&amp;rsquo;s Mountain, and others more.&lt;/p&gt;
+
+&lt;h2 id=&#34;next-week:f134b74e78c386ba684142a6899fbf89&#34;&gt;Next Week&lt;/h2&gt;
+
+&lt;p&gt;The next week will be dedicated to polishing and fleshing out the API reference, as there are still a few statements that could have better examples. Since the reference now support multiple examples per page, we&amp;rsquo;re also looking into creative uses to this - currently it&amp;rsquo;s only being used to differentiate the &lt;code&gt;out;&lt;/code&gt; and &lt;code&gt;out meta;&lt;/code&gt; statements, but we could further use it to show the different &lt;code&gt;By tag&lt;/code&gt; filters for example
+.&lt;/p&gt;
+
+&lt;p&gt;There is also going to be a couple of improvements coming in the way of Overpass Turbo. Currently the interactive map &lt;a href=&#34;https://github.com/tyrasd/overpass-turbo/issues/23&#34;&gt;doesn&amp;rsquo;t support&lt;/a&gt; a few features that would be integral to the coming interactive exercises feature, so I&amp;rsquo;m looking into implementing this and doing a pull request.&lt;/p&gt;
+
+&lt;p&gt;This feature would also be useful to make the examples more visual - imagine a &lt;code&gt;union&lt;/code&gt; statement with different colored nodes powered by MapCSS!&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s it for this week! Again, feel free to let me know if you see anything that could be improved by commenting below!&lt;/p&gt;
+
+&lt;p&gt;Till next time!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Embedding Overpass Turbo: GSOC Weekly Update 2</title>
+      <link>http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2/</link>
+      <pubDate>Thu, 11 Jun 2015 15:50:28 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2/</guid>
+      <description>
+
+&lt;p&gt;This is the second weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
+
+&lt;p&gt;This week&amp;rsquo;s deliverable is to integrate &lt;a href=&#34;http://overpass-turbo.eu&#34;&gt;Overpass Turbo&lt;/a&gt; inside the learning platform.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/overpass-turbo.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;From the get go, we knew we wanted to bring out a REPL-like interface to LearnOverpass - we want to encourage users to actively try and experiment with the Query Language.&lt;/p&gt;
+
+&lt;div class=&#34;cf&#34;&gt;
+&lt;div class=&#39;g6&#39;&gt; &lt;p&gt;The Overpass API guide in the wiki already knew that seeing the results of the query is useful. Code snippets always contained an overpass turbo link that would automatically insert the code snippet to the overpass turbo page.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s a functional setup, but it&amp;rsquo;s clunky - it&amp;rsquo;ll require the user to navigate to another tab/window and lose the context of the snippet (the wiki page).&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;g6&#34;&gt;
+  
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/turbo-btn.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/aside&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Embedding the Overpass Turbo interface directly to the documentation makes the most sense, so that&amp;rsquo;s what we did.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/turbo-embed.png&#34; alt=&#34;Overpass Turbo embedded inside LearnOverpass&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Overpass Turbo embedded inside LearnOverpass
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The embedded interface would be present in most of the language&amp;rsquo;s &lt;em&gt;statements&lt;/em&gt; reference, serving to show its usage. In the example capture in the image above, the query above shows the results of a Difference Block Statement. The result is visually striking - the nodes in the middle are removed by the difference statement.&lt;/p&gt;
+
+&lt;p&gt;Of course, the results of some statements cannot be adequately seen visually. In that case, the JSON results are shown.&lt;/p&gt;
+
+&lt;p&gt;There are a lot of ways we can play with this embedded interface. As an example, the &lt;code&gt;union&lt;/code&gt; statement may show different colored nodes, emphasizing that it is the union of its substatements. The &lt;code&gt;poly&lt;/code&gt; statement may take the form of a star, and the user can easily &lt;strong&gt;experiment with the query directly on the page&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;technical-details:da8f17cd6a288334f07428cd66d8dfa5&#34;&gt;Technical Details&lt;/h2&gt;
+
+&lt;p&gt;Embedding an Overpass Turbo from an iframe was the way to go.&lt;/p&gt;
+
+&lt;p&gt;The documentation reference only needed the output map - the coding editor instance would be placed in the site itself. I then dove into writing scripts that would do remove the editor part of Overpass Turbo. This was not particularly tricky, as Overpass Turbo had a toggle wide map feature, which would remove the coding interface. By then, only scrolling the contents of the iframe was necessary to remove the top bar, and we would have hit gold.&lt;/p&gt;
+
+&lt;p&gt;However, Martin informed me that Overpass Turbo included a standalone map output - it was obvious then this is what I&amp;rsquo;ve been aiming for from the start! Martin pointing this out feature greatly accelerated development, as that meant I only had to embed this page and pass the user&amp;rsquo;s input from CodeMirror through a GET request.&lt;/p&gt;
+
+&lt;p&gt;The initial plan for the site was to use React for the coding interface. It makes sense - it&amp;rsquo;s a &amp;lsquo;hot&amp;rsquo; framework (right now at least) and I have experience with it.&lt;/p&gt;
+
+&lt;p&gt;Programming the coding interface however, it was evident that this might not have been the best idea. React would require me to write my templates using jsx (or use their API), which did not make sense as I could already use Hugo for templating. It introduced too much overhead for what was essentially changing the src url (sending the GET parameters).&lt;/p&gt;
+
+&lt;p&gt;It was obvious - I was overengineering.&lt;/p&gt;
+
+&lt;p&gt;So I went ahead and programmed the whole thing in plain javascript, and it could not have been easier.&lt;/p&gt;
+
+&lt;p&gt;It wasn&amp;rsquo;t all a waste though - I did not get out of this experience empty handed. A more complete framework will be useful once we start integrating interactive exercises in LearnOverpass, and integrating webpack/dependencies.&lt;/p&gt;
+
+&lt;p&gt;This early though, Occam&amp;rsquo;s Razor very much applies. &lt;a href=&#34;http://http://vanilla-js.com&#34;&gt;VanillaJS ftw&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;next-week:da8f17cd6a288334f07428cd66d8dfa5&#34;&gt;Next Week&lt;/h2&gt;
+
+&lt;p&gt;For the next 1 &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; weeks or so, the focus of the project will be the creation of the API Documentation/Reference. The important thing here is to make the pages standalone and to utilize good code snippet samples to show a statement&amp;rsquo;s use.&lt;/p&gt;
+
+&lt;p&gt;Till next time!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GSOC 2015 Introduction: LearnOverpass</title>
+      <link>http://arianv.com/post/GSOC-2015-Introduction/</link>
+      <pubDate>Sat, 02 May 2015 18:52:11 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/GSOC-2015-Introduction/</guid>
+      <description>
+
+&lt;p&gt;Last year, I worked with the Wordpress organization to integrate socialization and gamification features to the Glotpress translation platform. It&amp;rsquo;s been a fun fulfilling ride, and there are definitely a lot of things that I learned during the project.&lt;/p&gt;
+
+&lt;p&gt;This year, I&amp;rsquo;ve been accepted to Google&amp;rsquo;s Summer of Code Program again and I&amp;rsquo;m working with the OpenStreetMap organization to create LearnOverpass!&lt;/p&gt;
+
+&lt;h1 id=&#34;what-is-learnoverpass-https-github-com-osmlab-learnoverpass:90d0b09821fe4c855d3c97303ce53d06&#34;&gt;What is &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide&#34;&gt;The Overpass API&lt;/a&gt; is a robust API for querying map data, but it&amp;rsquo;s use is still limited due to its beginner-unfriendly documentation and scarce tutorials. With the Query Language&amp;rsquo;s specialized semantics and a usage audience that can include non-developers, the lack or learning resources is a opt-put problem of the API.&lt;/p&gt;
+
+&lt;p&gt;LearnOverpass is a project that aims to solve that problem, by creating a complete, one stop, learning resource for the overpass API. We aim to make it easier for newcomers to learn and use the Overpass API for querying OSM data.&lt;/p&gt;
+
+&lt;p&gt;The Overpass API has an existing language guide found in the &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide&#34;&gt;Open Street Map wiki&lt;/a&gt;. It&amp;rsquo;s pretty comprehensive, and it&amp;rsquo;s all right.&lt;/p&gt;
+
+&lt;p&gt;But it&amp;rsquo;s not &lt;em&gt;great&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re familiar with the Google Summer of Code program, you will probably know that documentation cannot be accepted as a project.&lt;/p&gt;
+
+&lt;p&gt;Because this is not just a documentation project - we are creating something more. We aim to create a &lt;strong&gt;great&lt;/strong&gt; learning platform for beginners.&lt;/p&gt;
+
+&lt;p&gt;Flat documentation is boring.&lt;/p&gt;
+
+&lt;p&gt;How much more fun would it be to &lt;strong&gt;learn by playing with an interactive tutorial&lt;/strong&gt; instead of passively reading a wiki page?&lt;/p&gt;
+
+&lt;h2 id=&#34;a-bid-on-interactivity:90d0b09821fe4c855d3c97303ce53d06&#34;&gt;A bid on interactivity&lt;/h2&gt;
+
+&lt;p&gt;One of my favorite video on education is Bret Victor&amp;rsquo;s talk on &amp;lsquo;Inventing on Principle&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/PUv66718DII&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Engaging and interactively seeing how the programming language, in this case the Overpass Query Language, directly interacts with the output data will provide a powerful learning model to learners. Due to the possibly visual nature of the Overpass API&amp;rsquo;s output, adding a dash of interactivity allows API users to more easily and understand the execution of their queries.&lt;/p&gt;
+
+&lt;p&gt;We aim to create a learning resource more user friendly than the documentation in the OSM Wiki. We want to create a platform where users can easily answer their own questions by searching, and playing, with the documentation. A platform that that can be referred to by anyone in the world, from OSM users with zero programming background, to experienced, developers looking to utilize the API.&lt;/p&gt;
+
+&lt;p&gt;LearnOverpass in short, will fulfill it&amp;rsquo;s goal by providing a &lt;strong&gt;fun, interactive platform&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Concretely, it will include this three main features:
+- A beautiful API Documentation interface. Reference for syntax, detailing description, parameter types, etc. of Overpass queries.
+- An embedded interface to test out queries, allowing users to experiment with parameters/methods inside the API Documentation page themselves.
+- A set of Interactive Exercises that allows beginners to learn the different facets of the Overpass API in a fun and easy way.&lt;/p&gt;
+
+&lt;h2 id=&#34;current-progress:90d0b09821fe4c855d3c97303ce53d06&#34;&gt;Current Progress&lt;/h2&gt;
+
+&lt;p&gt;The project has officially started, and you can visit &lt;a href=&#34;http://osmlab.github.io/learnoverpass/en/&#34;&gt;LearnOverpass live&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Right now, the project has only been bootstrapped - adding the frameworks/preprocessors needed, as well as including initial layout and styles.&lt;/p&gt;
+
+&lt;p&gt;LearnOverpass is powered by the Static Site Generator &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. Since Hugo doesn&amp;rsquo;t include any features for the asset pipeline, I use &lt;a href=&#34;http://gulpjs.com&#34;&gt;Gulp&lt;/a&gt; as a task manager, responsible for minifying my html files, compiling source such as &lt;code&gt;stylus&lt;/code&gt; to &lt;code&gt;css&lt;/code&gt;, etc. Hugo doesn&amp;rsquo;t natively support i18n so I also had to do a few things to work around this.&lt;/p&gt;
+
+&lt;p&gt;However, Hugo&amp;rsquo;s lack of an asset pipeline works to the project&amp;rsquo;s advantage: decoupling it with content means that potential content contributors only need to install hugo to test out and run a local copy of the site.&lt;/p&gt;
+
+&lt;p&gt;That pretty much ends my update for the week.&lt;/p&gt;
+
+&lt;p&gt;Development has been on schedule, and for next week, I&amp;rsquo;ll be working on integrating Martin&amp;rsquo;s &lt;a href=&#34;http://overpass-turbo.eu&#34;&gt;Overpass Turbo&lt;/a&gt; to the site&amp;rsquo;s API reference page. This brings the concept of interactivity to the site - allowing, and even encouraging users, to experiment with the paramaters as they view the API documentation itself.&lt;/p&gt;
+
+&lt;p&gt;Martin Raifer (@tyr_asd) apart from creating Overpass Turbo, also acts as my mentor for this project. This project would not have come to fruitition without him and his initial project writeup, as well as his continued guides and advice for the project&amp;rsquo;s direction.&lt;/p&gt;
+
+&lt;h2 id=&#34;am-i-crazy-see-anything-wrong:90d0b09821fe4c855d3c97303ce53d06&#34;&gt;Am I crazy? See anything wrong?&lt;/h2&gt;
+
+&lt;p&gt;If you have any reactions/comments, reach me out through email, the comments below, or on &lt;a href=&#34;https://twitter.com/secretmapper&#34;&gt;twitter&lt;/a&gt;. I can also be found on the Overpass API mailing list.&lt;/p&gt;
+
+&lt;p&gt;If you spot a bug, or think the project could really use a feature, feel free to create an issue in the project&amp;rsquo;s github page.&lt;/p&gt;
+
+&lt;p&gt;Ideas and/or contributions/opinion for content are heavily accepted! Shout out to Alex Morega who freely contributed his &lt;a href=&#34;https://github.com/mgax/workshop-geocj2015-overpass/blob/master/README.md&#34;&gt;resources&lt;/a&gt; from his Overpass API Workshop, Pierre Béland for outlining sections for Overpass, and mmd for pointing out the Overpass by &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_API_by_Example&#34;&gt;Example Wiki page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thank you! I&amp;rsquo;m really excited about this project, and I hope the community will have as much fun using the project as I had developing. Let&amp;rsquo;s create LearnOverpass, the best learning resource for the Overpass API together!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

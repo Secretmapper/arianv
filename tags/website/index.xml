@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Website on Arian&#39;s Portfolio</title>
+    <link>http://localhost:1313/tags/website/</link>
+    <description>Recent content in Website on Arian&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Jun 2015 15:50:28 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Embedding Overpass Turbo: GSOC Weekly Update 2</title>
+      <link>http://localhost:1313/post/Embedding-Overpass-Turbo-Weekly-Update-2/</link>
+      <pubDate>Thu, 11 Jun 2015 15:50:28 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/Embedding-Overpass-Turbo-Weekly-Update-2/</guid>
+      <description>
+
+&lt;p&gt;This is the second weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
+
+&lt;p&gt;This week&amp;rsquo;s deliverable is to integrate &lt;a href=&#34;http://overpass-turbo.eu&#34;&gt;Overpass Turbo&lt;/a&gt; inside the learning platform.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/overpass-turbo.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;From the get go, we knew we wanted to bring out a REPL-like interface to LearnOverpass - we want to encourage users to actively try and experiment with the Query Language.&lt;/p&gt;
+
+&lt;div class=&#34;cf&#34;&gt;
+&lt;div class=&#39;g6&#39;&gt; &lt;p&gt;The Overpass API guide in the wiki already knew that seeing the results of the query is useful. Code snippets always contained an overpass turbo link that would automatically insert the code snippet to the overpass turbo page.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s a functional setup, but it&amp;rsquo;s clunky - it&amp;rsquo;ll require the user to navigate to another tab/window and lose the context of the snippet (the wiki page).&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;g6&#34;&gt;
+  
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/turbo-btn.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/aside&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Embedding the Overpass Turbo interface directly to the documentation makes the most sense, so that&amp;rsquo;s what we did.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/turbo-embed.png&#34; alt=&#34;Overpass Turbo embedded inside LearnOverpass&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Overpass Turbo embedded inside LearnOverpass
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The embedded interface would be present in most of the language&amp;rsquo;s &lt;em&gt;statements&lt;/em&gt; reference, serving to show its usage. In the example capture in the image above, the query above shows the results of a Difference Block Statement. The result is visually striking - the nodes in the middle are removed by the difference statement.&lt;/p&gt;
+
+&lt;p&gt;Of course, the results of some statements cannot be adequately seen visually. In that case, the JSON results are shown.&lt;/p&gt;
+
+&lt;p&gt;There are a lot of ways we can play with this embedded interface. As an example, the &lt;code&gt;union&lt;/code&gt; statement may show different colored nodes, emphasizing that it is the union of its substatements. The &lt;code&gt;poly&lt;/code&gt; statement may take the form of a star, and the user can easily &lt;strong&gt;experiment with the query directly on the page&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;technical-details:da8f17cd6a288334f07428cd66d8dfa5&#34;&gt;Technical Details&lt;/h2&gt;
+
+&lt;p&gt;Embedding an Overpass Turbo from an iframe was the way to go.&lt;/p&gt;
+
+&lt;p&gt;The documentation reference only needed the output map - the coding editor instance would be placed in the site itself. I then dove into writing scripts that would do remove the editor part of Overpass Turbo. This was not particularly tricky, as Overpass Turbo had a toggle wide map feature, which would remove the coding interface. By then, only scrolling the contents of the iframe was necessary to remove the top bar, and we would have hit gold.&lt;/p&gt;
+
+&lt;p&gt;However, Martin informed me that Overpass Turbo included a standalone map output - it was obvious then this is what I&amp;rsquo;ve been aiming for from the start! Martin pointing this out feature greatly accelerated development, as that meant I only had to embed this page and pass the user&amp;rsquo;s input from CodeMirror through a GET request.&lt;/p&gt;
+
+&lt;p&gt;The initial plan for the site was to use React for the coding interface. It makes sense - it&amp;rsquo;s a &amp;lsquo;hot&amp;rsquo; framework (right now at least) and I have experience with it.&lt;/p&gt;
+
+&lt;p&gt;Programming the coding interface however, it was evident that this might not have been the best idea. React would require me to write my templates using jsx (or use their API), which did not make sense as I could already use Hugo for templating. It introduced too much overhead for what was essentially changing the src url (sending the GET parameters).&lt;/p&gt;
+
+&lt;p&gt;It was obvious - I was overengineering.&lt;/p&gt;
+
+&lt;p&gt;So I went ahead and programmed the whole thing in plain javascript, and it could not have been easier.&lt;/p&gt;
+
+&lt;p&gt;It wasn&amp;rsquo;t all a waste though - I did not get out of this experience empty handed. A more complete framework will be useful once we start integrating interactive exercises in LearnOverpass, and integrating webpack/dependencies.&lt;/p&gt;
+
+&lt;p&gt;This early though, Occam&amp;rsquo;s Razor very much applies. &lt;a href=&#34;http://http://vanilla-js.com&#34;&gt;VanillaJS ftw&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;next-week:da8f17cd6a288334f07428cd66d8dfa5&#34;&gt;Next Week&lt;/h2&gt;
+
+&lt;p&gt;For the next 1 &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; weeks or so, the focus of the project will be the creation of the API Documentation/Reference. The important thing here is to make the pages standalone and to utilize good code snippet samples to show a statement&amp;rsquo;s use.&lt;/p&gt;
+
+&lt;p&gt;Till next time!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
