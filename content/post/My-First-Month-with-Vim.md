@@ -1,6 +1,5 @@
 +++
 date = "2015-03-15T10:48:18+08:00"
-draft = true
 title = "My First Month with Vim"
 tags = ["tools"]
 
