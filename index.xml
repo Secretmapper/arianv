@@ -46,22 +46,22 @@
     </item>
     
     <item>
-      <title>Orb Knight</title>
-      <link>http://arianv.com/portfolio/Orb%20Knight/</link>
-      <pubDate>Wed, 28 Jan 2015 13:38:37 +0800</pubDate>
-      
-      <guid>http://arianv.com/portfolio/Orb%20Knight/</guid>
-      <description>&lt;p&gt;Orb Knight-RPG, Featuring pets and a Realtime Battle System. Made for Google HTML5 Game Making Contest&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Match 3</title>
       <link>http://arianv.com/portfolio/Match%203/</link>
       <pubDate>Wed, 28 Jan 2015 13:38:37 +0800</pubDate>
       
       <guid>http://arianv.com/portfolio/Match%203/</guid>
       <description>&lt;p&gt;HTML5 Matching 3 Game. Set up to communicate with PHP backend for point based earning on Virtual Economy Sites&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Orb Knight</title>
+      <link>http://arianv.com/portfolio/Orb%20Knight/</link>
+      <pubDate>Wed, 28 Jan 2015 13:38:37 +0800</pubDate>
+      
+      <guid>http://arianv.com/portfolio/Orb%20Knight/</guid>
+      <description>&lt;p&gt;Orb Knight-RPG, Featuring pets and a Realtime Battle System. Made for Google HTML5 Game Making Contest&lt;/p&gt;
 </description>
     </item>
     
