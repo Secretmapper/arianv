@@ -5,7 +5,7 @@ title = "Spontaneous and Fast Learner"
 +++
 {{% aboutcontainer %}}
 {{% aboutitem %}}
-  <img src="/media/journey_east@feature.png">
+  <img src="/media/portfolio/journey_east@feature.png">
   <i>In Journey East, I was tasked to learn a language I'm unfamiliar with (Java) and learn how to develop APIs in a short amount of time so I could be brought to work on the server.</i>
 {{% /aboutitem %}}
 {{% aboutitem %}}
