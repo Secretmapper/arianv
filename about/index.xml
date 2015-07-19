@@ -15,35 +15,7 @@
       <pubDate>Sun, 01 Mar 2015 13:38:37 +1000</pubDate>
       
       <guid>http://arianv.com/about/communicator/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;portfolio-about-container&#34;&gt; &lt;div class=&#34;portfolio-about-item&#34;&gt; &lt;p&gt;&lt;h1&gt;Excellent Communicator&lt;/h1&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m a very chill guy to talk to, and I always try to put myself in other people&amp;rsquo;s shoes.&lt;/p&gt;
-
-&lt;p&gt;I write technical articles aimed at the general audience, which have been very well received on sites such as &lt;a href=&#34;http://gamedev.net&#34;&gt;GameDev.net&lt;/a&gt; and &lt;a href=&#34;http://gamasutra.com&#34;&gt;Gamasutra&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I also maintain my own blog at &lt;a href=&#34;http://arianv.com&#34;&gt;arianv.com&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;portfolio-about-item&#34;&gt; &lt;p&gt;&lt;blockquote class=&#34;communicator-quote&#34;&gt;
-    &lt;p&gt;
-    &amp;ldquo;Super talented and hard working. Also a super friendly guy who is a frequent communicator.&amp;rdquo;
-    &lt;/p&gt;
-    &lt;cite title=&#34;Daniel Stone&#34;&gt;Daniel Stone (Client)&lt;/cite&gt;
-  &lt;/blockquote&gt;
-  &lt;blockquote class=&#34;communicator-quote&#34;&gt;
-    &lt;p&gt;
-    &amp;ldquo;Keep up the good work! I am impressed with how much you have done so far ;)&amp;rdquo;
-    &lt;/p&gt;
-    &lt;cite title=&#34;Sean Diamond&#34;&gt;Sean Diamond (Client)&lt;/cite&gt;
-  &lt;/blockquote&gt;
-  &lt;blockquote class=&#34;communicator-quote&#34;&gt;
-    &lt;p&gt;
-      &amp;ldquo;Thank you for this, we&amp;rsquo;re doing an algorithm course at my university atm and this is exactly what we&amp;rsquo;re learning about, however, I find your examples and explanations much more easy to understand. You&amp;rsquo;re a life saver!&amp;rdquo;
-    &lt;/p&gt;
-    &lt;cite title=&#34;timgranstrom&#34;&gt;Tim Granstrom (Developer)&lt;/cite&gt;
-  &lt;/blockquote&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -52,17 +24,7 @@
       <pubDate>Sun, 01 Feb 2015 13:38:37 +0800</pubDate>
       
       <guid>http://arianv.com/about/fastlearner/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;portfolio-about-container&#34;&gt; &lt;div class=&#34;portfolio-about-item&#34;&gt; &lt;p&gt;&lt;img src=&#34;http://arianv.com/media/journey_east@feature.png&#34;&gt;
-  &lt;i&gt;In Journey East, I was tasked to learn a language I&amp;rsquo;m unfamiliar with (Java) and learn how to develop APIs in a short amount of time so I could be brought to work on the server.&lt;/i&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;portfolio-about-item&#34;&gt; &lt;p&gt;&lt;h1&gt;Spontaneous and Fast Learner&lt;/h1&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m a self starter, and thrive in fast-paced, dynamic environments.&lt;/p&gt;
-
-&lt;p&gt;I have a knack for learning new technologies in short periods of time.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -71,24 +33,7 @@
       <pubDate>Thu, 01 Jan 2015 13:38:37 +0800</pubDate>
       
       <guid>http://arianv.com/about/codesample/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;portfolio-about-container&#34;&gt; &lt;div class=&#34;portfolio-about-item&#34;&gt; &lt;p&gt;&lt;h1&gt;Solid Software Engineering Skills.&lt;/h1&gt;&lt;/p&gt;
-
-&lt;p&gt;Familiar with numerous programming paradigms such as Object-Oriented, Functional, and Asynchronous Programming.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;portfolio-about-item&#34;&gt; &lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #75715e&#34;&gt;#dev-ops&lt;/span&gt;
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;workflow&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;gulp&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;or&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;grunt&lt;/span&gt;
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;workflow&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;stylus&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;or&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;sass&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;or&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;less&lt;/span&gt;
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;workflow&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;imagemin&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;#&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;#agile&lt;/span&gt;
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;listenTo(SpecChange,&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt;
-  &lt;span style=&#34;color: #f8f8f2&#34;&gt;applyChanges()&lt;/span&gt;
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
   </channel>
