@@ -1,0 +1,63 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us"><head><link href="http://gmpg.org/xfn/11" rel="profile"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><meta property="og:title" content="Arian Allenson's Portfolio"/><meta property="og:type" content="website" /><meta property="og:image" content="http://arianv.com/media/avatar.png"/><meta property="og:site_name" content="Arian Allenson's Portfolio"/><meta property="og:description" content="Game Developer a.k.a. Secretmapper"/><title>Polishing API Reference: GSOC Weekly Update 4</title><link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'><link rel="stylesheet" href="http://arianv.com//css/main.css"> <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://arianv.com/apple-touch-icon-144-precomposed.png"><link href="http://arianv.com/favicon.png" rel="icon"><link href="" rel="alternate" type="application/rss+xml" title="Arian&#39;s Portfolio &middot; " /><meta name="description" content=""><meta name="keywords" content=""> </head><body><div class="content container"> <nav class="main-nav"><div class="ribbon-content"><div class="nav-inner"><ul><li> <a id="nav-home" data-page="home" href="http://arianv.com/">Home</a></li><li> <a id="nav-articles" data-page="articles" href="http://arianv.com/post">Articles</a></li></ul></div></div></nav><div class="post"><h1 id="post-title">Polishing API Reference: GSOC Weekly Update 4</h1><div class="post-info"> <span class="post-date">Jun 24, 2015 &middot; 2 minute read &middot; <a href="http://arianv.com/post/Polishing-API-Reference-Weekly-Update-4/#disqus_thread">Comments</a></span>   <span class="post-tags"><a class="label" href="http://arianv.com//tags/js">JS</a><a class="label" href="http://arianv.com//tags/go">Go</a><a class="label" href="http://arianv.com//tags/webdev">Webdev</a></span> </div><article> 
+
+<p>This is the fourth weekly update for the <a href="https://github.com/osmlab/learnoverpass">LearnOverpass</a> Project.</p>
+
+<p>This week&rsquo;s deliverable is to polish the learning platform&rsquo;s API reference.</p>
+
+<h2 id="modern-sensibilities:5519fb765641110f6979f62e6533b06f">Modern Sensibilities</h2>
+
+<p>The changes required for this week required me to flex my design muscles a bit.</p>
+
+<p>Martin&rsquo;s <a href="https://github.com/osmlab/learnoverpass/pull/2">pull request</a> showed my lack of eye for the site&rsquo;s typography, with what me using a 2.5em line-height.</p>
+
+<p>As the line-height issue was fixed, I also decided to pick a more modern typeface to go along with the site. I went with Google&rsquo;s <a href="https://www.google.com/fonts/specimen/Roboto">Roboto font</a>.</p>
+
+<p><figure >  <img src="http://arianv.com/media/images/gsoc-2015/overpass-compare.png" alt="Old typeface on the left, new on the right" style=" width:600px "/>  <figcaption> <p> Old typeface on the left, new on the right   </p> </figcaption> </figure></p>
+
+<p>The redesign also features a more minimal menu, that now supports &lsquo;active&rsquo; links.</p>
+
+<p><figure >  <img src="http://arianv.com/media/images/gsoc-2015/overpass-menu-compare.png"  style=" width:600px "/>  </figure></p>
+
+<p>Syntax Highliting is also added to the site, to both the overpass editor instances and all the sample code blocks. This is done by using codemirror to make code blocks read only, using it for ad-hoc syntax highliting. There are a few performance implications of this, but offset by the advantage of not importing another library.</p>
+
+<h2 id="future-proofing:5519fb765641110f6979f62e6533b06f">Future-proofing</h2>
+
+<p>The Learning Platform utilizes Martin&rsquo;s excellent Overpass Turbo, but it&rsquo;s interactive map feature has <a href="https://github.com/tyrasd/overpass-turbo/issues/23">fallen behind</a> a bit.</p>
+
+<p>Since some of these features are going to be essential for the platform, I devoted a bit of my time this week to expand on these.</p>
+
+<p>A pull request have sucessfully been accepted, and <a href="https://github.com/tyrasd/overpass-turbo/pull/173">mapCSS</a> is now in the interactive map!</p>
+
+<p>A dedicated JS API will soon be pushed to the repo too :)</p>
+
+<h2 id="next-week:5519fb765641110f6979f62e6533b06f">Next Week</h2>
+
+<p>Now that the API reference is complete, we&rsquo;re moving to a very exciting part of the project.</p>
+
+<p>Two words: &lsquo;Interative Exercises&rsquo;</p>
+
+<p>Thanks, as always, till next time!</p>
+  <hr/><div class="post-series-desc"><p>This is a post in the <a href="http://arianv.com//series/gsoc-2015" id="series"><b>GSOC 2015</b></a> series.<br/> Other posts in this series:</p>  <ul class="series"> <li>Jun 24, 2015 - <a href="http://arianv.com/post/Polishing-API-Reference-Weekly-Update-4/">Polishing API Reference: GSOC Weekly Update 4</a></li> <li>Jun 18, 2015 - <a href="http://arianv.com/post/Porting-API-Reference-Weekly-Update-3/">Porting API Reference: GSOC Weekly Update 3</a></li> <li>Jun 11, 2015 - <a href="http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2/">Embedding Overpass Turbo: GSOC Weekly Update 2</a></li> <li>May 02, 2015 - <a href="http://arianv.com/post/GSOC-2015-Introduction/">GSOC 2015 Introduction: LearnOverpass</a></li> </ul></div> </article> <div id="disqus_thread"></div></div></div> <script type="text/javascript">
+var disqus_shortname = "arianv";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>  <script type="text/javascript">
+    var disqus_shortname = "arianv";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  </div><footer>Copyright &#169; Arian Allenson M. Valdez | CC-BY-SA</footer>  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', "UA-60507502-1", 'auto');
+  ga('send', 'pageview');
+</script> </body></html>

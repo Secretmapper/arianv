@@ -6,178 +6,143 @@
     <description>Recent content on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jul 2015 12:59:37 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 01 Jan 2015 13:38:37 +0800</lastBuildDate>
     <atom:link href="http://arianv.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Liang Court</title>
-      <link>http://arianv.com/portfolio/Liang%20Court/</link>
-      <pubDate>Fri, 17 Jul 2015 12:59:37 +0800</pubDate>
+      <title>Programming Ability</title>
+      <link>http://arianv.com/about/codesample/</link>
+      <pubDate>Thu, 01 Jan 2015 13:38:37 +0800</pubDate>
       
-      <guid>http://arianv.com/portfolio/Liang%20Court/</guid>
-      <description>&lt;p&gt;A facebook embedded, casino coupon reward game for Liang Court, a Major Mall in Singapore&lt;/p&gt;
+      <guid>http://arianv.com/about/codesample/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;portfolio-about-container&#34;&gt; &lt;div class=&#34;portfolio-about-item&#34;&gt; &lt;p&gt;&lt;h1&gt;Solid Software Engineering Skills.&lt;/h1&gt;&lt;/p&gt;
+
+&lt;p&gt;Familiar with numerous programming paradigms such as Object-Oriented, Functional, and Asynchronous Programming.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;portfolio-about-item&#34;&gt; &lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #75715e&#34;&gt;#dev-ops&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;workflow&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;gulp&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;or&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;grunt&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;workflow&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;stylus&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;or&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;sass&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;or&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;less&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;workflow&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;use&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;imagemin&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;#agile&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;listenTo(SpecChange,&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;applyChanges()&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Polishing API Reference: GSOC Weekly Update 4</title>
-      <link>http://arianv.com/post/Polishing-API-Reference-Weekly-Update-4/</link>
-      <pubDate>Wed, 24 Jun 2015 11:27:49 +0801</pubDate>
+      <title>Space Shooter</title>
+      <link>http://arianv.com/portfolio/Space%20Shooter/</link>
+      <pubDate>Tue, 27 Jan 2015 13:38:37 +0800</pubDate>
       
-      <guid>http://arianv.com/post/Polishing-API-Reference-Weekly-Update-4/</guid>
-      <description>
-
-&lt;p&gt;This is the fourth weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
-
-&lt;p&gt;This week&amp;rsquo;s deliverable is to polish the learning platform&amp;rsquo;s API reference.&lt;/p&gt;
-
-&lt;h2 id=&#34;modern-sensibilities:5519fb765641110f6979f62e6533b06f&#34;&gt;Modern Sensibilities&lt;/h2&gt;
-
-&lt;p&gt;The changes required for this week required me to flex my design muscles a bit.&lt;/p&gt;
-
-&lt;p&gt;Martin&amp;rsquo;s &lt;a href=&#34;https://github.com/osmlab/learnoverpass/pull/2&#34;&gt;pull request&lt;/a&gt; showed my lack of eye for the site&amp;rsquo;s typography, with what me using a 2.5em line-height.&lt;/p&gt;
-
-&lt;p&gt;As the line-height issue was fixed, I also decided to pick a more modern typeface to go along with the site. I went with Google&amp;rsquo;s &lt;a href=&#34;https://www.google.com/fonts/specimen/Roboto&#34;&gt;Roboto font&lt;/a&gt;.&lt;/p&gt;
+      <guid>http://arianv.com/portfolio/Space%20Shooter/</guid>
+      <description>&lt;p&gt;Mobile Friendly Shooter built on top of the Phaser Framework. Features powerups and an online leaderboard.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Porting API Reference: GSOC Weekly Update 3</title>
-      <link>http://arianv.com/post/Porting-API-Reference-Weekly-Update-3/</link>
-      <pubDate>Thu, 18 Jun 2015 13:46:54 +0800</pubDate>
+      <title>Orb Knight</title>
+      <link>http://arianv.com/portfolio/Orb%20Knight/</link>
+      <pubDate>Wed, 28 Jan 2015 13:38:37 +0800</pubDate>
       
-      <guid>http://arianv.com/post/Porting-API-Reference-Weekly-Update-3/</guid>
-      <description>
-
-&lt;p&gt;This is the third weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
-
-&lt;p&gt;This week&amp;rsquo;s deliverable is to &amp;lsquo;port&amp;rsquo; the API reference to the learning platform.&lt;/p&gt;
-
-&lt;h2 id=&#34;existing-resources:f134b74e78c386ba684142a6899fbf89&#34;&gt;Existing Resources&lt;/h2&gt;
-
-&lt;p&gt;The &amp;lsquo;sales pitch&amp;rsquo; of LearnOverpass has always been &lt;em&gt;&amp;lsquo;a one stop, learning resource for the overpass API&amp;rsquo;&lt;/em&gt; - we wanted the site to be the de facto page for learning the Query Language.&lt;/p&gt;
-
-&lt;p&gt;To do this properly, we need to make use of, and expand, &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL&#34;&gt;existing resources&lt;/a&gt; of the language.&lt;/p&gt;
-
-&lt;h2 id=&#34;query-goodness:f134b74e78c386ba684142a6899fbf89&#34;&gt;Query Goodness&lt;/h2&gt;
-
-&lt;p&gt;To get my project specification accepted, I had to write a solid plan, a set of goals, etc. One of the things I needed to have was to create a mockup of the application, and one of those was this little gem:&lt;/p&gt;
+      <guid>http://arianv.com/portfolio/Orb%20Knight/</guid>
+      <description>&lt;p&gt;Orb Knight-RPG, Featuring pets and a Realtime Battle System. Made for Google HTML5 Game Making Contest&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Embedding Overpass Turbo: GSOC Weekly Update 2</title>
-      <link>http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2/</link>
-      <pubDate>Thu, 11 Jun 2015 15:50:28 +0800</pubDate>
+      <title>Match 3</title>
+      <link>http://arianv.com/portfolio/Match%203/</link>
+      <pubDate>Wed, 28 Jan 2015 13:38:37 +0800</pubDate>
       
-      <guid>http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2/</guid>
-      <description>&lt;p&gt;This is the second weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
-
-&lt;p&gt;This week&amp;rsquo;s deliverable is to integrate &lt;a href=&#34;http://overpass-turbo.eu&#34;&gt;Overpass Turbo&lt;/a&gt; inside the learning platform.&lt;/p&gt;
-
-&lt;p&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/overpass-turbo.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-&lt;/p&gt;
-
-&lt;p&gt;From the get go, we knew we wanted to bring out a REPL-like interface to LearnOverpass - we want to encourage users to actively try and experiment with the Query Language.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;cf&#34;&gt;&lt;/p&gt;
+      <guid>http://arianv.com/portfolio/Match%203/</guid>
+      <description>&lt;p&gt;HTML5 Matching 3 Game. Set up to communicate with PHP backend for point based earning on Virtual Economy Sites&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>series gsoc2015</title>
-      <link>http://arianv.com/desc/series-GSOC-2015/</link>
-      <pubDate>Wed, 06 May 2015 11:09:35 +0000</pubDate>
+      <title>Scratch Wars</title>
+      <link>http://arianv.com/portfolio/Scratch%20Wars/</link>
+      <pubDate>Wed, 28 Jan 2015 13:38:37 +0800</pubDate>
       
-      <guid>http://arianv.com/desc/series-GSOC-2015/</guid>
-      <description>&lt;p&gt;In 2015, I worked on the Overpass&amp;rsquo; Learning Platform for Google Summer Of Code 2015. This series details the creation of the project, from the initial project proposal, to the design, technical considerations, implementation, and user feedback.&lt;/p&gt;
+      <guid>http://arianv.com/portfolio/Scratch%20Wars/</guid>
+      <description>&lt;p&gt;Control your forces in this epic battle between Red and Blue!&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>GSOC 2015 Introduction: LearnOverpass</title>
-      <link>http://arianv.com/post/GSOC-2015-Introduction/</link>
-      <pubDate>Sat, 02 May 2015 18:52:11 +0800</pubDate>
+      <title>VirtuaPet</title>
+      <link>http://arianv.com/portfolio/VirtuaPet/</link>
+      <pubDate>Fri, 30 Jan 2015 19:41:26 +0800</pubDate>
       
-      <guid>http://arianv.com/post/GSOC-2015-Introduction/</guid>
-      <description>
-
-&lt;p&gt;Last year, I worked with the Wordpress organization to integrate socialization and gamification features to the Glotpress translation platform. It&amp;rsquo;s been a fun fulfilling ride, and there are definitely a lot of things that I learned during the project.&lt;/p&gt;
-
-&lt;p&gt;This year, I&amp;rsquo;ve been accepted to Google&amp;rsquo;s Summer of Code Program again and I&amp;rsquo;m working with the OpenStreetMap organization to create LearnOverpass!&lt;/p&gt;
-
-&lt;h1 id=&#34;what-is-learnoverpass-https-github-com-osmlab-learnoverpass:90d0b09821fe4c855d3c97303ce53d06&#34;&gt;What is &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt;&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide&#34;&gt;The Overpass API&lt;/a&gt; is a robust API for querying map data, but it&amp;rsquo;s use is still limited due to its beginner-unfriendly documentation and scarce tutorials. With the Query Language&amp;rsquo;s specialized semantics and a usage audience that can include non-developers, the lack or learning resources is a opt-put problem of the API.&lt;/p&gt;
-
-&lt;p&gt;LearnOverpass is a project that aims to solve that problem, by creating a complete, one stop, learning resource for the overpass API. We aim to make it easier for newcomers to learn and use the Overpass API for querying OSM data.&lt;/p&gt;
-
-&lt;p&gt;The Overpass API has an existing language guide found in the &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide&#34;&gt;Open Street Map wiki&lt;/a&gt;. It&amp;rsquo;s pretty comprehensive, and it&amp;rsquo;s all right.&lt;/p&gt;
-
-&lt;p&gt;But it&amp;rsquo;s not &lt;em&gt;great&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re familiar with the Google Summer of Code program, you will probably know that documentation cannot be accepted as a project.&lt;/p&gt;
-
-&lt;p&gt;Because this is not just a documentation project - we are creating something more. We aim to create a &lt;strong&gt;great&lt;/strong&gt; learning platform for beginners.&lt;/p&gt;
-
-&lt;p&gt;Flat documentation is boring.&lt;/p&gt;
-
-&lt;p&gt;How much more fun would it be to &lt;strong&gt;learn by playing with an interactive tutorial&lt;/strong&gt; instead of passively reading a wiki page?&lt;/p&gt;
-
-&lt;h2 id=&#34;a-bid-on-interactivity:90d0b09821fe4c855d3c97303ce53d06&#34;&gt;A bid on interactivity&lt;/h2&gt;
-
-&lt;p&gt;One of my favorite video on education is Bret Victor&amp;rsquo;s talk on &amp;lsquo;Inventing on Principle&amp;rsquo;&lt;/p&gt;
+      <guid>http://arianv.com/portfolio/VirtuaPet/</guid>
+      <description>&lt;p&gt;A Modern Virtual Pet Site where players collect, train, and take care of pets! Written in PHP, made with Love.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>My First Month with Vim</title>
-      <link>http://arianv.com/post/My-First-Month-with-Vim/</link>
-      <pubDate>Sun, 15 Mar 2015 10:48:18 +0800</pubDate>
+      <title>Journey East</title>
+      <link>http://arianv.com/portfolio/Journey%20East/</link>
+      <pubDate>Fri, 30 Jan 2015 19:45:31 +0800</pubDate>
       
-      <guid>http://arianv.com/post/My-First-Month-with-Vim/</guid>
-      <description>
-
-&lt;p&gt;Today celebrates my first month with vim.&lt;/p&gt;
-
-&lt;p&gt;It also marks the first time I did a custom configuration on my &lt;code&gt;.vimrc&lt;/code&gt;. When I said &amp;lsquo;custom&amp;rsquo; it means that it was not just some snippet I found from the internet, it was an actual, personal configuration that made &amp;lsquo;vim&amp;rsquo; my own flavor of &amp;lsquo;vim&amp;rsquo;. This, I think, is the point when someone can say they have graduated from vim noob, to vim user.&lt;/p&gt;
-
-&lt;h1 id=&#34;hipster-coding:c0f0488411cf8fe53e5c18f05ae3dc22&#34;&gt;Hipster Coding&lt;/h1&gt;
-
-&lt;p&gt;Vim is &lt;em&gt;the&lt;/em&gt; editor. Not just any editor. &lt;strong&gt;THE&lt;/strong&gt; editor. You know for &lt;a href=&#34;https://xkcd.com/378/&#34;&gt;real programmers&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Just a couple of months ago I made the switch from Windows to OSX, biting the bullet and buying myself a 13&amp;rdquo; rMBP. I&amp;rsquo;ve come to enjoy the transition thus far, finally having the versatility of UNIX on my machine.&lt;/p&gt;
-
-&lt;p&gt;The more than positive experience of switching OS made me want to experiment with my tools more, and seeing &lt;a href=&#34;https://www.youtube.com/watch?v=UTqZNujQOlA&#34;&gt;Jonathan Blow programming on Emacs&lt;/a&gt; inspired me to switch to these classic editors. I already used Emacs back in the day, and while it is a good editor, I was looking for something a little more lightweight and nimble. Working with Javascript most of the time, I would much prefer a speedy editor like Vim against fancy IDE features that Emacs could offer.&lt;/p&gt;
-
-&lt;h1 id=&#34;the-learning-curve-and-progressive-hacking:c0f0488411cf8fe53e5c18f05ae3dc22&#34;&gt;The Learning Curve and Progressive Hacking&lt;/h1&gt;
-
-&lt;p&gt;I was intimidated at first. Vim is well known to have a pretty brutal learning curve, and I had contracts whose deadlines won&amp;rsquo;t extend to account for me learning a new editor. This was a potential show-stopper right from the get go.&lt;/p&gt;
+      <guid>http://arianv.com/portfolio/Journey%20East/</guid>
+      <description>&lt;p&gt;An epic MMO set in an original world, featuring Crafting, Raids, and PvP! Coordinated with a team of developers. Responsible for Client and Server Development. (AS3 and Java)&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Excellent Communicator</title>
-      <link>http://arianv.com/about/communicator/</link>
-      <pubDate>Sun, 01 Mar 2015 13:38:37 +1000</pubDate>
+      <title>PiRPG</title>
+      <link>http://arianv.com/portfolio/PiRPG/</link>
+      <pubDate>Fri, 30 Jan 2015 19:47:44 +0800</pubDate>
       
-      <guid>http://arianv.com/about/communicator/</guid>
-      <description></description>
+      <guid>http://arianv.com/portfolio/PiRPG/</guid>
+      <description>&lt;p&gt;JRPG with a uniquely dynamic card based system. Project Manager, integrated development, art and QA, organizing workload and direction. Responsible for entire engine creation. Code followed best OOP practices to make card functions easily extendable.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Spontaneous and Fast Learner</title>
-      <link>http://arianv.com/about/fastlearner/</link>
-      <pubDate>Sun, 01 Feb 2015 13:38:37 +0800</pubDate>
+      <title>RUPP</title>
+      <link>http://arianv.com/portfolio/RUPP/</link>
+      <pubDate>Fri, 30 Jan 2015 19:48:53 +0800</pubDate>
       
-      <guid>http://arianv.com/about/fastlearner/</guid>
-      <description></description>
+      <guid>http://arianv.com/portfolio/RUPP/</guid>
+      <description>&lt;p&gt;Fluid Web App built with AngularJS. Complete Route Based Navigations lend to a fluid user experience. NodeJS backend on top of SailsJS&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Zombie Shooting Game</title>
+      <link>http://arianv.com/portfolio/Zombie%20Shooting%20Game/</link>
+      <pubDate>Fri, 30 Jan 2015 19:52:30 +0800</pubDate>
+      
+      <guid>http://arianv.com/portfolio/Zombie%20Shooting%20Game/</guid>
+      <description>&lt;p&gt;GPU Accelerated flash game developed with Starling.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Big Issues</title>
+      <link>http://arianv.com/portfolio/Big%20Issues/</link>
+      <pubDate>Fri, 30 Jan 2015 19:53:25 +0800</pubDate>
+      
+      <guid>http://arianv.com/portfolio/Big%20Issues/</guid>
+      <description>&lt;p&gt;A &amp;lsquo;Begging Game&amp;rsquo; showing the issues of poverty and world hunger. Developed for the Charity Game Jam.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ghoul Feeder</title>
+      <link>http://arianv.com/portfolio/Ghoul%20Feeder/</link>
+      <pubDate>Fri, 30 Jan 2015 19:54:06 +0800</pubDate>
+      
+      <guid>http://arianv.com/portfolio/Ghoul%20Feeder/</guid>
+      <description>&lt;p&gt;Powerup your ghoul in this kid-centric flash game!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -207,36 +172,6 @@
       
       <guid>http://arianv.com/portfolio/jSolar/</guid>
       <description>&lt;p&gt;A 3d simulation of the copernican solar system model, where users can move the camera as well as affix it to the different planets. Made with Three.js&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ghoul Feeder</title>
-      <link>http://arianv.com/portfolio/Ghoul%20Feeder/</link>
-      <pubDate>Fri, 30 Jan 2015 19:54:06 +0800</pubDate>
-      
-      <guid>http://arianv.com/portfolio/Ghoul%20Feeder/</guid>
-      <description>&lt;p&gt;Powerup your ghoul in this kid-centric flash game!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Big Issues</title>
-      <link>http://arianv.com/portfolio/Big%20Issues/</link>
-      <pubDate>Fri, 30 Jan 2015 19:53:25 +0800</pubDate>
-      
-      <guid>http://arianv.com/portfolio/Big%20Issues/</guid>
-      <description>&lt;p&gt;A &amp;lsquo;Begging Game&amp;rsquo; showing the issues of poverty and world hunger. Developed for the Charity Game Jam.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Zombie Shooting Game</title>
-      <link>http://arianv.com/portfolio/Zombie%20Shooting%20Game/</link>
-      <pubDate>Fri, 30 Jan 2015 19:52:30 +0800</pubDate>
-      
-      <guid>http://arianv.com/portfolio/Zombie%20Shooting%20Game/</guid>
-      <description>&lt;p&gt;GPU Accelerated flash game developed with Starling.&lt;/p&gt;
 </description>
     </item>
     
