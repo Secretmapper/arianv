@@ -2,19 +2,98 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Webdev on Arian&#39;s Portfolio</title>
-    <link>http://arianv.com/tags/webdev/</link>
+    <link>http://localhost:1313/tags/webdev/</link>
     <description>Recent content in Webdev on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jun 2015 11:27:49 +0801</lastBuildDate>
-    <atom:link href="http://arianv.com/tags/webdev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Aug 2015 13:40:39 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/webdev/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>LearnOverpass Final Report</title>
+      <link>http://localhost:1313/post/LearnOverpass-GSOC-2015-Final-Report/</link>
+      <pubDate>Thu, 27 Aug 2015 13:40:39 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/LearnOverpass-GSOC-2015-Final-Report/</guid>
+      <description>
+
+&lt;p&gt;This year I participated in my 2nd GSOC journey. I worked for the OpenStreetMap Foundation developing an integrated learning platform for their Overpass API which we (me and my mentor) affectionally called &lt;a href=&#34;http://arianv.com/post/GSOC-2015-Introduction/&#34;&gt;LearnOverpass&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s been three months since I started the project, and LearnOverpass is now live and functional - and while the consensus is still out, I&amp;rsquo;m definitely happy with the results!&lt;/p&gt;
+
+&lt;h1 id=&#34;exercises-exercises:d1f36ce9c4a0cd5577a2581edfda1a10&#34;&gt;Exercises, exercises&lt;/h1&gt;
+
+&lt;p&gt;One of the definite &amp;lsquo;killer features&amp;rsquo; we aimed for in LearnOverpass is the inclusion of interactive, playable exercises - with the goal of introducing users, to the Overpass API through active engagement. Reading docs is boring, actually playing around and seeing results is FUN.&lt;/p&gt;
+
+&lt;p&gt;Keeping the exercises informative whilst crafting an engaging story was a very tough act to balance. Focus too much on the story, and pedagogy might suffer. Focus too much on the topics on the other hand, and you might end up with nothing better than just your usual documentation.&lt;/p&gt;
+
+&lt;p&gt;It was the culmination of many efforts, Martin&amp;rsquo;s and everyone in the mailing list gathering around and nitpicking on the exercise lessons, to figure out a way to make them engaging and worthwhile, and we must say that we&amp;rsquo;ve achieved that goal.&lt;/p&gt;
+
+&lt;h1 id=&#34;meet-bob:d1f36ce9c4a0cd5577a2581edfda1a10&#34;&gt;Meet Bob&lt;/h1&gt;
+
+&lt;p&gt;Bob is LearnOverpass&amp;rsquo; protagonist, whose antics we use as an anchor to sprinkle, little by little, concepts of the Overpass Query Language.&lt;/p&gt;
+
+&lt;p&gt;Starting with the &amp;ldquo;Hello World&amp;rdquo; Query (a bounding box query to find nodes in a certain lat/lon box), we continue by teaching filters, making sure to keep a close feedback loop with the user and the exercises. As the user gets more and more comfortable with them, we add more topics and queries, eventually showing certain language semantics (i.e. how things work™) through visual examples and metaphors.&lt;/p&gt;
+
+&lt;p&gt;As we move from concept to concept, we also remove certain training wheels, removing boilerplate code here and there to ensure retention and keep the queries from getting stale.&lt;/p&gt;
+
+&lt;p&gt;LearnOverpass&amp;rsquo; story never really gets in the way. It was a useful tool to keep the natural progression between queries, and the plot was simple enough not to take too much focus away from the query language, but engaging enough to keep the users interested in more, providing a faculty for familiarity (the very concrete bob and his needs for location info) to an otherwise abstract field (querying).&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/turbo-hello.png&#34; alt=&#34;LearnOverpass&amp;#39; Hello World&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        LearnOverpass&amp;#39; Hello World
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&#34;project-completion-report:d1f36ce9c4a0cd5577a2581edfda1a10&#34;&gt;Project Completion Report&lt;/h1&gt;
+
+&lt;p&gt;The Documentation is comprehensive and a pleasure to view, and all it&amp;rsquo;s required features have been completed through and through. The interactive overpass map presenting usage examples allows the docs to be more comprehensive in showing different uses for every query, and is definitely fun to experiment on as a beginner.&lt;/p&gt;
+
+&lt;p&gt;The Exercises on the other hand has a very solid foundation. Not requiring any programming knowledge at all (except Overpass QL of course!) to add exercises in, it is very easy to craft user-created exercise module, allowing the community to participate and create exercises. Crafting a dedicated Javascript API for Overpass turbo through &lt;code&gt;postMessage&lt;/code&gt; allowed for greater flexibility, making the interface (relatively) error-proof. Push notification &amp;lsquo;style&amp;rsquo; hints show up on wrong answers, while getting the right one triggers a simple &amp;lsquo;next lesson&amp;rsquo; prompt.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/learn-exercises.gif&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The introduction exercise is a pretty great intro, but I do wish I had more time to complete all of it in the GSOC&amp;rsquo;s timeline. There was a definite lack of Recursion concepts explained in the intro course, which is a shame, as it is one of the most complicated aspects of the Query Language.&lt;/p&gt;
+
+&lt;p&gt;All in all though, I would say that the general outcome is pretty good! When comparing with the initial project specification, I think that a good chunk of it has been completed.&lt;/p&gt;
+
+&lt;h1 id=&#34;moving-forward:d1f36ce9c4a0cd5577a2581edfda1a10&#34;&gt;Moving Forward&lt;/h1&gt;
+
+&lt;p&gt;Now that the GSOC&amp;rsquo;s run has ended and I&amp;rsquo;m going back to college, my time for development will greatly decrease. However, as a project I had a hand in from start to finish, I really want to see the project grow and realize it&amp;rsquo;s full potential, essentially making sure that LearnOverpass will really be the &amp;ldquo;definitive, one stop learning resource for the overpass API&amp;rdquo; as me and Martin have imagined. With that in mind, I will contribute more exercises into the project, especially the heavy recursion parts, the lack of which produces a big hole into the otherwise complete intro course.&lt;/p&gt;
+
+&lt;p&gt;The project also includes a pretty comprehensive contribution guide, with our hope to involve the community.&lt;/p&gt;
+
+&lt;p&gt;Which is pretty great, since we already are! Jo has written a more advanced exercise &lt;a href=&#34;https://docs.google.com/document/d/1VPGgljCXrwr1ZtjKCp9xG2C0I1C_GRX6Mlk0PTejFEk/edit#heading=h.brctw0f48q4c&#34;&gt;lesson&lt;/a&gt; which will be integrated into the platform soon :)&lt;/p&gt;
+
+&lt;p&gt;All in all, working on LearnOverpass has been an incredibly fun, productive experience. I&amp;rsquo;m incredibly happy with the platform used, the technical challenges made me grow as a developer, and getting to work on an open source project with a very active community is a real delight.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Polishing API Reference: GSOC Weekly Update 4</title>
-      <link>http://arianv.com/post/Polishing-API-Reference-Weekly-Update-4/</link>
+      <link>http://localhost:1313/post/Polishing-API-Reference-Weekly-Update-4/</link>
       <pubDate>Wed, 24 Jun 2015 11:27:49 +0801</pubDate>
       
-      <guid>http://arianv.com/post/Polishing-API-Reference-Weekly-Update-4/</guid>
+      <guid>http://localhost:1313/post/Polishing-API-Reference-Weekly-Update-4/</guid>
       <description>
 
 &lt;p&gt;This is the fourth weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
@@ -29,11 +108,11 @@
 
 &lt;p&gt;As the line-height issue was fixed, I also decided to pick a more modern typeface to go along with the site. I went with Google&amp;rsquo;s &lt;a href=&#34;https://www.google.com/fonts/specimen/Roboto&#34;&gt;Roboto font&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/overpass-compare.png&#34; alt=&#34;Old typeface on the left, new on the right&#34; style=&#34; width:600px &#34;/&gt;  &lt;figcaption&gt; &lt;p&gt; Old typeface on the left, new on the right   &lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/overpass-compare.png&#34; alt=&#34;Old typeface on the left, new on the right&#34; style=&#34; width:600px &#34;/&gt;  &lt;figcaption&gt; &lt;p&gt; Old typeface on the left, new on the right   &lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt;&lt;/p&gt;
 
 &lt;p&gt;The redesign also features a more minimal menu, that now supports &amp;lsquo;active&amp;rsquo; links.&lt;/p&gt;
 
-&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/overpass-menu-compare.png&#34;  style=&#34; width:600px &#34;/&gt;  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/overpass-menu-compare.png&#34;  style=&#34; width:600px &#34;/&gt;  &lt;/figure&gt;&lt;/p&gt;
 
 &lt;p&gt;Syntax Highliting is also added to the site, to both the overpass editor instances and all the sample code blocks. This is done by using codemirror to make code blocks read only, using it for ad-hoc syntax highliting. There are a few performance implications of this, but offset by the advantage of not importing another library.&lt;/p&gt;
 
@@ -59,10 +138,10 @@
     
     <item>
       <title>Porting API Reference: GSOC Weekly Update 3</title>
-      <link>http://arianv.com/post/Porting-API-Reference-Weekly-Update-3/</link>
+      <link>http://localhost:1313/post/Porting-API-Reference-Weekly-Update-3/</link>
       <pubDate>Thu, 18 Jun 2015 13:46:54 +0800</pubDate>
       
-      <guid>http://arianv.com/post/Porting-API-Reference-Weekly-Update-3/</guid>
+      <guid>http://localhost:1313/post/Porting-API-Reference-Weekly-Update-3/</guid>
       <description>
 
 &lt;p&gt;This is the third weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
@@ -111,7 +190,7 @@
 
 &lt;h2 id=&#34;learning-by-example:f134b74e78c386ba684142a6899fbf89&#34;&gt;Learning By Example&lt;/h2&gt;
 
-&lt;p&gt;With the &lt;a href=&#34;http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2&#34;&gt;embedded overpass turbo interface added last week&lt;/a&gt;, we were able to create conclusive visual examples per statement&amp;rsquo;s usage. Properly crafting the right queries that show the different uses of the statement and it&amp;rsquo;s quirks took up the bulk of this week&amp;rsquo;s task.&lt;/p&gt;
+&lt;p&gt;With the &lt;a href=&#34;http://localhost:1313/post/Embedding-Overpass-Turbo-Weekly-Update-2&#34;&gt;embedded overpass turbo interface added last week&lt;/a&gt;, we were able to create conclusive visual examples per statement&amp;rsquo;s usage. Properly crafting the right queries that show the different uses of the statement and it&amp;rsquo;s quirks took up the bulk of this week&amp;rsquo;s task.&lt;/p&gt;
 
 &lt;p&gt;To make the examples more interesting, statements that would query in famous landmarks were used: in the reference pages we see the stonehenge, the peak to Christ the Redeemer Statue&amp;rsquo;s Mountain, and others more.&lt;/p&gt;
 
@@ -132,10 +211,10 @@
     
     <item>
       <title>Embedding Overpass Turbo: GSOC Weekly Update 2</title>
-      <link>http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2/</link>
+      <link>http://localhost:1313/post/Embedding-Overpass-Turbo-Weekly-Update-2/</link>
       <pubDate>Thu, 11 Jun 2015 15:50:28 +0800</pubDate>
       
-      <guid>http://arianv.com/post/Embedding-Overpass-Turbo-Weekly-Update-2/</guid>
+      <guid>http://localhost:1313/post/Embedding-Overpass-Turbo-Weekly-Update-2/</guid>
       <description>
 
 &lt;p&gt;This is the second weekly update for the &lt;a href=&#34;https://github.com/osmlab/learnoverpass&#34;&gt;LearnOverpass&lt;/a&gt; Project.&lt;/p&gt;
@@ -145,7 +224,7 @@
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/overpass-turbo.jpg&#34; /&gt;
+        &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/overpass-turbo.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -162,7 +241,7 @@
   
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/turbo-btn.png&#34; /&gt;
+        &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/turbo-btn.png&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -175,7 +254,7 @@
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://arianv.com/media/images/gsoc-2015/turbo-embed.png&#34; alt=&#34;Overpass Turbo embedded inside LearnOverpass&#34; /&gt;
+        &lt;img src=&#34;http://localhost:1313/media/images/gsoc-2015/turbo-embed.png&#34; alt=&#34;Overpass Turbo embedded inside LearnOverpass&#34; /&gt;
     
     
     &lt;figcaption&gt;
@@ -226,10 +305,10 @@
     
     <item>
       <title>GSOC 2015 Introduction: LearnOverpass</title>
-      <link>http://arianv.com/post/GSOC-2015-Introduction/</link>
+      <link>http://localhost:1313/post/GSOC-2015-Introduction/</link>
       <pubDate>Sat, 02 May 2015 18:52:11 +0800</pubDate>
       
-      <guid>http://arianv.com/post/GSOC-2015-Introduction/</guid>
+      <guid>http://localhost:1313/post/GSOC-2015-Introduction/</guid>
       <description>
 
 &lt;p&gt;Last year, I worked with the Wordpress organization to integrate socialization and gamification features to the Glotpress translation platform. It&amp;rsquo;s been a fun fulfilling ride, and there are definitely a lot of things that I learned during the project.&lt;/p&gt;

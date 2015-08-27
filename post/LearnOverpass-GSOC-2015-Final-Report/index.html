@@ -1,0 +1,97 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us"><head><link href="http://gmpg.org/xfn/11" rel="profile"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><meta property="og:title" content="Arian Allenson's Portfolio"/><meta property="og:type" content="website" /><meta property="og:image" content="http://arianv.com/media/avatar.png"/><meta property="og:site_name" content="Arian Allenson's Portfolio"/><meta property="og:description" content="Game Developer a.k.a. Secretmapper"/><title>LearnOverpass Final Report</title><link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'><link rel="stylesheet" href="http://localhost:1313//css/main.css"> <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:1313/apple-touch-icon-144-precomposed.png"><link href="http://localhost:1313/favicon.png" rel="icon"><link href="" rel="alternate" type="application/rss+xml" title="Arian&#39;s Portfolio &middot; " /><meta name="description" content=""><meta name="keywords" content=""> </head><body><div class="content container"> <nav class="main-nav"><div class="ribbon-content"><div class="nav-inner"><ul><li> <a id="nav-home" data-page="home" href="http://localhost:1313/">Home</a></li><li> <a id="nav-articles" data-page="articles" href="http://localhost:1313/post">Articles</a></li></ul></div></div></nav><div class="post"><h1 id="post-title">LearnOverpass Final Report</h1><div class="post-info"> <span class="post-date">Aug 27, 2015 &middot; 4 minute read &middot; <a href="http://localhost:1313/post/LearnOverpass-GSOC-2015-Final-Report/#disqus_thread">Comments</a></span>   <span class="post-tags"><a class="label" href="http://localhost:1313//tags/js">JS</a><a class="label" href="http://localhost:1313//tags/hugo">Hugo</a><a class="label" href="http://localhost:1313//tags/webdev">Webdev</a></span> </div><article> 
+
+<p>This year I participated in my 2nd GSOC journey. I worked for the OpenStreetMap Foundation developing an integrated learning platform for their Overpass API which we (me and my mentor) affectionally called <a href="http://arianv.com/post/GSOC-2015-Introduction/">LearnOverpass</a></p>
+
+<p>It&rsquo;s been three months since I started the project, and LearnOverpass is now live and functional - and while the consensus is still out, I&rsquo;m definitely happy with the results!</p>
+
+<h1 id="exercises-exercises:d1f36ce9c4a0cd5577a2581edfda1a10">Exercises, exercises</h1>
+
+<p>One of the definite &lsquo;killer features&rsquo; we aimed for in LearnOverpass is the inclusion of interactive, playable exercises - with the goal of introducing users, to the Overpass API through active engagement. Reading docs is boring, actually playing around and seeing results is FUN.</p>
+
+<p>Keeping the exercises informative whilst crafting an engaging story was a very tough act to balance. Focus too much on the story, and pedagogy might suffer. Focus too much on the topics on the other hand, and you might end up with nothing better than just your usual documentation.</p>
+
+<p>It was the culmination of many efforts, Martin&rsquo;s and everyone in the mailing list gathering around and nitpicking on the exercise lessons, to figure out a way to make them engaging and worthwhile, and we must say that we&rsquo;ve achieved that goal.</p>
+
+<h1 id="meet-bob:d1f36ce9c4a0cd5577a2581edfda1a10">Meet Bob</h1>
+
+<p>Bob is LearnOverpass&rsquo; protagonist, whose antics we use as an anchor to sprinkle, little by little, concepts of the Overpass Query Language.</p>
+
+<p>Starting with the &ldquo;Hello World&rdquo; Query (a bounding box query to find nodes in a certain lat/lon box), we continue by teaching filters, making sure to keep a close feedback loop with the user and the exercises. As the user gets more and more comfortable with them, we add more topics and queries, eventually showing certain language semantics (i.e. how things work™) through visual examples and metaphors.</p>
+
+<p>As we move from concept to concept, we also remove certain training wheels, removing boilerplate code here and there to ensure retention and keep the queries from getting stale.</p>
+
+<p>LearnOverpass&rsquo; story never really gets in the way. It was a useful tool to keep the natural progression between queries, and the plot was simple enough not to take too much focus away from the query language, but engaging enough to keep the users interested in more, providing a faculty for familiarity (the very concrete bob and his needs for location info) to an otherwise abstract field (querying).</p>
+
+<p>
+<figure >
+    
+        <img src="http://localhost:1313/media/images/gsoc-2015/turbo-hello.png" alt="LearnOverpass&#39; Hello World" />
+    
+    
+    <figcaption>
+        <p>
+        LearnOverpass&#39; Hello World
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</p>
+
+<h1 id="project-completion-report:d1f36ce9c4a0cd5577a2581edfda1a10">Project Completion Report</h1>
+
+<p>The Documentation is comprehensive and a pleasure to view, and all it&rsquo;s required features have been completed through and through. The interactive overpass map presenting usage examples allows the docs to be more comprehensive in showing different uses for every query, and is definitely fun to experiment on as a beginner.</p>
+
+<p>The Exercises on the other hand has a very solid foundation. Not requiring any programming knowledge at all (except Overpass QL of course!) to add exercises in, it is very easy to craft user-created exercise module, allowing the community to participate and create exercises. Crafting a dedicated Javascript API for Overpass turbo through <code>postMessage</code> allowed for greater flexibility, making the interface (relatively) error-proof. Push notification &lsquo;style&rsquo; hints show up on wrong answers, while getting the right one triggers a simple &lsquo;next lesson&rsquo; prompt.</p>
+
+<p>
+<figure >
+    
+        <img src="http://localhost:1313/media/images/gsoc-2015/learn-exercises.gif" />
+    
+    
+</figure>
+</p>
+
+<p>The introduction exercise is a pretty great intro, but I do wish I had more time to complete all of it in the GSOC&rsquo;s timeline. There was a definite lack of Recursion concepts explained in the intro course, which is a shame, as it is one of the most complicated aspects of the Query Language.</p>
+
+<p>All in all though, I would say that the general outcome is pretty good! When comparing with the initial project specification, I think that a good chunk of it has been completed.</p>
+
+<h1 id="moving-forward:d1f36ce9c4a0cd5577a2581edfda1a10">Moving Forward</h1>
+
+<p>Now that the GSOC&rsquo;s run has ended and I&rsquo;m going back to college, my time for development will greatly decrease. However, as a project I had a hand in from start to finish, I really want to see the project grow and realize it&rsquo;s full potential, essentially making sure that LearnOverpass will really be the &ldquo;definitive, one stop learning resource for the overpass API&rdquo; as me and Martin have imagined. With that in mind, I will contribute more exercises into the project, especially the heavy recursion parts, the lack of which produces a big hole into the otherwise complete intro course.</p>
+
+<p>The project also includes a pretty comprehensive contribution guide, with our hope to involve the community.</p>
+
+<p>Which is pretty great, since we already are! Jo has written a more advanced exercise <a href="https://docs.google.com/document/d/1VPGgljCXrwr1ZtjKCp9xG2C0I1C_GRX6Mlk0PTejFEk/edit#heading=h.brctw0f48q4c">lesson</a> which will be integrated into the platform soon :)</p>
+
+<p>All in all, working on LearnOverpass has been an incredibly fun, productive experience. I&rsquo;m incredibly happy with the platform used, the technical challenges made me grow as a developer, and getting to work on an open source project with a very active community is a real delight.</p>
+  <hr/><div class="post-series-desc"><p>This is a post in the <a href="http://localhost:1313//series/gsoc-2015" id="series"><b>GSOC 2015</b></a> series.<br/> Other posts in this series:</p>  <ul class="series"> <li>Aug 27, 2015 - <a href="http://localhost:1313/post/LearnOverpass-GSOC-2015-Final-Report/">LearnOverpass Final Report</a></li> <li>Jun 24, 2015 - <a href="http://localhost:1313/post/Polishing-API-Reference-Weekly-Update-4/">Polishing API Reference: GSOC Weekly Update 4</a></li> <li>Jun 18, 2015 - <a href="http://localhost:1313/post/Porting-API-Reference-Weekly-Update-3/">Porting API Reference: GSOC Weekly Update 3</a></li> <li>Jun 11, 2015 - <a href="http://localhost:1313/post/Embedding-Overpass-Turbo-Weekly-Update-2/">Embedding Overpass Turbo: GSOC Weekly Update 2</a></li> <li>May 02, 2015 - <a href="http://localhost:1313/post/GSOC-2015-Introduction/">GSOC 2015 Introduction: LearnOverpass</a></li> </ul></div> </article> <div id="disqus_thread"></div></div></div> <script type="text/javascript">
+var disqus_shortname = "arianv";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>  <script type="text/javascript">
+    var disqus_shortname = "arianv";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  </div><footer>Copyright &#169; Arian Allenson M. Valdez | CC-BY-SA</footer>  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', "UA-60507502-1", 'auto');
+  ga('send', 'pageview');
+</script> <script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body></html>

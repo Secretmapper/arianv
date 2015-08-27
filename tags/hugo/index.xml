@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gsoc 2015 on Arian&#39;s Portfolio</title>
-    <link>http://localhost:1313/series/gsoc-2015/</link>
-    <description>Recent content in Gsoc 2015 on Arian&#39;s Portfolio</description>
+    <title>Hugo on Arian&#39;s Portfolio</title>
+    <link>http://localhost:1313/tags/hugo/</link>
+    <description>Recent content in Hugo on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Aug 2015 13:40:39 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/series/gsoc-2015/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>LearnOverpass Final Report</title>

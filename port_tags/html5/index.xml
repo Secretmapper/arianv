@@ -2,79 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Html5 on Arian&#39;s Portfolio</title>
-    <link>http://arianv.com/port_tags/html5/</link>
+    <link>http://localhost:1313/port_tags/html5/</link>
     <description>Recent content in Html5 on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Jul 2015 12:59:37 +0800</lastBuildDate>
-    <atom:link href="http://arianv.com/port_tags/html5/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/port_tags/html5/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Liang Court</title>
-      <link>http://arianv.com/portfolio/Liang%20Court/</link>
+      <link>http://localhost:1313/portfolio/Liang%20Court/</link>
       <pubDate>Fri, 17 Jul 2015 12:59:37 +0800</pubDate>
       
-      <guid>http://arianv.com/portfolio/Liang%20Court/</guid>
+      <guid>http://localhost:1313/portfolio/Liang%20Court/</guid>
       <description>&lt;p&gt;A facebook embedded, casino coupon reward game for Liang Court, a Major Mall in Singapore&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>RUPP</title>
-      <link>http://arianv.com/portfolio/RUPP/</link>
+      <link>http://localhost:1313/portfolio/RUPP/</link>
       <pubDate>Fri, 30 Jan 2015 19:48:53 +0800</pubDate>
       
-      <guid>http://arianv.com/portfolio/RUPP/</guid>
+      <guid>http://localhost:1313/portfolio/RUPP/</guid>
       <description>&lt;p&gt;Fluid Web App built with AngularJS. Complete Route Based Navigations lend to a fluid user experience. NodeJS backend on top of SailsJS&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>VirtuaPet</title>
-      <link>http://arianv.com/portfolio/VirtuaPet/</link>
+      <link>http://localhost:1313/portfolio/VirtuaPet/</link>
       <pubDate>Fri, 30 Jan 2015 19:41:26 +0800</pubDate>
       
-      <guid>http://arianv.com/portfolio/VirtuaPet/</guid>
+      <guid>http://localhost:1313/portfolio/VirtuaPet/</guid>
       <description>&lt;p&gt;A Modern Virtual Pet Site where players collect, train, and take care of pets! Written in PHP, made with Love.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Match 3</title>
-      <link>http://arianv.com/portfolio/Match%203/</link>
+      <link>http://localhost:1313/portfolio/Match%203/</link>
       <pubDate>Wed, 28 Jan 2015 13:38:37 +0800</pubDate>
       
-      <guid>http://arianv.com/portfolio/Match%203/</guid>
+      <guid>http://localhost:1313/portfolio/Match%203/</guid>
       <description>&lt;p&gt;HTML5 Matching 3 Game. Set up to communicate with PHP backend for point based earning on Virtual Economy Sites&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Orb Knight</title>
-      <link>http://arianv.com/portfolio/Orb%20Knight/</link>
+      <link>http://localhost:1313/portfolio/Orb%20Knight/</link>
       <pubDate>Wed, 28 Jan 2015 13:38:37 +0800</pubDate>
       
-      <guid>http://arianv.com/portfolio/Orb%20Knight/</guid>
+      <guid>http://localhost:1313/portfolio/Orb%20Knight/</guid>
       <description>&lt;p&gt;Orb Knight-RPG, Featuring pets and a Realtime Battle System. Made for Google HTML5 Game Making Contest&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Scratch Wars</title>
-      <link>http://arianv.com/portfolio/Scratch%20Wars/</link>
+      <link>http://localhost:1313/portfolio/Scratch%20Wars/</link>
       <pubDate>Wed, 28 Jan 2015 13:38:37 +0800</pubDate>
       
-      <guid>http://arianv.com/portfolio/Scratch%20Wars/</guid>
+      <guid>http://localhost:1313/portfolio/Scratch%20Wars/</guid>
       <description>&lt;p&gt;Control your forces in this epic battle between Red and Blue!&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Space Shooter</title>
-      <link>http://arianv.com/portfolio/Space%20Shooter/</link>
+      <link>http://localhost:1313/portfolio/Space%20Shooter/</link>
       <pubDate>Tue, 27 Jan 2015 13:38:37 +0800</pubDate>
       
-      <guid>http://arianv.com/portfolio/Space%20Shooter/</guid>
+      <guid>http://localhost:1313/portfolio/Space%20Shooter/</guid>
       <description>&lt;p&gt;Mobile Friendly Shooter built on top of the Phaser Framework. Features powerups and an online leaderboard.&lt;/p&gt;
 </description>
     </item>
