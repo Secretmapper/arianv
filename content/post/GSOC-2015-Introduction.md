@@ -2,7 +2,7 @@
 date = "2015-05-02T18:52:11+08:00"
 title = "GSOC 2015 Introduction: LearnOverpass"
 series = ["GSOC 2015"]
-tags = ["JS", "Go", "Webdev"]
+tags = ["JS", "Hugo", "Webdev"]
 
 +++
 
