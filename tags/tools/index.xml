@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on Arian&#39;s Portfolio</title>
-    <link>http://localhost:1313/tags/tools/</link>
+    <link>http://arianv.com/tags/tools/</link>
     <description>Recent content in Tools on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 Mar 2015 10:48:18 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://arianv.com/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My First Month with Vim</title>
-      <link>http://localhost:1313/post/My-First-Month-with-Vim/</link>
+      <link>http://arianv.com/post/My-First-Month-with-Vim/</link>
       <pubDate>Sun, 15 Mar 2015 10:48:18 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/My-First-Month-with-Vim/</guid>
+      <guid>http://arianv.com/post/My-First-Month-with-Vim/</guid>
       <description>
 
 &lt;p&gt;Today celebrates my first month with vim.&lt;/p&gt;
@@ -33,7 +33,7 @@
 
 &lt;p&gt;I was intimidated at first. Vim is well known to have a pretty brutal learning curve, and I had contracts whose deadlines won&amp;rsquo;t extend to account for me learning a new editor. This was a potential show-stopper right from the get go.&lt;/p&gt;
 
-&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://localhost:1313/media/images/editor-learning-curve.png&#34; alt=&#34;This image is as classic as the editors themselves&#34; style=&#34;&#34;/&gt;  &lt;figcaption&gt; &lt;p&gt; This image is as classic as the editors themselves   &lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://arianv.com/media/images/editor-learning-curve.png&#34; alt=&#34;This image is as classic as the editors themselves&#34; style=&#34;&#34;/&gt;  &lt;figcaption&gt; &lt;p&gt; This image is as classic as the editors themselves   &lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt;&lt;/p&gt;
 
 &lt;p&gt;I figured though - when would I ever just commit to learning vim? I&amp;rsquo;ve programmed enough to know that perfect opportunities to learn things never really present themselves, so I decided to learn it just like how one would learn a new framework or language, by &lt;em&gt;just effin&amp;rsquo; using it&lt;/em&gt;&lt;/p&gt;
 
@@ -51,7 +51,7 @@
 
 &lt;p&gt;As a slave to aesthetics, the second plugin (which is really a theme) that I added is the Solarized theme. This also made me switch to iTerm, which, apart from supporting 256 colors, also had an excellent show/hide feature that can be keybound. This, with iTerm&amp;rsquo;s (also keybind-able) fullscreen feature gave me an unparalleled productivity boost.&lt;/p&gt;
 
-&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://localhost:1313/media/images/vim.gif&#34; alt=&#34;My editor is an `alt space` away&#34; style=&#34;&#34;/&gt;  &lt;figcaption&gt; &lt;p&gt; My editor is an &lt;code&gt;alt space&lt;/code&gt; away   &lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure &gt;  &lt;img src=&#34;http://arianv.com/media/images/vim.gif&#34; alt=&#34;My editor is an `alt space` away&#34; style=&#34;&#34;/&gt;  &lt;figcaption&gt; &lt;p&gt; My editor is an &lt;code&gt;alt space&lt;/code&gt; away   &lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt;&lt;/p&gt;
 
 &lt;p&gt;YouCompleteMe provided some much needed auto complete. Fugitive was used for Git, and I finally learned how to use Ack to search for things. Linters? Syntastic. Code expand? Emmet. Et cetera, et cetera.&lt;/p&gt;
 
