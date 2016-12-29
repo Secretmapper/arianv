@@ -17,7 +17,7 @@
     "gulp-flatten": "^0.0.4",
     "gulp-htmlclean": "^2.5.1",
     "gulp-if": "^1.2.1",
-    "gulp-imagemin": "^1.2.1",
+    "gulp-imagemin": "^3.0.1",
     "gulp-jshint": "^1.5.3",
     "gulp-livereload": "^2.0.0",
     "gulp-load-plugins": "^0.7.1",
@@ -30,14 +30,17 @@
     "gulp-stylus": "^2.0.0",
     "gulp-uglify": "^1.0.1",
     "gulp-useref": "^1.0.2",
-    "imagemin-jpegtran": "^4.1.0",
+    "imagemin-jpegtran": "^5.0.0",
     "jeet": "^6.1.2",
     "jshint-stylish": "^1.0.0",
     "main-bower-files": "^2.1.0",
     "opn": "^1.0.0",
-    "pngquant": "^0.4.0",
     "serve-index": "^1.1.4",
     "serve-static": "^1.4.0",
     "wiredep": "^2.0.0"
+  },
+  "dependencies": {
+    "imagemin-jpegtran": "^5.0.0",
+    "imagemin-pngquant": "^5.0.0"
   }
 }

@@ -4,7 +4,7 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var jeet = require('jeet');
-var pngquant = require('pngquant');
+var pngquant = require('imagemin-pngquant');
 var jpegtran = require('imagemin-jpegtran');
 var folio = 'themes/secretfolio/';
 
@@ -76,6 +76,32 @@ gulp.task('watch', function () {
   gulp.watch('app/styles/**/*.styl', ['styles']);
   gulp.watch('app/**/*.html', ['html']);
   gulp.watch('app/**/*.html', ['partials']);
+});
+
+gulp.task('images', function () {
+  return gulp.src('static/media/*.png')
+    .pipe($.responsive({
+      '**/*' : [{
+        width: 270,
+        withoutEnlargement: false,
+        format: 'jpeg'
+      },
+      {
+        rename: {
+          suffix: '@feature'
+        },
+        width: 460,
+        withoutEnlargement: false
+      }]
+    },{
+      progressive: true,
+      withMetadata: false
+    }))
+    .pipe($.cache($.imagemin({
+      interlaced: true,
+      use: [jpegtran(), pngquant()]
+    })))
+    .pipe(gulp.dest('static/medias/'));
 });
 
 gulp.task('clearcache', function() {
