@@ -4,14 +4,14 @@
 
 <p>This week&rsquo;s deliverable is to integrate <a href="http://overpass-turbo.eu">Overpass Turbo</a> inside the learning platform.</p>
 
-<p>
+
 <figure >
     
         <img src="http://arianv.com/media/images/gsoc-2015/overpass-turbo.jpg" />
     
     
 </figure>
-</p>
+
 
 <p>From the get go, we knew we wanted to bring out a REPL-like interface to LearnOverpass - we want to encourage users to actively try and experiment with the Query Language.</p>
 
@@ -34,7 +34,7 @@
 
 <p>Embedding the Overpass Turbo interface directly to the documentation makes the most sense, so that&rsquo;s what we did.</p>
 
-<p>
+
 <figure >
     
         <img src="http://arianv.com/media/images/gsoc-2015/turbo-embed.png" alt="Overpass Turbo embedded inside LearnOverpass" />
@@ -50,7 +50,7 @@
     </figcaption>
     
 </figure>
-</p>
+
 
 <p>The embedded interface would be present in most of the language&rsquo;s <em>statements</em> reference, serving to show its usage. In the example capture in the image above, the query above shows the results of a Difference Block Statement. The result is visually striking - the nodes in the middle are removed by the difference statement.</p>
 
@@ -58,7 +58,7 @@
 
 <p>There are a lot of ways we can play with this embedded interface. As an example, the <code>union</code> statement may show different colored nodes, emphasizing that it is the union of its substatements. The <code>poly</code> statement may take the form of a star, and the user can easily <strong>experiment with the query directly on the page</strong>.</p>
 
-<h2 id="technical-details:da8f17cd6a288334f07428cd66d8dfa5">Technical Details</h2>
+<h2 id="technical-details">Technical Details</h2>
 
 <p>Embedding an Overpass Turbo from an iframe was the way to go.</p>
 
@@ -78,7 +78,7 @@
 
 <p>This early though, Occam&rsquo;s Razor very much applies. <a href="http://http://vanilla-js.com">VanillaJS ftw</a>.</p>
 
-<h2 id="next-week:da8f17cd6a288334f07428cd66d8dfa5">Next Week</h2>
+<h2 id="next-week">Next Week</h2>
 
 <p>For the next 1 <sup>1</sup>&frasl;<sub>2</sub> weeks or so, the focus of the project will be the creation of the API Documentation/Reference. The important thing here is to make the pages standalone and to utilize good code snippet samples to show a statement&rsquo;s use.</p>
 
@@ -98,7 +98,7 @@ var disqus_shortname = "arianv";
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
-</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  </div><footer>Copyright &#169; Arian Allenson M. Valdez | CC-BY-SA</footer>  <script>
+</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  </div><footer>Copyright &#169; Arian Allenson M. Valdez | CC-BY-SA</footer><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/solarized-dark.min.css"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script> <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

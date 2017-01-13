@@ -4,7 +4,7 @@
 
 <p>It&rsquo;s been three months since I started the project, and LearnOverpass is now live and functional - and while the consensus is still out, I&rsquo;m definitely happy with the results!</p>
 
-<h1 id="exercises-exercises:d1f36ce9c4a0cd5577a2581edfda1a10">Exercises, exercises</h1>
+<h1 id="exercises-exercises">Exercises, exercises</h1>
 
 <p>One of the definite &lsquo;killer features&rsquo; we aimed for in LearnOverpass is the inclusion of interactive, playable exercises - with the goal of introducing users, to the Overpass API through active engagement. Reading docs is boring, actually playing around and seeing results is FUN.</p>
 
@@ -12,7 +12,7 @@
 
 <p>It was the culmination of many efforts, Martin&rsquo;s and everyone in the mailing list gathering around and nitpicking on the exercise lessons, to figure out a way to make them engaging and worthwhile, and we must say that we&rsquo;ve achieved that goal.</p>
 
-<h1 id="meet-bob:d1f36ce9c4a0cd5577a2581edfda1a10">Meet Bob</h1>
+<h1 id="meet-bob">Meet Bob</h1>
 
 <p>Bob is LearnOverpass&rsquo; protagonist, whose antics we use as an anchor to sprinkle, little by little, concepts of the Overpass Query Language.</p>
 
@@ -22,7 +22,7 @@
 
 <p>LearnOverpass&rsquo; story never really gets in the way. It was a useful tool to keep the natural progression between queries, and the plot was simple enough not to take too much focus away from the query language, but engaging enough to keep the users interested in more, providing a faculty for familiarity (the very concrete bob and his needs for location info) to an otherwise abstract field (querying).</p>
 
-<p>
+
 <figure >
     
         <img src="http://arianv.com/media/images/gsoc-2015/turbo-hello.png" alt="LearnOverpass&#39; Hello World" />
@@ -38,28 +38,28 @@
     </figcaption>
     
 </figure>
-</p>
 
-<h1 id="project-completion-report:d1f36ce9c4a0cd5577a2581edfda1a10">Project Completion Report</h1>
+
+<h1 id="project-completion-report">Project Completion Report</h1>
 
 <p>The Documentation is comprehensive and a pleasure to view, and all it&rsquo;s required features have been completed through and through. The interactive overpass map presenting usage examples allows the docs to be more comprehensive in showing different uses for every query, and is definitely fun to experiment on as a beginner.</p>
 
 <p>The Exercises on the other hand has a very solid foundation. Not requiring any programming knowledge at all (except Overpass QL of course!) to add exercises in, it is very easy to craft user-created exercise module, allowing the community to participate and create exercises. Crafting a dedicated Javascript API for Overpass turbo through <code>postMessage</code> allowed for greater flexibility, making the interface (relatively) error-proof. Push notification &lsquo;style&rsquo; hints show up on wrong answers, while getting the right one triggers a simple &lsquo;next lesson&rsquo; prompt.</p>
 
-<p>
+
 <figure >
     
         <img src="http://arianv.com/media/images/gsoc-2015/learn-exercises.gif" />
     
     
 </figure>
-</p>
+
 
 <p>The introduction exercise is a pretty great intro, but I do wish I had more time to complete all of it in the GSOC&rsquo;s timeline. There was a definite lack of Recursion concepts explained in the intro course, which is a shame, as it is one of the most complicated aspects of the Query Language.</p>
 
 <p>All in all though, I would say that the general outcome is pretty good! When comparing with the initial project specification, I think that a good chunk of it has been completed.</p>
 
-<h1 id="moving-forward:d1f36ce9c4a0cd5577a2581edfda1a10">Moving Forward</h1>
+<h1 id="moving-forward">Moving Forward</h1>
 
 <p>Now that the GSOC&rsquo;s run has ended and I&rsquo;m going back to college, my time for development will greatly decrease. However, as a project I had a hand in from start to finish, I really want to see the project grow and realize it&rsquo;s full potential, essentially making sure that LearnOverpass will really be the &ldquo;definitive, one stop learning resource for the overpass API&rdquo; as me and Martin have imagined. With that in mind, I will contribute more exercises into the project, especially the heavy recursion parts, the lack of which produces a big hole into the otherwise complete intro course.</p>
 
@@ -83,7 +83,7 @@ var disqus_shortname = "arianv";
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
-</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  </div><footer>Copyright &#169; Arian Allenson M. Valdez | CC-BY-SA</footer>  <script>
+</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  </div><footer>Copyright &#169; Arian Allenson M. Valdez | CC-BY-SA</footer><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/solarized-dark.min.css"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script> <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

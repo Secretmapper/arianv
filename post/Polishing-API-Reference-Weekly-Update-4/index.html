@@ -4,7 +4,7 @@
 
 <p>This week&rsquo;s deliverable is to polish the learning platform&rsquo;s API reference.</p>
 
-<h2 id="modern-sensibilities:5519fb765641110f6979f62e6533b06f">Modern Sensibilities</h2>
+<h2 id="modern-sensibilities">Modern Sensibilities</h2>
 
 <p>The changes required for this week required me to flex my design muscles a bit.</p>
 
@@ -12,15 +12,15 @@
 
 <p>As the line-height issue was fixed, I also decided to pick a more modern typeface to go along with the site. I went with Google&rsquo;s <a href="https://www.google.com/fonts/specimen/Roboto">Roboto font</a>.</p>
 
-<p><figure >  <img src="http://arianv.com/media/images/gsoc-2015/overpass-compare.png" alt="Old typeface on the left, new on the right" style=" width:600px "/>  <figcaption> <p> Old typeface on the left, new on the right   </p> </figcaption> </figure></p>
+<figure >  <img src="http://arianv.com/media/images/gsoc-2015/overpass-compare.png" alt="Old typeface on the left, new on the right" style=" width:600px "/>  <figcaption> <p> Old typeface on the left, new on the right   </p> </figcaption> </figure>
 
 <p>The redesign also features a more minimal menu, that now supports &lsquo;active&rsquo; links.</p>
 
-<p><figure >  <img src="http://arianv.com/media/images/gsoc-2015/overpass-menu-compare.png"  style=" width:600px "/>  </figure></p>
+<figure >  <img src="http://arianv.com/media/images/gsoc-2015/overpass-menu-compare.png"  style=" width:600px "/>  </figure>
 
 <p>Syntax Highliting is also added to the site, to both the overpass editor instances and all the sample code blocks. This is done by using codemirror to make code blocks read only, using it for ad-hoc syntax highliting. There are a few performance implications of this, but offset by the advantage of not importing another library.</p>
 
-<h2 id="future-proofing:5519fb765641110f6979f62e6533b06f">Future-proofing</h2>
+<h2 id="future-proofing">Future-proofing</h2>
 
 <p>The Learning Platform utilizes Martin&rsquo;s excellent Overpass Turbo, but it&rsquo;s interactive map feature has <a href="https://github.com/tyrasd/overpass-turbo/issues/23">fallen behind</a> a bit.</p>
 
@@ -30,7 +30,7 @@
 
 <p>A dedicated JS API will soon be pushed to the repo too :)</p>
 
-<h2 id="next-week:5519fb765641110f6979f62e6533b06f">Next Week</h2>
+<h2 id="next-week">Next Week</h2>
 
 <p>Now that the API reference is complete, we&rsquo;re moving to a very exciting part of the project.</p>
 
@@ -52,7 +52,7 @@ var disqus_shortname = "arianv";
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
-</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  </div><footer>Copyright &#169; Arian Allenson M. Valdez | CC-BY-SA</footer>  <script>
+</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  </div><footer>Copyright &#169; Arian Allenson M. Valdez | CC-BY-SA</footer><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/solarized-dark.min.css"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script> <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
