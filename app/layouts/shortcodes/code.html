@@ -1,0 +1,9 @@
+{{ if .IsNamedParams }}
+  <code>
+    {{ .Inner }}
+  </code>
+{{ else }}
+  <code class='{{ if len .Params | eq 1 }}{{ .Get 0 }}{{ end }}'>
+    {{ .Inner }}
+  </code>
+{{ end }}

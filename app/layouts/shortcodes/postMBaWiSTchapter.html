@@ -1,0 +1,21 @@
+{{ $slice := (slice "jquery.js"
+                    "menu-widget.js"
+                    "menu-widget--fancy-button.js"
+                    "ad-widget.js"
+                    "loading-bar.js"
+                    "loading-bar.fancy.theme.js"
+                    "social.sdk.js"
+                    "analytics.js"
+                    "analytics.seo.js"
+                    "main.js" ) }}
+
+{{ range $i, $item := $slice }}
+<pre
+  class='chapter-2__code-file-{{ $i }} chapter-2__code-file'
+  style='position: absolute; top: {{ mul $i 1.38 }}rem'
+><!--
+--><code class="html"><!--
+-->   &lt;script src=&quot;js/{{ $item }}&quot;&gt;&lt;/script&gt;<!--
+--></code>
+</pre>
+{{ end }}

@@ -112,8 +112,7 @@ gulp.task('build', ['jshint', 'html', 'partials'], function () {
   return gulp.src(folio + '**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
-gulp.task('default', ['clean'], function () {
-  gulp.start('build');
+gulp.task('default', ['clean', 'build'], function () {
   gulp.start('watch');
   gulp.src('').pipe($.shell(['hugo server --watch --theme=secretfolio --buildDrafts']));
 });

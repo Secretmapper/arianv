@@ -1,0 +1,15 @@
+{{ if .IsNamedParams }}
+  {{ if .Get "for" | eq "noscript" }}
+    <noscript>
+      <div class='info-box info-box--warning'>
+        <p>This post contains rich javascript content. Please enable JavaScript to get the full intended experience</p>
+      </div>
+    </noscript>
+  {{ else if .Get "for" | eq "mdscreen" }}
+    <div class='info-box info-box--warning info-box--warning-mdscreen'>
+      {{ .Inner }}
+    </div>
+  {{ end }}
+{{ else }}
+  <div></div>
+{{ end }}

@@ -3,6 +3,7 @@
   color #618CA0
   padding 1rem
   margin 0 auto
+  margin-bottom 1rem
   max-width md_size
   p
     font-size 1.3rem
@@ -14,3 +15,17 @@
     margin 0
     font-size 1rem
     font-style italic
+
+.info-box--warning
+  background-color #FBEDB7
+  color #8c8466
+  >p
+    margin 0
+    font-size 1rem
+
+.info-box--warning-md-screen
+  display block
+
+@media (min-width md_size)
+  .info-box--warning-md-screen
+    display none
