@@ -1,6 +1,5 @@
 +++
 date = "2016-12-29T21:22:19+08:00"
-draft = true
 title = "Module Bundling and Webpack in Simple Terms"
 tags = ["JS", "React", "Webdev"]
 
