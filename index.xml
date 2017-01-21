@@ -65,6 +65,10 @@
 .chapter-2__code-file code {
   padding: 0;
 }
+
+.chapter-2__req-green {
+  color: green;
+}
 &lt;/style&gt;
 
  &lt;noscript&gt;&lt;div class=&#39;info-box info-box--warning&#39;&gt;&lt;p&gt;This post contains rich javascript content. Please enable JavaScript to get the full intended experience&lt;/p&gt;&lt;/div&gt;&lt;/noscript&gt;  
@@ -193,7 +197,7 @@ main.js
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Of course writing all the filenames we want to concatenate everytime we make a change is going to get tiresome. Thankfully, we can create a &lt;bold data-reactid=&#34;94&#34;&gt;configuration&lt;/bold&gt; file for webpack&lt;/p&gt;
+&lt;p&gt;Of course writing all the filenames we want to concatenate everytime we make a change is going to get tiresome. Thankfully, we can create a &lt;bold&gt;configuration&lt;/bold&gt; file for webpack&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;module.exports = {
   entry: [
@@ -322,10 +326,13 @@ alert(string)
 
 &lt;p&gt;Now imagine if our string &amp;lsquo;Hello!&amp;rsquo; is really long, and that it would really make sense for them to be in different files. Normally, you&amp;rsquo;d do something like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;window.string = &#39;asuperreallylongstring&#39;
-
-alert(window.string)
+ &lt;code class=&#39;html&#39;&gt;&lt;pre&gt;&lt;code&gt;window.string = &#39;asuperreallylongstring&#39;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt; 
+
+ &lt;code class=&#39;html&#39;&gt;&lt;pre&gt;&lt;code&gt;alert(window.string)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt; 
 
 &lt;p&gt;And just add both to our html&lt;/p&gt;
 
@@ -337,19 +344,22 @@ alert(window.string)
 
 &lt;p&gt;What module loaders allow you to do is, &lt;em&gt;surprise&lt;/em&gt;, load modules. Using module loaders changes the code above to something similar to this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;module.exports = &#39;asuperreallylongstring&#39;
+ &lt;code class=&#39;html&#39;&gt;&lt;pre&gt;&lt;code&gt;module.exports = &#39;asuperreallylongstring&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt; 
 
-var string = require(&#39;./string.js&#39;)
+ &lt;code class=&#39;&#39;&gt;&lt;pre&gt;&lt;code&gt;var string = require(&#39;./string.js&#39;)
 alert(string)
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt; 
 
 &lt;p&gt;Pointing Webpack to &lt;code&gt;main.js&lt;/code&gt; will process it, see that it requires something, and bundles the files together. If we look at our list above, you&amp;rsquo;ll see that module loading solves all of our problems:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;A lot of JS files in script tags means a lot of network requests. This results in slower load times (but will be solved by HTTP/2) - &lt;span class=&#34;chapter-2__req-green&#34; data-reactid=&#34;220&#34;&gt;using a module bundler like webpack, we can combine our modules into one&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;There are implicit dependencies. While &lt;code&gt;menu-widget--fancy-button&lt;/code&gt; is loaded in the same manner every other script is, it actually depends on &lt;code&gt;menu-widget&lt;/code&gt;, which in turn relies on &lt;code&gt;jquery&lt;/code&gt;. For all we know, it also depends on &lt;code&gt;loading-bar&lt;/code&gt;, but that&amp;rsquo;s the point - we don&amp;rsquo;t really know until we look at the code/documentation - &lt;span class=&#34;chapter-2__req-green&#34; data-reactid=&#34;231&#34;&gt;Every dependency is explicit through &lt;code&gt;require&lt;/code&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Related to above, there&amp;rsquo;s an implicit loading order. &lt;code&gt;main.js&lt;/code&gt; can&amp;rsquo;t be placed on top, as it will execute before the other scripts it relies on - &lt;span class=&#34;chapter-2__req-green&#34; data-reactid=&#34;238&#34;&gt;Since we&amp;rsquo;re loading the dependencies as we need them, the loading order is now explicit&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Everything is &lt;strong&gt;global&lt;/strong&gt; (most likely) - &lt;span class=&#34;chapter-2__req-green&#34; data-reactid=&#34;243&#34;&gt;while it&amp;rsquo;s still possible, it&amp;rsquo;s now much harder, and there is less reason for code to be global (unlike our code above that needed the global window to pass it&amp;rsquo;s data&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;A lot of JS files in script tags means a lot of network requests. This results in slower load times (but will be solved by HTTP/2) - &lt;span class=&#34;chapter-2__req-green&#34; &gt;using a module bundler like webpack, we can combine our modules into one&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;There are implicit dependencies. While &lt;code&gt;menu-widget--fancy-button&lt;/code&gt; is loaded in the same manner every other script is, it actually depends on &lt;code&gt;menu-widget&lt;/code&gt;, which in turn relies on &lt;code&gt;jquery&lt;/code&gt;. For all we know, it also depends on &lt;code&gt;loading-bar&lt;/code&gt;, but that&amp;rsquo;s the point - we don&amp;rsquo;t really know until we look at the code/documentation - &lt;span class=&#34;chapter-2__req-green&#34;&gt;Every dependency is explicit through &lt;code&gt;require&lt;/code&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Related to above, there&amp;rsquo;s an implicit loading order. &lt;code&gt;main.js&lt;/code&gt; can&amp;rsquo;t be placed on top, as it will execute before the other scripts it relies on - &lt;span class=&#34;chapter-2__req-green&#34;&gt;Since we&amp;rsquo;re loading the dependencies as we need them, the loading order is now explicit&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Everything is &lt;strong&gt;global&lt;/strong&gt; (most likely) - &lt;span class=&#34;chapter-2__req-green&#34;&gt;while it&amp;rsquo;s still possible, it&amp;rsquo;s now much harder, and there is less reason for code to be global (unlike our code above that needed the global window to pass it&amp;rsquo;s data&lt;/span&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;By using modules, our code is now much easier to reason about - we don&amp;rsquo;t have to guess what library depends on what library and dependencies we no longer use are automatically removed (as long as we don&amp;rsquo;t &lt;code&gt;require&lt;/code&gt; them)&lt;/p&gt;

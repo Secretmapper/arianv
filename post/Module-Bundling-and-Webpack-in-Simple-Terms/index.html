@@ -48,6 +48,10 @@
 .chapter-2__code-file code {
   padding: 0;
 }
+
+.chapter-2__req-green {
+  color: green;
+}
 </style>
 
  <noscript><div class='info-box info-box--warning'><p>This post contains rich javascript content. Please enable JavaScript to get the full intended experience</p></div></noscript>  
@@ -176,7 +180,7 @@ main.js
 </div>
 </div>
 
-<p>Of course writing all the filenames we want to concatenate everytime we make a change is going to get tiresome. Thankfully, we can create a <bold data-reactid="94">configuration</bold> file for webpack</p>
+<p>Of course writing all the filenames we want to concatenate everytime we make a change is going to get tiresome. Thankfully, we can create a <bold>configuration</bold> file for webpack</p>
 
 <pre><code>module.exports = {
   entry: [
@@ -305,10 +309,13 @@ alert(string)
 
 <p>Now imagine if our string &lsquo;Hello!&rsquo; is really long, and that it would really make sense for them to be in different files. Normally, you&rsquo;d do something like this:</p>
 
-<pre><code>window.string = 'asuperreallylongstring'
-
-alert(window.string)
+ <code class='html'><pre><code>window.string = 'asuperreallylongstring'
 </code></pre>
+</code> 
+
+ <code class='html'><pre><code>alert(window.string)
+</code></pre>
+</code> 
 
 <p>And just add both to our html</p>
 
@@ -320,19 +327,22 @@ alert(window.string)
 
 <p>What module loaders allow you to do is, <em>surprise</em>, load modules. Using module loaders changes the code above to something similar to this:</p>
 
-<pre><code>module.exports = 'asuperreallylongstring'
+ <code class='html'><pre><code>module.exports = 'asuperreallylongstring'
+</code></pre>
+</code> 
 
-var string = require('./string.js')
+ <code class=''><pre><code>var string = require('./string.js')
 alert(string)
 </code></pre>
+</code> 
 
 <p>Pointing Webpack to <code>main.js</code> will process it, see that it requires something, and bundles the files together. If we look at our list above, you&rsquo;ll see that module loading solves all of our problems:</p>
 
 <ol>
-<li>A lot of JS files in script tags means a lot of network requests. This results in slower load times (but will be solved by HTTP/2) - <span class="chapter-2__req-green" data-reactid="220">using a module bundler like webpack, we can combine our modules into one</span></li>
-<li>There are implicit dependencies. While <code>menu-widget--fancy-button</code> is loaded in the same manner every other script is, it actually depends on <code>menu-widget</code>, which in turn relies on <code>jquery</code>. For all we know, it also depends on <code>loading-bar</code>, but that&rsquo;s the point - we don&rsquo;t really know until we look at the code/documentation - <span class="chapter-2__req-green" data-reactid="231">Every dependency is explicit through <code>require</code></span></li>
-<li>Related to above, there&rsquo;s an implicit loading order. <code>main.js</code> can&rsquo;t be placed on top, as it will execute before the other scripts it relies on - <span class="chapter-2__req-green" data-reactid="238">Since we&rsquo;re loading the dependencies as we need them, the loading order is now explicit</span></li>
-<li>Everything is <strong>global</strong> (most likely) - <span class="chapter-2__req-green" data-reactid="243">while it&rsquo;s still possible, it&rsquo;s now much harder, and there is less reason for code to be global (unlike our code above that needed the global window to pass it&rsquo;s data</span></li>
+<li>A lot of JS files in script tags means a lot of network requests. This results in slower load times (but will be solved by HTTP/2) - <span class="chapter-2__req-green" >using a module bundler like webpack, we can combine our modules into one</span></li>
+<li>There are implicit dependencies. While <code>menu-widget--fancy-button</code> is loaded in the same manner every other script is, it actually depends on <code>menu-widget</code>, which in turn relies on <code>jquery</code>. For all we know, it also depends on <code>loading-bar</code>, but that&rsquo;s the point - we don&rsquo;t really know until we look at the code/documentation - <span class="chapter-2__req-green">Every dependency is explicit through <code>require</code></span></li>
+<li>Related to above, there&rsquo;s an implicit loading order. <code>main.js</code> can&rsquo;t be placed on top, as it will execute before the other scripts it relies on - <span class="chapter-2__req-green">Since we&rsquo;re loading the dependencies as we need them, the loading order is now explicit</span></li>
+<li>Everything is <strong>global</strong> (most likely) - <span class="chapter-2__req-green">while it&rsquo;s still possible, it&rsquo;s now much harder, and there is less reason for code to be global (unlike our code above that needed the global window to pass it&rsquo;s data</span></li>
 </ol>
 
 <p>By using modules, our code is now much easier to reason about - we don&rsquo;t have to guess what library depends on what library and dependencies we no longer use are automatically removed (as long as we don&rsquo;t <code>require</code> them)</p>
