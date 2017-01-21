@@ -53,6 +53,10 @@ tags = ["JS", "React", "Webdev"]
 .chapter-2__code-file code {
   padding: 0;
 }
+
+.chapter-2__req-green {
+  color: green;
+}
 </style>
 
 {{< warning for="noscript" >}}
@@ -179,7 +183,7 @@ Entry
 {{% /div %}}
 </div>
 
-Of course writing all the filenames we want to concatenate everytime we make a change is going to get tiresome. Thankfully, we can create a <bold data-reactid="94">configuration</bold> file for webpack
+Of course writing all the filenames we want to concatenate everytime we make a change is going to get tiresome. Thankfully, we can create a <bold>configuration</bold> file for webpack
 
     module.exports = {
       entry: [
@@ -292,9 +296,13 @@ Basically imagine something like this:
 
 Now imagine if our string 'Hello!' is really long, and that it would really make sense for them to be in different files. Normally, you'd do something like this:
 
+{{% code "html" %}}
     window.string = 'asuperreallylongstring'
+{{% /code %}}
 
+{{% code "html" %}}
     alert(window.string)
+{{% /code %}}
 
 And just add both to our html
 
@@ -305,17 +313,21 @@ While, this example is a bit simple, javascript code split into multiple files i
 
 What module loaders allow you to do is, _surprise_, load modules. Using module loaders changes the code above to something similar to this:
 
+{{% code "html" %}}
     module.exports = 'asuperreallylongstring'
+{{% /code %}}
 
+{{% code "html" "main.js" %}}
     var string = require('./string.js')
     alert(string)
+{{% /code %}}
 
 Pointing Webpack to `main.js` will process it, see that it requires something, and bundles the files together. If we look at our list above, you'll see that module loading solves all of our problems:
 
-1.  A lot of JS files in script tags means a lot of network requests. This results in slower load times (but will be solved by HTTP/2) - <span class="chapter-2__req-green" data-reactid="220">using a module bundler like webpack, we can combine our modules into one</span>
-2.  There are implicit dependencies. While `menu-widget--fancy-button` is loaded in the same manner every other script is, it actually depends on `menu-widget`, which in turn relies on `jquery`. For all we know, it also depends on `loading-bar`, but that's the point - we don't really know until we look at the code/documentation - <span class="chapter-2__req-green" data-reactid="231">Every dependency is explicit through `require`</span>
-3.  Related to above, there's an implicit loading order. `main.js` can't be placed on top, as it will execute before the other scripts it relies on - <span class="chapter-2__req-green" data-reactid="238">Since we're loading the dependencies as we need them, the loading order is now explicit</span>
-4.  Everything is **global** (most likely) - <span class="chapter-2__req-green" data-reactid="243">while it's still possible, it's now much harder, and there is less reason for code to be global (unlike our code above that needed the global window to pass it's data</span>
+1.  A lot of JS files in script tags means a lot of network requests. This results in slower load times (but will be solved by HTTP/2) - <span class="chapter-2__req-green" >using a module bundler like webpack, we can combine our modules into one</span>
+2.  There are implicit dependencies. While `menu-widget--fancy-button` is loaded in the same manner every other script is, it actually depends on `menu-widget`, which in turn relies on `jquery`. For all we know, it also depends on `loading-bar`, but that's the point - we don't really know until we look at the code/documentation - <span class="chapter-2__req-green">Every dependency is explicit through `require`</span>
+3.  Related to above, there's an implicit loading order. `main.js` can't be placed on top, as it will execute before the other scripts it relies on - <span class="chapter-2__req-green">Since we're loading the dependencies as we need them, the loading order is now explicit</span>
+4.  Everything is **global** (most likely) - <span class="chapter-2__req-green">while it's still possible, it's now much harder, and there is less reason for code to be global (unlike our code above that needed the global window to pass it's data</span>
 
 By using modules, our code is now much easier to reason about - we don't have to guess what library depends on what library and dependencies we no longer use are automatically removed (as long as we don't `require` them)
 
