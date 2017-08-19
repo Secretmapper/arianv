@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webdev on Arian&#39;s Portfolio</title>
+    <link>http://arianv.com/tags/webdev/</link>
+    <description>Recent content in Webdev on Arian&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Dec 2016 21:22:19 +0800</lastBuildDate>
+    
+	<atom:link href="http://arianv.com/tags/webdev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Module Bundling and Webpack in Simple Terms</title>
+      <link>http://arianv.com/post/module-bundling-and-webpack-in-simple-terms/</link>
+      <pubDate>Thu, 29 Dec 2016 21:22:19 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/module-bundling-and-webpack-in-simple-terms/</guid>
+      <description>#chapter-1, #chapter-2__scroll { display: none; position: relative; height: 100vh; width: 100%; } .chapter-1__heading { font-size: 2rem; margin-bottom: 0; margin-top: 0; max-width: none !important; position: absolute; text-align: center; width: 100%; } .chapter-1__heading-1 { opacity: 1; } .chapter-1__hider-1, .chapter-1__hider-2, .chapter-1__hider-3, .chapter-1__hider-4 { background-color: #002B36; height: 1rem; position: absolute; width: 100%; } .chapter-2__darkener { background-color: gray; opacity: 0.5; position: absolute; height: 30rem; width: 100%; } .chapter-2__code-file { position: absolute; width: 100%; } .</description>
+    </item>
+    
+    <item>
+      <title>LearnOverpass Final Report</title>
+      <link>http://arianv.com/post/learnoverpass-gsoc-2015-final-report/</link>
+      <pubDate>Thu, 27 Aug 2015 13:40:39 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/learnoverpass-gsoc-2015-final-report/</guid>
+      <description>This year I participated in my 2nd GSOC journey. I worked for the OpenStreetMap Foundation developing an integrated learning platform for their Overpass API which we (me and my mentor) affectionally called LearnOverpass
+It&amp;rsquo;s been three months since I started the project, and LearnOverpass is now live and functional - and while the consensus is still out, I&amp;rsquo;m definitely happy with the results!
+Exercises, exercises One of the definite &amp;lsquo;killer features&amp;rsquo; we aimed for in LearnOverpass is the inclusion of interactive, playable exercises - with the goal of introducing users, to the Overpass API through active engagement.</description>
+    </item>
+    
+    <item>
+      <title>Polishing API Reference: GSOC Weekly Update 4</title>
+      <link>http://arianv.com/post/polishing-api-reference-weekly-update-4/</link>
+      <pubDate>Wed, 24 Jun 2015 11:27:49 +0801</pubDate>
+      
+      <guid>http://arianv.com/post/polishing-api-reference-weekly-update-4/</guid>
+      <description>This is the fourth weekly update for the LearnOverpass Project.
+This week&amp;rsquo;s deliverable is to polish the learning platform&amp;rsquo;s API reference.
+Modern Sensibilities The changes required for this week required me to flex my design muscles a bit.
+Martin&amp;rsquo;s pull request showed my lack of eye for the site&amp;rsquo;s typography, with what me using a 2.5em line-height.
+As the line-height issue was fixed, I also decided to pick a more modern typeface to go along with the site.</description>
+    </item>
+    
+    <item>
+      <title>Porting API Reference: GSOC Weekly Update 3</title>
+      <link>http://arianv.com/post/porting-api-reference-weekly-update-3/</link>
+      <pubDate>Thu, 18 Jun 2015 13:46:54 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/porting-api-reference-weekly-update-3/</guid>
+      <description>This is the third weekly update for the LearnOverpass Project.
+This week&amp;rsquo;s deliverable is to &amp;lsquo;port&amp;rsquo; the API reference to the learning platform.
+Existing Resources The &amp;lsquo;sales pitch&amp;rsquo; of LearnOverpass has always been &amp;lsquo;a one stop, learning resource for the overpass API&amp;rsquo; - we wanted the site to be the de facto page for learning the Query Language.
+To do this properly, we need to make use of, and expand, existing resources of the language.</description>
+    </item>
+    
+    <item>
+      <title>Embedding Overpass Turbo: GSOC Weekly Update 2</title>
+      <link>http://arianv.com/post/embedding-overpass-turbo-weekly-update-2/</link>
+      <pubDate>Thu, 11 Jun 2015 15:50:28 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/embedding-overpass-turbo-weekly-update-2/</guid>
+      <description>This is the second weekly update for the LearnOverpass Project.
+This week&amp;rsquo;s deliverable is to integrate Overpass Turbo inside the learning platform.
+ From the get go, we knew we wanted to bring out a REPL-like interface to LearnOverpass - we want to encourage users to actively try and experiment with the Query Language.
+The Overpass API guide in the wiki already knew that seeing the results of the query is useful.</description>
+    </item>
+    
+    <item>
+      <title>GSOC 2015 Introduction: LearnOverpass</title>
+      <link>http://arianv.com/post/gsoc-2015-introduction/</link>
+      <pubDate>Sat, 02 May 2015 18:52:11 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/gsoc-2015-introduction/</guid>
+      <description>Last year, I worked with the Wordpress organization to integrate socialization and gamification features to the Glotpress translation platform. It&amp;rsquo;s been a fun fulfilling ride, and there are definitely a lot of things that I learned during the project.
+This year, I&amp;rsquo;ve been accepted to Google&amp;rsquo;s Summer of Code Program again and I&amp;rsquo;m working with the OpenStreetMap organization to create LearnOverpass!
+What is LearnOverpass The Overpass API is a robust API for querying map data, but it&amp;rsquo;s use is still limited due to its beginner-unfriendly documentation and scarce tutorials.</description>
+    </item>
+    
+  </channel>
+</rss>

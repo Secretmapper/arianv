@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Arian&#39;s Portfolio</title>
+    <link>http://arianv.com/tags/tools/</link>
+    <description>Recent content in Tools on Arian&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Mar 2015 10:48:18 +0800</lastBuildDate>
+    
+	<atom:link href="http://arianv.com/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Month with Vim</title>
+      <link>http://arianv.com/post/my-first-month-with-vim/</link>
+      <pubDate>Sun, 15 Mar 2015 10:48:18 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/my-first-month-with-vim/</guid>
+      <description>Today celebrates my first month with vim.
+It also marks the first time I did a custom configuration on my .vimrc. When I said &amp;lsquo;custom&amp;rsquo; it means that it was not just some snippet I found from the internet, it was an actual, personal configuration that made &amp;lsquo;vim&amp;rsquo; my own flavor of &amp;lsquo;vim&amp;rsquo;. This, I think, is the point when someone can say they have graduated from vim noob, to vim user.</description>
+    </item>
+    
+  </channel>
+</rss>

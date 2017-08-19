@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Arian&#39;s Portfolio</title>
+    <link>http://arianv.com/about/</link>
+    <description>Recent content in Abouts on Arian&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Mar 2015 13:38:37 +1000</lastBuildDate>
+    
+	<atom:link href="http://arianv.com/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Excellent Communicator</title>
+      <link>http://arianv.com/about/communicator/</link>
+      <pubDate>Sun, 01 Mar 2015 13:38:37 +1000</pubDate>
+      
+      <guid>http://arianv.com/about/communicator/</guid>
+      <description>Excellent Communicator
+I&amp;rsquo;m a very chill guy to talk to, and I always try to put myself in other people&amp;rsquo;s shoes.
+I write technical articles aimed at the general audience, which have been very well received on sites such as GameDev.net and Gamasutra.
+I also maintain my own blog at arianv.com
+  &amp;ldquo;Super talented and hard working. Also a super friendly guy who is a frequent communicator.&amp;rdquo; Daniel Stone (Client)   &amp;ldquo;Keep up the good work!</description>
+    </item>
+    
+    <item>
+      <title>Spontaneous and Fast Learner</title>
+      <link>http://arianv.com/about/fastlearner/</link>
+      <pubDate>Sun, 01 Feb 2015 13:38:37 +0800</pubDate>
+      
+      <guid>http://arianv.com/about/fastlearner/</guid>
+      <description>In Journey East, I was tasked to learn a language I&amp;rsquo;m unfamiliar with (Java) and learn how to develop APIs in a short amount of time so I could be brought to work on the server.
+ Spontaneous and Fast Learner
+I&amp;rsquo;m a self starter, and thrive in fast-paced, dynamic environments.
+I have a knack for learning new technologies in short periods of time.
+  </description>
+    </item>
+    
+    <item>
+      <title>Programming Ability</title>
+      <link>http://arianv.com/about/codesample/</link>
+      <pubDate>Thu, 01 Jan 2015 13:38:37 +0800</pubDate>
+      
+      <guid>http://arianv.com/about/codesample/</guid>
+      <description>Solid Software Engineering Skills.
+Familiar with numerous programming paradigms such as Object-Oriented, Functional, and Asynchronous Programming.
+ #dev-ops workflow.use gulp or grunt workflow.use stylus or sass or less workflow.use imagemin # #agile listenTo(SpecChange, -&amp;gt; applyChanges() )
+
+  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React on Arian&#39;s Portfolio</title>
+    <link>http://arianv.com/tags/react/</link>
+    <description>Recent content in React on Arian&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Dec 2016 21:22:19 +0800</lastBuildDate>
+    
+	<atom:link href="http://arianv.com/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Module Bundling and Webpack in Simple Terms</title>
+      <link>http://arianv.com/post/module-bundling-and-webpack-in-simple-terms/</link>
+      <pubDate>Thu, 29 Dec 2016 21:22:19 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/module-bundling-and-webpack-in-simple-terms/</guid>
+      <description>#chapter-1, #chapter-2__scroll { display: none; position: relative; height: 100vh; width: 100%; } .chapter-1__heading { font-size: 2rem; margin-bottom: 0; margin-top: 0; max-width: none !important; position: absolute; text-align: center; width: 100%; } .chapter-1__heading-1 { opacity: 1; } .chapter-1__hider-1, .chapter-1__hider-2, .chapter-1__hider-3, .chapter-1__hider-4 { background-color: #002B36; height: 1rem; position: absolute; width: 100%; } .chapter-2__darkener { background-color: gray; opacity: 0.5; position: absolute; height: 30rem; width: 100%; } .chapter-2__code-file { position: absolute; width: 100%; } .</description>
+    </item>
+    
+  </channel>
+</rss>

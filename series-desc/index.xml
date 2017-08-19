@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series-Desc on Arian&#39;s Portfolio</title>
+    <link>http://arianv.com/series-desc/</link>
+    <description>Recent content in Series-Desc on Arian&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 May 2015 11:09:35 +0000</lastBuildDate>
+    
+	<atom:link href="http://arianv.com/series-desc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gsoc 2015</title>
+      <link>http://arianv.com/series-desc/gsoc-2015/</link>
+      <pubDate>Wed, 06 May 2015 11:09:35 +0000</pubDate>
+      
+      <guid>http://arianv.com/series-desc/gsoc-2015/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
