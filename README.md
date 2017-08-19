@@ -2,7 +2,7 @@
 
 This is the source for my blog/portfolio http://arianv.com.
 
-Built on top of hugo.
+Built on top of hugo, with asset management through gulp
 
 # License
 
