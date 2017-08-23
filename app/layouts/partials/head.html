@@ -32,6 +32,10 @@
   {{ template "_internal/google_news.html" . }}
   {{ template "_internal/schema.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
+  {{ if .ReadingTime }}
+    <meta name="twitter:label1" value="Reading time">
+    <meta name="twitter:data1" value="{{ .ReadingTime }} min read">
+  {{ end }}
   {{ with .Site.Params.googleAuthorship }}<link rel="author" href="http://plus.google.com/{{ . }}">{{ end }}
 </head>
 <body{{ with .Site.Params.theme }} class="{{ . }}"{{ end }}>
