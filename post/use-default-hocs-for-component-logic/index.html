@@ -1,0 +1,620 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us"><head><link href="http://gmpg.org/xfn/11" rel="profile"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><meta property="og:title" content="Arian Allenson's Portfolio"/><meta property="og:type" content="website"/><meta property="og:image" content="http://arianv.com/media/avatar.png"/><meta property="og:site_name" content="Arian Allenson's Portfolio"/><meta property="og:description" content="Game Developer a.k.a. Secretmapper"/><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-7239879270831004", enable_page_level_ads: true });</script><title>Use Default HOCs for Component Logic</title><link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'><link rel="stylesheet" href="http://arianv.com//css/main.css"> <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://arianv.com/apple-touch-icon-144-precomposed.png"><link href="http://arianv.com/favicon.png" rel="icon"><link href="" rel="alternate" type="application/rss+xml" title="Arian&#39;s Portfolio &middot; "/><meta name="description" content=""><meta name="keywords" content=""> </head><body><div class="content container"> <nav class="main-nav"><div class="ribbon-content"><div class="nav-inner"><ul><li> <a id="nav-home" data-page="home" href="http://arianv.com/">Home</a></li><li> <a id="nav-articles" data-page="articles" href="http://arianv.com/post">Articles</a></li></ul></div></div></nav><div class="post"><h1 id="post-title">Use Default HOCs for Component Logic</h1><div class="post-info"> <span class="post-date">Aug 23, 2017 &middot; 11 minute read &middot; <a href="http://arianv.com/post/use-default-hocs-for-component-logic/#disqus_thread">Comments</a></span>   <span class="post-tags"><a class="label" href="http://arianv.com//tags/js">JS</a><a class="label" href="http://arianv.com//tags/react">React</a><a class="label" href="http://arianv.com//tags/webdev">Webdev</a></span> </div><article> 
+
+<p>Perhaps one of the most useful patterns for writing React applications is the classic <a href="https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0">&ldquo;Container and Presentational Components&rdquo;</a> pattern. Even without knowledge of React, it makes sense - it decomposes concerns between component presentation and logic.</p>
+
+<p>One very useful pattern I&rsquo;ve used to achieve this is by using Higher Order Components to inject default logic to components. This pattern drastically reduces component API boilerplate and more effectively separates implementation and presentational concerns of components.</p>
+
+<h1 id="the-problem">The Problem</h1>
+
+<p>Most of the time, components have internal logic concerning how they work. There are two ways we employ them:</p>
+
+<ul>
+<li>Make a controlled component</li>
+<li>Make an uncontrolled component</li>
+</ul>
+
+<p>An uncontrolled component is one where the component manages it&rsquo;s state internally. Consider a <code>Modal</code> component which is used like so:</p>
+
+<pre><code>class App extends Component {
+  render () {
+    return (
+      &lt;View&gt;
+        &lt;Modal&gt;
+          This is my modal
+        &lt;/Modal&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+</code></pre>
+
+<p>Since <code>Modal</code> in this case is an uncontrolled component, it won&rsquo;t ever show up! The way this is usually solved is by passing a &lsquo;target&rsquo; to the modal component, which is mounted and when clicked, will open the modal:</p>
+
+<pre><code>class App extends Component {
+  render () {
+    return (
+      &lt;View&gt;
+        &lt;Modal target={&lt;Button&gt;Click me to open the modal&lt;/Button&gt;}&gt;
+          &lt;Text&gt;This is my modal&lt;/Text&gt;
+        &lt;/Modal&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+</code></pre>
+
+<p>This is a pretty good representation of an uncontrolled component.</p>
+
+<p>However, uncontrolled components have one big disadvantage - we can&rsquo;t control them (<em>ba dum tiss</em>)</p>
+
+<p>That is, imagine if we want to &lsquo;control&rsquo; the modal and open it using another independent button. There is no way to do that with our current API:</p>
+
+<pre><code>class App extends Component {
+  render () {
+    return (
+      &lt;View&gt;
+        &lt;Modal target={&lt;Button&gt;Click me to open the modal&lt;/Button&gt;}&gt;
+          &lt;Text&gt;This is my modal&lt;/Text&gt;
+        &lt;/Modal&gt;
+
+        &lt;View&gt;
+          &lt;Text&gt;Hello! This second button should open the modal:&lt;/Text&gt;
+          &lt;Button&gt;Second button that should open the modal but can't :(&lt;/Button&gt;
+        &lt;/View&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+</code></pre>
+
+<p>That is where controlled components come in. They are more powerful because we can control the component:</p>
+
+<pre><code>Modal.propTypes = {
+  isOpen: PropTypes.bool.isRequired
+}
+</code></pre>
+
+<p>So instead of passing a target element, we pass an <code>isOpen</code> property that dictates whether our Modal is open or not.</p>
+
+<pre><code>class App extends Component {
+  render () {
+    return (
+      &lt;View&gt;
+        &lt;Modal isOpen={PUT_STATE_HERE}&gt;
+          &lt;Text&gt;This is my modal&lt;/Text&gt;
+        &lt;/Modal&gt;
+
+        &lt;Button&gt;Click me to open the modal&lt;/Button&gt;
+
+        &lt;View&gt;
+          &lt;Text&gt;Hello! This second button should open the modal:&lt;/Text&gt;
+          &lt;Button&gt;Second button that should open the modal&lt;/Button&gt;
+        &lt;/View&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+</code></pre>
+
+<p>Of course, since we&rsquo;ve left state management up to the outer application, we need to actually define component logic on our mounting component. That means we need to add state and event handlers:</p>
+
+<pre><code>class App extends Component {
+  state = {
+    isOpenModal: true
+  }
+
+  onOpenModal = () =&gt; {
+    this.setState({ isOpenModal: true })
+  }
+
+  onCloseModal = () =&gt; {
+    this.setState({ isOpenModal: false })
+  }
+
+  render () {
+    const { onOpenModal, onCloseModal, state: { isOpenModal } } = this
+
+    return (
+      &lt;View&gt;
+        &lt;Modal isOpen={isOpenModal} onRequestClose={onCloseModal}&gt;
+          &lt;Text&gt;This is my modal&lt;/Text&gt;
+        &lt;/Modal&gt;
+
+        &lt;Button onClick={onOpenModal}&gt;Click me to open the modal&lt;/Button&gt;
+
+        &lt;View&gt;
+          &lt;Text&gt;Hello! This second button should open the modal:&lt;/Text&gt;
+          &lt;Button onClick={onCloseModal}&gt;
+            Second button that should open the modal
+          &lt;/Button&gt;
+        &lt;/View&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+</code></pre>
+
+<p>Yikes! Do we really need to write all of that, just to support two buttons for opening modals!? Surely there&rsquo;s a better way!</p>
+
+<p>This shows the disconnect between uncontrolled and controlled components. More often than not, we want controlled components, but we often DO NOT want to have to reimplement the state logic of components.</p>
+
+<h1 id="the-solution">The Solution</h1>
+
+<p>The way I&rsquo;ve solved this is by introducing a <code>default HOC</code> - a HOC that provides a sensible default implementation for your component and passes it as properties. <em>It decouples the state logic of your component between it&rsquo;s presentation layer</em>, and allows you to customize both independently.</p>
+
+<p>So how would the above be written using the <code>default HOC</code> pattern? Like so:</p>
+
+<pre><code>@Modal.HOC()
+class App extends Component {
+  render () {
+    const { modal: { isOpen, onOpen, onClose } } = this.props
+
+    return (
+      &lt;View&gt;
+        &lt;Modal isOpen={isOpen} onRequestClose={onClose}&gt;
+          &lt;Text&gt;This is my modal&lt;/Text&gt;
+        &lt;/Modal&gt;
+
+        &lt;Button onClick={onOpen}&gt;Click me to open the modal&lt;/Button&gt;
+
+        &lt;View&gt;
+          &lt;Text&gt;Hello! This second button should open the modal:&lt;/Text&gt;
+          &lt;Button onClick={onOpen}&gt;
+            Second button that should open the modal
+          &lt;/Button&gt;
+        &lt;/View&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+</code></pre>
+
+<p>Woah! Look at that, we&rsquo;ve removed all the implementation noise of our handlers (onOpen, onClose) and introduced minimal new code. In case you haven&rsquo;t spotted it, it&rsquo;s the decorator at the top <code>@Modal.HOC()</code></p>
+
+<p>Of course, if you don&rsquo;t like working with decorators, you can just use them as good old fashioned functions:</p>
+
+<pre><code>export default Modal.HOC()(App)
+</code></pre>
+
+<h2 id="how-does-it-work">How does it work?</h2>
+
+<p>Default HOCs are essentially Container Components created as a Higher Order Component. Let&rsquo;s try implementing <code>Modal.HOC</code>. In the modal definition, we will add this:</p>
+
+<pre><code>Modal.HOC = () =&gt; (PassedComponent) {
+  return class ModalHOC extends Component {
+    state = {
+      isOpen: true
+    }
+
+    onOpenModal = () =&gt; {
+      this.setState({ isOpen: true })
+    }
+
+    onCloseModal = () =&gt; {
+      this.setState({ isOpen: false })
+    }
+
+    render () {
+      const modal = {
+        isOpen: true,
+        onOpen: onOpenModal,
+        onClose: onCloseModal
+      }
+
+      return (&lt;PassedComponent modal={modal} {...this.props} /&gt;)
+    }
+  }
+}
+</code></pre>
+
+<p>Essentially, we&rsquo;re encapsulating our component logic (onOpen, onClose handlers) in a HOC, and passing handlers and state as props!</p>
+
+<p>This pattern is more flexible than initially meets the eye. Imagine if we want to create two modals in one component:</p>
+
+<pre><code>@Modal.HOC()
+class App extends Component {
+  render () {
+    const { modal: { isOpen, onOpen, onClose } } = this.props
+
+    return (
+      &lt;View&gt;
+        &lt;Modal isOpen={isOpen} onRequestClose={onClose}&gt;
+          &lt;Text&gt;This is my modal&lt;/Text&gt;
+        &lt;/Modal&gt;
+
+        &lt;Button onClick={onOpen}&gt;Open 1st Modal&lt;/Button&gt;
+
+        &lt;Modal isOpen={isOpen} onRequestClose={onClose}&gt;
+          &lt;Text&gt;This is my second modal&lt;/Text&gt;
+        &lt;/Modal&gt;
+
+        &lt;Button onClick={onOpen}&gt;Open 2nd Modal&lt;/Button&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+</code></pre>
+
+<p>Uh oh, we only have one <code>isOpen</code> property, meaning, both of our Modal components will show up! What can we do?</p>
+
+<p>We solve it by passing a <code>key</code> to our HOC</p>
+
+<pre><code>@Modal.HOC('modalOne') // State handler for modal one
+@Modal.HOC('modalTwo') // State handler for modal two
+class App extends Component {
+  render () {
+    const { modalOne, modalTwo } = this.props
+
+    return (
+      &lt;View&gt;
+        &lt;Modal isOpen={modalOne.isOpen} onRequestClose={modalOne.onClose}&gt;
+          &lt;Text&gt;This is my modal&lt;/Text&gt;
+        &lt;/Modal&gt;
+
+        &lt;Button onClick={modalOne.onOpen}&gt;Open 1st Modal&lt;/Button&gt;
+
+        &lt;Modal isOpen={modalTwo.isOpen} onRequestClose={modalTwo.onClose}&gt;
+          &lt;Text&gt;This is my second modal&lt;/Text&gt;
+        &lt;/Modal&gt;
+
+        &lt;Button onClick={modalTwo.onOpen}&gt;Open 2nd Modal&lt;/Button&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+</code></pre>
+
+<p>and updating our HOC to accept the keys:</p>
+
+<pre><code>Modal.HOC = key =&gt; (PassedComponent) {
+  return class ModalHOC extends Component {
+    state = {
+      isOpen: true
+    }
+
+    onOpenModal = () =&gt; {
+      this.setState({ isOpen: true })
+    }
+
+    onCloseModal = () =&gt; {
+      this.setState({ isOpen: false })
+    }
+
+    render () {
+      // we're using key (which is passed as an argument to our HOC)
+      // as the property name passed to our actual component
+      const props = {
+        [key]: {
+          isOpen: this.state.isOpen,
+          onOpen: onOpenModal,
+          onClose: onCloseModal
+        }
+      }
+
+      return (&lt;PassedComponent {...props} {...this.props} /&gt;)
+    }
+  }
+}
+</code></pre>
+
+<p>By simply passing an argument to our HOC, we were able to extend the App to support two modals! Compare and contrast that if we were to have done it using old fashioned controlled components:</p>
+
+<pre><code>class App extends Component {
+  state = {
+    isModalOneOpen: true
+    isModalTwoOpen: true
+  }
+
+  onOpenModalOne = _ =&gt; { this.setState({ isModalOneOpen: true }) }
+  onOpenModalTwo = _ =&gt; { this.setState({ isModalOneOpen: true }) }
+
+  onCloseModalOne = _ =&gt; { this.setState({ isModalOneOpen: false }) }
+  onCloseModalTwo = _ =&gt; { this.setState({ isModalOneOpen: false }) }
+
+  render () {
+    const {
+      state: {
+        isModalOneOpen,
+        isModalTwoOpen,
+      }
+      onOpenModalOne,
+      onOpenModalTwo,
+      onCloseModalOne,
+      onCloseModalTwo
+    } = this
+
+    return (
+      &lt;View&gt;
+        &lt;Modal isOpen={isModalOneOpen} onRequestClose={onCloseModalOne}&gt;
+          &lt;Text&gt;This is my modal&lt;/Text&gt;
+        &lt;/Modal&gt;
+
+        &lt;Button onClick={onOpenModalOne}&gt;Open 1st Modal&lt;/Button&gt;
+
+        &lt;Modal isOpen={isModalTwoOpen} onRequestClose={onCloseModalTwo}&gt;
+          &lt;Text&gt;This is my second modal&lt;/Text&gt;
+        &lt;/Modal&gt;
+
+        &lt;Button onClick={onOpenModalTwo}&gt;Open 2nd Modal&lt;/Button&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+</code></pre>
+
+<p>Aghh! Now imagine if we were to add more modals, we&rsquo;ll have duplicate (and eventually more error-prone) code everywhere!</p>
+
+<h1 id="extensions">Extensions</h1>
+
+<h2 id="slider">Slider</h2>
+
+<p>The <code>Default HOC</code> pattern can be applied to almost any reusable component. Consider an uncontrolled slider/carousel, that has left and right buttons to show off its items:</p>
+
+<pre><code>class App extends Component {
+  render () {
+    return (
+      &lt;Slider&gt;
+        &lt;Item key='1'&gt;
+          Item 1
+        &lt;/Item&gt;
+        &lt;Item key='2'&gt;
+          Item 2
+        &lt;/Item&gt;
+        &lt;Item key='3'&gt;
+          Item 3
+        &lt;/Item&gt;
+      &lt;/Slider&gt;
+    )
+  }
+}
+</code></pre>
+
+<p>Again, adding our own separate button to trigger left and right actions introduces a comedic amount of implementation logic:</p>
+
+<pre><code>// for simplicity, let's assume
+// number of items is always 3
+const length = 3
+
+class App extends Component {
+  state = {
+    index: 0
+  }
+
+  onNext: _ =&gt; {
+    this.setState(({ index }) =&gt; ({ index: Math.min((index + 1), length) }))
+  }
+
+  onPrev: _ =&gt; {
+    this.setState(({ index }) =&gt; ({ index: Math.max((index - 1), length) }))
+  }
+
+  render () {
+    const { state: { index }, onNext, onPrev } = this
+
+    return (
+      &lt;View&gt;
+        &lt;Slider index={index} onNext={onNext} onPrev={onPrev}&gt;
+          &lt;Item key='1'&gt;
+            Item 1
+          &lt;/Item&gt;
+          &lt;Item key='2'&gt;
+            Item 2 
+          &lt;/Item&gt;
+          &lt;Item key='3'&gt;
+            Item 3
+          &lt;/Item&gt;
+        &lt;/Slider&gt;
+
+        &lt;Button onClick={onNext}&gt;Next&lt;/Button&gt;
+        &lt;Button onClick={onPrev}&gt;Prev&lt;/Button&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+</code></pre>
+
+<p>A <code>Default HOC</code> solves this handily:</p>
+
+<pre><code>@Slider.HOC()
+class App extends Component {
+  render () {
+    const { slider: { index, onNext, onPrev } } = this.props
+
+    return (
+      &lt;View&gt;
+        &lt;Slider index={index} onNext={onNext} onPrev={onPrev}&gt;
+          &lt;Item key='1'&gt;
+            Item 1
+          &lt;/Item&gt;
+          &lt;Item key='2'&gt;
+            Item 2
+          &lt;/Item&gt;
+          &lt;Item key='3'&gt;
+            Item 3
+          &lt;/Item&gt;
+        &lt;/Slider&gt;
+
+        &lt;Button onClick={onNext}&gt;Next&lt;/Button&gt;
+        &lt;Button onClick={onPrev}&gt;Prev&lt;/Button&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+</code></pre>
+
+<p>Uh oh, we have a problem. If you notice, we can&rsquo;t know the length of the slider (in this case 3) if we use a <code>default HOC</code>. A classic uncontrolled component would be able to get it using <code>React.Children.count(props.children)</code>, and accessing that in the handlers.</p>
+
+<p>We can solve this simply by passing &lsquo;runtime&rsquo; properties like that on the actual component layer. Note that the next example shows the component definition of our Slider:</p>
+
+<pre><code>class Slider extends Component {
+  render () {
+    const length = React.Children.count(props.children)
+
+    return (
+      &lt;Slider&gt;
+        &lt;Button onClick={onPrev(length)}&gt;Prev&lt;/Button&gt;
+        &lt;Button onClick={onNext(length)}&gt;Next&lt;/Button&gt;
+
+        {renderSlider()}
+      &lt;/Slider&gt;
+    )
+  }
+}
+
+Slider.HOC = (key = 'slider') =&gt; PassedComponent =&gt; {
+  return class SliderHOC extends Component {
+    state = {
+      index: 0
+    }
+
+    onPrev = length =&gt; _ =&gt; {
+      // onPrev definition. notice length is passed as an argument
+    }
+
+    onNext = length =&gt; _ =&gt; {
+      // onNext definition. notice length is passed as an argument
+    }
+
+    // render definition
+  }
+}
+
+export default Slider
+</code></pre>
+
+<p>Awesome, we solved the children length problem, and we still have a controlled component (with delegated implementation details)</p>
+
+<p>Note though that the above has the disadvantage of creating a new function in every render, (<code>onNext(length)</code> returns a new handler) which is bad practice as it can cause unnecessary renders. From experience, this has never become a problem.</p>
+
+<p>If it causes performance problems however, we can solve that by memoizing onNext (which should, in this case be fine, assuming children length doesn&rsquo;t vary wildly) or by passing a method where we can pass the length:</p>
+
+<pre><code>class Slider extends Component {
+  constructor (props) {
+    super(props)
+
+    props.hoc({ length: React.Children.count(props.children) })
+  }
+
+  componentWillReceiveProps (nextProps) {
+    const count = React.Children.count
+    const newLength = count(nextProps.children)
+
+    if (newLength !== count(this.props.children)) {
+      nextProps.hoc({ length: newLength })
+    }
+  }
+
+  render () {
+    const length = React.Children.count(props.children)
+
+    return (
+      &lt;Slider&gt;
+        &lt;Button onClick={onPrev(length)}&gt;Prev&lt;/Button&gt;
+        &lt;Button onClick={onNext(length)}&gt;Next&lt;/Button&gt;
+
+        {renderSlider()}
+      &lt;/Slider&gt;
+    )
+  }
+}
+
+Slider.HOC = (key = 'slider') =&gt; PassedComponent =&gt; {
+  return class SliderHOC extends Component {
+    state = {
+      length: 0,
+      index: 0
+    }
+
+    hoc = ({ length }) =&gt; {
+      // length is saved as state
+      this.setState({ length })
+    }
+
+    // onPrev, onNext, render definitions
+  }
+}
+
+export default Slider
+</code></pre>
+
+<h2 id="adoptability">Adoptability</h2>
+
+<p>Another advantage of the <code>Default HOC</code> pattern is that it is exactly that - it&rsquo;s a default <code>HOC</code>, or more accurately, a default Component Enhancer. This means that if required, you can create your extend handlers to have it&rsquo;s own logic.</p>
+
+<p>For example, let&rsquo;s say you want to call an alert every time &lsquo;next&rsquo; is clicked in the slider above:</p>
+
+<pre><code>@Slider.HOC()
+class App extends Component {
+  onNext = _ =&gt; {
+    const { slider: { onNext } } = this.props
+
+    // call alert!
+    alert('extendable!')
+
+    // call actual onNext handler
+    onNext()
+  }
+
+  render () {
+    const { slider: { index, onPrev, hoc } } = this.props
+
+    // let's use our own onNext handler
+    const { onNext } = this
+
+    return (
+      &lt;View&gt;
+        &lt;Slider index={index} onNext={onNext} onPrev={onPrev} hoc={hoc}&gt;
+          &lt;Item key='1'&gt;
+            Item 1
+          &lt;/Item&gt;
+          &lt;Item key='2'&gt;
+            Item 2 
+          &lt;/Item&gt;
+          &lt;Item key='3'&gt;
+            Item 3 
+          &lt;/Item&gt;
+        &lt;/Slider&gt;
+
+        &lt;Button onClick={onNext}&gt;Next&lt;/Button&gt;
+        &lt;Button onClick={onPrev}&gt;Prev&lt;/Button&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+</code></pre>
+
+<h2 id="redux">Redux</h2>
+
+<p>While not explicitly covered here, it is a possibility, and perhaps a neat idea to decompose the HOC internals further and provide the option to use them as reducers and actions.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>This <code>Default HOC</code> pattern is incredibly powerful, and something I&rsquo;ve employed multiple times in my projects. It allows you to keep your components &lsquo;controlled&rsquo;, while encapsulating the implementation logic to the actual component instead of the mounting component.</p>
+
+<p>I&rsquo;m actually a bit surprised not to see it in the wild more often. It&rsquo;s such a useful pattern, and I wish it gets more adoption especially on open source components, as it solves a lot of tricky problems.</p>
+
+<p>If you are interested in implementing this pattern, you may find <a href="https://github.com/acdlite/recompose">recompose</a> useful.</p>
+ </article><footer class="article-footer"><h3>Arian Valdez <a href="//twitter.com/Secretmapper">@Secretmapper</a></h3><p>React.JS and Node.JS Software engineering consultant. Designer/Developer Unicorn. Created Alt Tracker, Combustion, Riyu, etc.</p></footer> <div id="disqus_thread"></div></div></div> <script type="text/javascript">
+var disqus_shortname = "arianv";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>  <script type="text/javascript">
+    var disqus_shortname = "arianv";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  </div><footer class="page-footer">Copyright &#169; Arian Allenson M. Valdez | CC-BY-SA</footer><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/solarized-dark.min.css"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script> <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', "UA-60507502-1", 'auto');
+  ga('send', 'pageview');
+</script> </body></html>

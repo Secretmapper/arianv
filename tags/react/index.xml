@@ -6,10 +6,20 @@
     <description>Recent content in React on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Dec 2016 21:22:19 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 23 Aug 2017 12:04:32 +0800</lastBuildDate>
     
 	<atom:link href="http://arianv.com/tags/react/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Use Default HOCs for Component Logic</title>
+      <link>http://arianv.com/post/use-default-hocs-for-component-logic/</link>
+      <pubDate>Wed, 23 Aug 2017 12:04:32 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/use-default-hocs-for-component-logic/</guid>
+      <description>Perhaps one of the most useful patterns for writing React applications is the classic &amp;ldquo;Container and Presentational Components&amp;rdquo; pattern. Even without knowledge of React, it makes sense - it decomposes concerns between component presentation and logic.
+One very useful pattern I&amp;rsquo;ve used to achieve this is by using Higher Order Components to inject default logic to components. This pattern drastically reduces component API boilerplate and more effectively separates implementation and presentational concerns of components.</description>
+    </item>
     
     <item>
       <title>Module Bundling and Webpack in Simple Terms</title>
