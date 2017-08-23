@@ -2,6 +2,7 @@
 date = "2016-12-29T21:22:19+08:00"
 title = "Module Bundling and Webpack in Simple Terms"
 tags = ["JS", "React", "Webdev"]
+description = "Webpack isn't hard. It's misunderstood"
 
 +++
 

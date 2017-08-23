@@ -2,6 +2,7 @@
 title: "Use Default HOCs for Component Logic"
 date: 2017-08-23T12:04:32+08:00
 tags: ["JS", "React", "Webdev"]
+description: "You'll find it much easier to reuse components if you provide default HOCs for their logic"
 ---
 
 Perhaps one of the most useful patterns for writing React applications is the classic ["Container and Presentational Components"](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) pattern. Even without knowledge of React, it makes sense - it decomposes concerns between component presentation and logic.
