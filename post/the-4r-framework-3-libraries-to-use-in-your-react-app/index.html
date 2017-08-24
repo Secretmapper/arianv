@@ -1,0 +1,322 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us"><head><link href="http://gmpg.org/xfn/11" rel="profile"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-7239879270831004", enable_page_level_ads: true });</script><title>The 4R framework - 3 libraries to use in your React app</title><link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'><link rel="stylesheet" href="http://arianv.com//css/main.css"> <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://arianv.com/apple-touch-icon-144-precomposed.png"><link href="http://arianv.com/favicon.png" rel="icon"><link href="" rel="alternate" type="application/rss+xml" title="Arian&#39;s Portfolio &middot; "/><meta name="description" content="The 4R framework is a set of libraries that make writing complex React apps easier"><meta name="keywords" content=""> <meta property="og:title" content="The 4R framework - 3 libraries to use in your React app" />
+<meta property="og:description" content="The 4R framework is a set of libraries that make writing complex React apps easier" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://arianv.com/post/the-4r-framework-3-libraries-to-use-in-your-react-app/" />
+
+
+
+<meta property="article:published_time" content="2017-08-24T10:25:27&#43;08:00"/>
+<meta property="article:modified_time" content="2017-08-24T10:25:27&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+  
+<meta itemprop="name" content="The 4R framework - 3 libraries to use in your React app">
+<meta itemprop="description" content="The 4R framework is a set of libraries that make writing complex React apps easier">
+
+
+<meta itemprop="dateModified" content="2017-08-24T10:25:27&#43;08:00" />
+<meta itemprop="wordCount" content="1360">
+
+
+
+<meta itemprop="keywords" content="" />
+ <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="The 4R framework - 3 libraries to use in your React app"/>
+<meta name="twitter:description" content="The 4R framework is a set of libraries that make writing complex React apps easier"/>
+ <meta name="twitter:label1" value="Reading time"><meta name="twitter:data1" value="7 min read">  </head><body><div class="content container"> <nav class="main-nav"><div class="ribbon-content"><div class="nav-inner"><ul><li> <a id="nav-home" data-page="home" href="http://arianv.com/">Home</a></li><li> <a id="nav-articles" data-page="articles" href="http://arianv.com/post">Articles</a></li></ul></div></div></nav><div class="post"><h1 id="post-title">The 4R framework - 3 libraries to use in your React app</h1><div class="post-info"> <span class="post-date">Aug 24, 2017 &middot; 7 minute read &middot; <a href="http://arianv.com/post/the-4r-framework-3-libraries-to-use-in-your-react-app/#disqus_thread">Comments</a></span> </div><article> 
+
+<p>React fits well right in to the Unix philosophy - it does one thing, and one thing well. It&rsquo;s a beautifully designed, declarative library for building user interfaces.</p>
+
+<p>To write complex React applications however, it would be best to use more libraries than just React in it&rsquo;s lonesome.</p>
+
+<p>The vast and rapidly evolving javascript landscape means there&rsquo;s almost always a library that we can leverage for any given task. Given that, there are 3 libraries I consider essential when making React apps, and I&rsquo;ve consolidated it to this one catchy name because marketing is everything</p>
+
+<div class='post-width post-all-center'> <h1 id="the-4r-framework">The 4R framework</h1>
+</div>
+
+<p>The 4R framework is React + a set of libraries that makes working with React a lot easier. It&rsquo;s named 4R because it consists of 3 libraries that all start with the letter &ldquo;R&rdquo;:</p>
+
+<ul>
+<li><strong>R</strong>eact</li>
+<li><strong>R</strong>ecompose</li>
+<li><strong>R</strong>amda</li>
+<li><strong>R</strong>elay/<strong>R</strong>edux+<strong>R</strong>eselect</li>
+</ul>
+
+<p>Don&rsquo;t worry, this isn&rsquo;t actually a new framework, it&rsquo;s just a name.</p>
+
+<h2 id="1-react">1. React</h2>
+
+<p>React is the first R.</p>
+
+<h2 id="2-recompose">2. Recompose</h2>
+
+<p><a href="https://github.com/acdlite/recompose">Recompose</a> is a library that makes it easier to write stateless functional components and Higher Order Components. It&rsquo;s a utility library that allows you to do common React patterns in a more terse way.</p>
+
+<p>One such example is lifting state into higher order components. So instead of this:</p>
+
+<pre><code>export default class extends Component {
+  state = { counter: 0 }
+
+  increment = _ =&gt; {
+    this.setState(({ counter }) =&gt; counter + 1)
+  }
+
+  decrement = _ =&gt; {
+    this.setState(({ counter }) =&gt; counter - 1)
+  }
+
+  render () {
+    const { state: { counter }, increment, decrement } = this
+
+    return (
+      &lt;View&gt;
+        &lt;Text&gt;Count: {counter}&lt;/Text&gt;
+        &lt;Button onClick={increment}&gt;Increment&lt;/Button&gt;
+        &lt;Button onClick={decrement}&gt;Decrement&lt;/Button&gt;
+      &lt;/View&gt;
+    )
+  }
+}
+</code></pre>
+
+<p>you write this:</p>
+
+<pre><code>import { compose, withState, withHandlers } from 'recompose'
+
+export default compose(
+  withState('counter', 'setCounter', 0),
+  withHandlers({
+    increment: ({ counter }) =&gt; counter + 1,
+    decrement: ({ counter }) =&gt; counter - 1
+  })
+)(({ counter, increment, decrement }) =&gt; (
+  &lt;View&gt;
+    &lt;Text&gt;Count: {counter}&lt;/Text&gt;
+    &lt;Button onClick={increment}&gt;Increment&lt;/Button&gt;
+    &lt;Button onClick={decrement}&gt;Decrement&lt;/Button&gt;
+  &lt;/View&gt;
+))
+</code></pre>
+
+<p>Note how Recompose more effectively separates the implementation logic of your component from its presentation layer. Writing components like this gives you more readable code, and leaves your presentation layer as a stateless functional component.</p>
+
+<p>Using Recompose also allows you to employ the <a href="http://arianv.com/post/use-default-hocs-for-component-logic/">&ldquo;Default HOC&rdquo; pattern</a> more easily.</p>
+
+<p>Recompose has a lot of other nifty utility functions. For example, <code>lifecycle</code> allows you to define lifecycle methods (such as <code>componentDidMount</code>, <code>componentWillReceiveProps</code>) and <code>onlyUpdateForKeys</code> gives you a <code>HOC</code> that will make your component update only for specific property changes.</p>
+
+<h2 id="3-ramda">3. Ramda</h2>
+
+<p><a href="http://ramdajs.com">Ramda</a> is a practical functional library for Javascript.</p>
+
+<p>It gives you a bunch of utility functions for manipulating data. If you&rsquo;ve used something like lodash or underscore before, Ramda is similar, but it keeps everything in a nice functional flavor.</p>
+
+<p>For example, let&rsquo;s say your API returns a data structure similar to this:</p>
+
+<pre><code>{
+  result: 'SUCCESS',
+  version: '1.0.0.',
+  nodes: [
+    { id: 12, name: 'Company A', type: 'Shop', active: true, distance: 63 },
+    { id: 42, name: 'Bus Stop X', type: 'Bus Stop', active: true, distance: 3 },
+    { id: 23, name: 'Store B', type: 'Shop', active: false, distance: 12 },
+    { id: 8, name: 'Store Z', type: 'Shop', active: true, distance: 46 }
+    // ...100 more entries
+  ]
+}
+</code></pre>
+
+<p>and we want to choose nodes that are active and are of type &lsquo;Shop&rsquo;, sorting them by distance and only return their id and name.</p>
+
+<p>A classic way to write that would be:</p>
+
+<pre><code>fetchData()
+  .then(function(data) {
+    return data.nodes
+  })
+  .then(function(nodes) {
+    var results = []
+    for (var i = 0, len = nodes.length; i &lt; len; i++) {
+      if (nodes[i].active) {
+        results.push(nodes[i])
+      }
+    }
+    return results
+  })
+  .then(function(nodes) {
+    var results = []
+    for (var i = 0, len = nodes.length; i &lt; len; i++) {
+      if (nodes[i].type == 'Shop') {
+        results.push(nodes[i])
+      }
+    }
+    return results
+  })
+  .then(function(nodes) {
+    nodes.sort(function(first, second) {
+      var a = first.distance, b = second.distance;
+      return a &lt; b ? -1 : a &gt; b ? 1 : 0;
+    })
+    return nodes
+  })
+  .then(function(nodes) {
+    var results = [], node;
+    for (var i = 0, len = nodes.length; i &lt; len; i++) {
+      node = nodes[i];
+      nodes.push({
+        id: node.id,
+        name: node.name
+      })
+    }
+    return results
+  })
+</code></pre>
+
+<p>A way to write that in Ramda would be:</p>
+
+<pre><code>return fetchData()
+  .then(R.get('nodes'))
+  .then(R.filter(R.prop('active')))
+  .then(R.filter(R.propEq('type', 'Shop')))
+  .then(R.sortBy(R.get('distance')))
+  .then(R.map(R.pick(['id', 'name'])))
+</code></pre>
+
+<div class='post-width post-big post-all-center'> <p><strong>Elegance</strong></p>
+</div>
+
+<h2 id="4-relay-redux-reselect">4. Relay / Redux + Reselect</h2>
+
+<p>The 4th one is tricky, because they can sort of solve the same problem domain. They are NOT mutually exclusive, but most of the time you can choose to either go with both, or with one or the other.</p>
+
+<h3 id="4-1-relay">4.1. Relay</h3>
+
+<p><a href="https://facebook.github.io/relay/">Relay</a> is a framework by facebook for for building data-driven React applications. It does that by being a declarative front-end for GraphQL.</p>
+
+<p><a href="http://graphql.org/">GraphQL</a> is a specification for fetching data from a backend, effectively replacing REST API calls.</p>
+
+<p>Relay&rsquo;s strength comes from it&rsquo;s declarative API, allowing you to declare what data a specific component needs while letting Relay handle the messy internals.</p>
+
+<p>That means that you can, for example, say that your <code>UserProfile</code> component needs a name and description from a user, and let Relay handle fetching that data, without explicitly saying who the user is, or checking if it has already been fetched.</p>
+
+<pre><code>const UserProfile = ({ user: { name, description } }) =&gt; (
+  &lt;View&gt;
+    &lt;Text&gt;{name}&lt;/Text&gt;
+    &lt;Text&gt;{description}&lt;/Text&gt;
+  &lt;/View&gt;
+)
+
+Relay.createContainer(UserProfile, {
+  fragments: {
+    user: () =&gt; Relay.QL`
+      fragment on User {
+        name,
+        description
+      }
+    `
+  }
+}
+</code></pre>
+
+<p>This is incredibly compelling because the data needs of your component is written next to the views that require them, making it easier to keep the UI and data needs in sync and ensure that your components fetch only what they need.</p>
+
+<p>If we, in the future, decided to add profile images for our component above, we would only need to add that to our data declaration.</p>
+
+<pre><code>const UserProfile = ({ user: { name, description, image } }) =&gt; (
+  &lt;View&gt;
+    &lt;Text&gt;{name}&lt;/Text&gt;
+    &lt;Text&gt;{description}&lt;/Text&gt;
+    {image &amp;&amp; &lt;Image src={image.uri} /&gt;}
+  &lt;/View&gt;
+)
+
+Relay.createContainer(UserProfile, {
+  fragments: {
+    user: () =&gt; Relay.QL`
+      fragment on User {
+        name,
+        description,
+        image {
+          uri
+        }
+      }
+    `
+  }
+}
+</code></pre>
+
+<p>Declarative data declarations like this allows Relay to do optimizations and create efficient network requests. If a user component for the same user appears in a page N times, it is only requested once.</p>
+
+<h3 id="4-2-redux-reselect">4.2 Redux + Reselect</h3>
+
+<p><a href="http://redux.js.org">Redux</a> is the React ecosystem&rsquo;s de facto state management library. As your react application increases complexity, you will invariably find it more and more difficult to share state data and handlers between different components.</p>
+
+<p>Redux is a flux implementation that allows components to <code>connect</code> and access a <code>store</code> that holds the whole state tree of your application. You can think of the Redux store as your local, in browser database, that provides a Single Source of Truth for your whole app.</p>
+
+<p>If you can think of Redux as the handler for your app&rsquo;s &lsquo;database&rsquo;, you can think of <a href="https://github.com/reactjs/reselect">Reselect</a> as <code>SQL Views</code>. Reselect is a selector library for redux that allows you to define how you want to compute or derive data from your redux store, optimizing how the data is fetched and preventing unnecessary computations.</p>
+
+<p>(Note that while I put Relay and Redux at the same spot (4), they are NOT mutually exclusive. In fact, due to Relay not having a dedicated local store/schema, you may find it necessary to use Redux still)</p>
+
+<h1 id="tips">Tips</h1>
+
+<p>If you like what you see and would like to add the 4R framework to your next project, just run this:</p>
+
+<pre><code>yarn add recompose ramda relay redux react-redux reselect
+</code></pre>
+
+<p>and you already have the 4R framework!</p>
+
+<ul>
+<li>Use <a href="https://www.npmjs.com/package/babel-plugin-ramda">babel-plugin-ramda</a> to optimize your ramda bundle. Ramda doesn&rsquo;t play well with tree shaking - that means if you only use a subset of Ramda (i.e. <code>R.map</code> and <code>R.get</code>) your users will still get the whole bundle file. This babel plugin fixes that</li>
+<li>Recompose plays well with the <a href="http://arianv.com/post/use-default-hocs-for-component-logic/">Default HOC pattern</a>, so make sure to leverage that.</li>
+</ul>
+
+<h2 id="further-reading">Further Reading</h2>
+
+<ul>
+<li><a href="https://github.com/acdlite/recompose">Recompose docs</a></li>
+<li><a href="https://ramdajs.com/docs/">Ramda docs</a></li>
+<li><a href="https://facebook.github.io/relay">Relay docs</a></li>
+<li><a href="https://redux.js.org/">Redux docs</a></li>
+<li><a href="https://github.com/reactjs/reselect">Reselect docs</a></li>
+</ul>
+
+<p>Other good general use libraries/tools for your react project:</p>
+
+<ul>
+<li><a href="http://flowtype.org">Flow</a> - Static Type Checker for Javascript</li>
+<li><a href="https://facebook.github.io/immutable-js/">Immutable</a> - Immutable collections</li>
+<li><a href="http://dev.apollodata.com">Apollo</a> - Alternative GraphQL Client</li>
+<li><a href="http://storybook.js.org">Storybook</a> - Create a live UI Development Environment for your components</li>
+</ul>
+ </article><footer class="article-footer"><h3>Arian Valdez <a href="//twitter.com/Secretmapper">@Secretmapper</a></h3><p>React.JS and Node.JS Software engineering consultant. Designer/Developer Unicorn. Created Alt Tracker, Combustion, Riyu, etc.</p></footer> <div id="disqus_thread"></div></div></div> <script type="text/javascript">
+var disqus_shortname = "arianv";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>  <script type="text/javascript">
+    var disqus_shortname = "arianv";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  </div><footer class="page-footer">Copyright &#169; Arian Allenson M. Valdez | CC-BY-SA</footer><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/solarized-dark.min.css"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script> <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', "UA-60507502-1", 'auto');
+  ga('send', 'pageview');
+</script> </body></html>

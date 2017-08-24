@@ -6,10 +6,21 @@
     <description>Recent content on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Aug 2017 12:04:32 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 24 Aug 2017 10:25:27 +0800</lastBuildDate>
     
 	<atom:link href="http://arianv.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The 4R framework - 3 libraries to use in your React app</title>
+      <link>http://arianv.com/post/the-4r-framework-3-libraries-to-use-in-your-react-app/</link>
+      <pubDate>Thu, 24 Aug 2017 10:25:27 +0800</pubDate>
+      
+      <guid>http://arianv.com/post/the-4r-framework-3-libraries-to-use-in-your-react-app/</guid>
+      <description>React fits well right in to the Unix philosophy - it does one thing, and one thing well. It&amp;rsquo;s a beautifully designed, declarative library for building user interfaces.
+To write complex React applications however, it would be best to use more libraries than just React in it&amp;rsquo;s lonesome.
+The vast and rapidly evolving javascript landscape means there&amp;rsquo;s almost always a library that we can leverage for any given task. Given that, there are 3 libraries I consider essential when making React apps, and I&amp;rsquo;ve consolidated it to this one catchy name because marketing is everything</description>
+    </item>
     
     <item>
       <title>Use Default HOCs for Component Logic</title>
