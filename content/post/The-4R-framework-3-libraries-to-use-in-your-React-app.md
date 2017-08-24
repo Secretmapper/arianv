@@ -1,6 +1,7 @@
 ---
 title: "The 4R framework - 3 libraries to use in your React app"
 date: 2017-08-24T10:25:27+08:00
+tags:  ["JS", "React", "Webdev"]
 description: "The 4R framework is a set of libraries that make writing complex React apps easier"
 ---
 
