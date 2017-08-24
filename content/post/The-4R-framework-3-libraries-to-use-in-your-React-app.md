@@ -1,7 +1,7 @@
 ---
 title: "The 4R framework - 3 libraries to use in your React app"
 date: 2017-08-24T10:25:27+08:00
-draft: true
+description: "The 4R framework is a set of libraries that make writing complex React apps easier"
 ---
 
 React fits well right in to the Unix philosophy - it does one thing, and one thing well. It's a beautifully designed, declarative library for building user interfaces.
