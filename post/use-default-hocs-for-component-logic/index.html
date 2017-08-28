@@ -626,22 +626,22 @@ class App extends Component {
 <p>I&rsquo;m actually a bit surprised not to see it in the wild more often. It&rsquo;s such a useful pattern, and I wish it gets more adoption especially on open source components, as it solves a lot of tricky problems.</p>
 
 <p>If you are interested in implementing this pattern, you may find <a href="https://github.com/acdlite/recompose">recompose</a> useful.</p>
- </article><footer class="article-footer"><h3>Arian Valdez <a href="//twitter.com/Secretmapper">@Secretmapper</a></h3><p>React.JS and Node.JS Software engineering consultant. Designer/Developer Unicorn. Created Alt Tracker, Combustion, Riyu, etc.</p></footer> <div id="disqus_thread"></div></div></div> <script type="text/javascript">
-var disqus_shortname = "arianv";
-(function () {
-    var s = document.createElement('script'); s.async = true;
-    s.type = 'text/javascript';
-    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
-</script>  <script type="text/javascript">
-    var disqus_shortname = "arianv";
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  </div><footer class="page-footer">Copyright &#169; Arian Allenson M. Valdez | CC-BY-SA</footer><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/solarized-dark.min.css"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script> <script>
+ </article><footer class="article-footer"><h3>Arian Valdez <a href="//twitter.com/Secretmapper">@Secretmapper</a></h3><p>React.JS and Node.JS Software engineering consultant. Designer/Developer Unicorn. Created Alt Tracker, Combustion, Riyu, etc.</p></footer> <div id="disqus_thread"></div></div></div> <div id="disqus_thread"></div><script>
+  
+  var disqus_config = function () {
+    
+      this.page.identifier = 'Use Default HOCs for Component Logic';
+    
+    this.page.title = "Use Default HOCs for Component Logic";
+    this.page.url = "//arianv.com/post/use-default-hocs-for-component-logic/";
+  };
+  (function() {  
+    var d = document, s = d.createElement('script');
+    s.src = 'https://arianv.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>  </div><footer class="page-footer">Copyright &#169; Arian Allenson M. Valdez | CC-BY-SA</footer><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/solarized-dark.min.css"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script> <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
