@@ -13,7 +13,7 @@
   <title>{{ .Title }}</title>
 
   <!-- CSS -->
-<link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css">
   {{ if isset .Site.Params "highlight" }}
     <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/highlight/{{ .Site.Params.highlight }}.css">
@@ -36,7 +36,7 @@
     <meta name="twitter:label1" value="Reading time">
     <meta name="twitter:data1" value="{{ .ReadingTime }} min read">
   {{ end }}
-  {{ with .Site.Params.googleAuthorship }}<link rel="author" href="http://plus.google.com/{{ . }}">{{ end }}
+  {{ with .Site.Params.googleAuthorship }}<link rel="author" href="//plus.google.com/{{ . }}">{{ end }}
 </head>
 <body{{ with .Site.Params.theme }} class="{{ . }}"{{ end }}>
 <div class="content container">

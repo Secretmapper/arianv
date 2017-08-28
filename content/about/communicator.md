@@ -11,7 +11,7 @@ title = "Excellent Communicator"
 
   I write technical articles aimed at the general audience, which have been very well received on sites such as <a href="http://gamedev.net">GameDev.net</a> and <a href="http://gamasutra.com">Gamasutra</a>.
 
-  I also maintain my own blog at <a href="http://arianv.com">arianv.com</a>
+  I also maintain my own blog at <a href="//arianv.com">arianv.com</a>
 {{% /aboutitem %}}
 {{% aboutitem %}}
   <blockquote class="communicator-quote">
