@@ -1,4 +1,4 @@
-baseurl = "http://arianv.com/"
+baseurl = "//arianv.com/"
 languageCode = "en-us"
 title = "Arian's Portfolio"
 pygmentsstyle = "monokai"
