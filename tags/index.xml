@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Arian&#39;s Portfolio</title>
-    <link>http://arianv.com/tags/</link>
+    <link>//arianv.com/tags/</link>
     <description>Recent content in Tags on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Aug 2015 13:40:39 +0800</lastBuildDate>
     
-	<atom:link href="http://arianv.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//arianv.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo</title>
-      <link>http://arianv.com/tags/hugo/</link>
+      <link>//arianv.com/tags/hugo/</link>
       <pubDate>Thu, 27 Aug 2015 13:40:39 +0800</pubDate>
       
-      <guid>http://arianv.com/tags/hugo/</guid>
+      <guid>//arianv.com/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Js</title>
-      <link>http://arianv.com/tags/js/</link>
+      <link>//arianv.com/tags/js/</link>
       <pubDate>Thu, 24 Aug 2017 10:25:27 +0800</pubDate>
       
-      <guid>http://arianv.com/tags/js/</guid>
+      <guid>//arianv.com/tags/js/</guid>
       <description></description>
     </item>
     
     <item>
       <title>React</title>
-      <link>http://arianv.com/tags/react/</link>
+      <link>//arianv.com/tags/react/</link>
       <pubDate>Thu, 24 Aug 2017 10:25:27 +0800</pubDate>
       
-      <guid>http://arianv.com/tags/react/</guid>
+      <guid>//arianv.com/tags/react/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tools</title>
-      <link>http://arianv.com/tags/tools/</link>
+      <link>//arianv.com/tags/tools/</link>
       <pubDate>Sun, 15 Mar 2015 10:48:18 +0800</pubDate>
       
-      <guid>http://arianv.com/tags/tools/</guid>
+      <guid>//arianv.com/tags/tools/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Webdev</title>
-      <link>http://arianv.com/tags/webdev/</link>
+      <link>//arianv.com/tags/webdev/</link>
       <pubDate>Thu, 24 Aug 2017 10:25:27 +0800</pubDate>
       
-      <guid>http://arianv.com/tags/webdev/</guid>
+      <guid>//arianv.com/tags/webdev/</guid>
       <description></description>
     </item>
     

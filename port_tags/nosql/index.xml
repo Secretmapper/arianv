@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nosql on Arian&#39;s Portfolio</title>
-    <link>http://arianv.com/port_tags/nosql/</link>
+    <link>//arianv.com/port_tags/nosql/</link>
     <description>Recent content in Nosql on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Jan 2015 19:48:53 +0800</lastBuildDate>
     
-	<atom:link href="http://arianv.com/port_tags/nosql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//arianv.com/port_tags/nosql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>RUPP</title>
-      <link>http://arianv.com/portfolio/rupp/</link>
+      <link>//arianv.com/portfolio/rupp/</link>
       <pubDate>Fri, 30 Jan 2015 19:48:53 +0800</pubDate>
       
-      <guid>http://arianv.com/portfolio/rupp/</guid>
+      <guid>//arianv.com/portfolio/rupp/</guid>
       <description>Fluid Web App built with AngularJS. Complete Route Based Navigations lend to a fluid user experience. NodeJS backend on top of SailsJS</description>
     </item>
     
     <item>
       <title>Journey East</title>
-      <link>http://arianv.com/portfolio/journey-east/</link>
+      <link>//arianv.com/portfolio/journey-east/</link>
       <pubDate>Fri, 30 Jan 2015 19:45:31 +0800</pubDate>
       
-      <guid>http://arianv.com/portfolio/journey-east/</guid>
+      <guid>//arianv.com/portfolio/journey-east/</guid>
       <description>An epic MMO set in an original world, featuring Crafting, Raids, and PvP! Coordinated with a team of developers. Responsible for Client and Server Development. (AS3 and Java)</description>
     </item>
     

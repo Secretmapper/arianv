@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mysql on Arian&#39;s Portfolio</title>
-    <link>http://arianv.com/port_tags/mysql/</link>
+    <link>//arianv.com/port_tags/mysql/</link>
     <description>Recent content in Mysql on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Jan 2015 19:55:18 +0800</lastBuildDate>
     
-	<atom:link href="http://arianv.com/port_tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//arianv.com/port_tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GSOC 2014 - Wordpress</title>
-      <link>http://arianv.com/portfolio/gsoc/</link>
+      <link>//arianv.com/portfolio/gsoc/</link>
       <pubDate>Fri, 30 Jan 2015 19:55:18 +0800</pubDate>
       
-      <guid>http://arianv.com/portfolio/gsoc/</guid>
+      <guid>//arianv.com/portfolio/gsoc/</guid>
       <description>Worked with the Wordpress Organization on the Google Summer of Code Program to gamify and improve Glotpress</description>
     </item>
     

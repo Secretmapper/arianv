@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Arian&#39;s Portfolio</title>
-    <link>http://arianv.com/series/</link>
+    <link>//arianv.com/series/</link>
     <description>Recent content in Series on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Aug 2015 13:40:39 +0800</lastBuildDate>
     
-	<atom:link href="http://arianv.com/series/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//arianv.com/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gsoc 2015</title>
-      <link>http://arianv.com/series/gsoc-2015/</link>
+      <link>//arianv.com/series/gsoc-2015/</link>
       <pubDate>Thu, 27 Aug 2015 13:40:39 +0800</pubDate>
       
-      <guid>http://arianv.com/series/gsoc-2015/</guid>
+      <guid>//arianv.com/series/gsoc-2015/</guid>
       <description></description>
     </item>
     
