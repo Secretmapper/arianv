@@ -15,7 +15,7 @@
       </strong>
     </a>
     <div class="portfolio-card-holder">
-      {{ range where .Data.Pages.ByDate "Section" "portfolio" }}
+      {{ range where .Data.Pages.ByDate.Reverse "Section" "portfolio" }}
         <div class="portfolio-card-outer">
           <div class="portfolio-card">
             <div class="portfolio-card-inner">
