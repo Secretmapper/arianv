@@ -3,6 +3,7 @@ date = "2015-01-30T19:55:18+08:00"
 title = "GSOC 2014 - Wordpress"
 image = "/media/portfolio/wp_gsoc.png"
 port_tags = ["PHP", "CSS", "MySQL"]
+web_url = "http://glotpress.blog/author/secretmapper/"
 
 +++
 
