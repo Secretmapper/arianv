@@ -18,6 +18,16 @@
   </url>
   
   <url>
+    <loc>//arianv.com/portfolio/combustion/</loc>
+    <lastmod>2017-02-25T19:53:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/portfolio/riyu/</loc>
+    <lastmod>2017-02-25T19:53:25+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//arianv.com/post/module-bundling-and-webpack-in-simple-terms/</loc>
     <lastmod>2016-12-29T21:22:19+08:00</lastmod>
   </url>
@@ -166,13 +176,13 @@
   
   <url>
     <loc>//arianv.com/port_tags/as3/</loc>
-    <lastmod>2017-06-14T19:53:25+08:00</lastmod>
+    <lastmod>2015-01-30T19:54:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>//arianv.com/port_tags/css/</loc>
-    <lastmod>2015-01-30T19:55:18+08:00</lastmod>
+    <lastmod>2017-02-25T19:53:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -183,20 +193,26 @@
   </url>
   
   <url>
+    <loc>//arianv.com/port_tags/elixir/</loc>
+    <lastmod>2017-06-14T19:53:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>//arianv.com/port_tags/fb/</loc>
     <lastmod>2015-07-17T12:59:37+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//arianv.com/series/gsoc-2015/</loc>
-    <lastmod>2015-08-27T13:40:39+08:00</lastmod>
+    <loc>//arianv.com/series-desc/gsoc-2015/</loc>
+    <lastmod>2015-05-06T11:09:35+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//arianv.com/series-desc/gsoc-2015/</loc>
-    <lastmod>2015-05-06T11:09:35+00:00</lastmod>
+    <loc>//arianv.com/series/gsoc-2015/</loc>
+    <lastmod>2015-08-27T13:40:39+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -220,7 +236,7 @@
   
   <url>
     <loc>//arianv.com/port_tags/js/</loc>
-    <lastmod>2015-08-25T12:59:37+08:00</lastmod>
+    <lastmod>2017-06-14T19:53:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -243,6 +259,18 @@
   </url>
   
   <url>
+    <loc>//arianv.com/port_tags/oss/</loc>
+    <lastmod>2017-06-14T19:53:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/port_tags/phoenix/</loc>
+    <lastmod>2017-06-14T19:53:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>//arianv.com/port_tags/php/</loc>
     <lastmod>2015-01-30T19:55:18+08:00</lastmod>
     <priority>0</priority>
@@ -250,7 +278,7 @@
   
   <url>
     <loc>//arianv.com/port_tags/</loc>
-    <lastmod>2017-06-14T19:53:25+08:00</lastmod>
+    <lastmod>2015-01-30T19:54:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -281,6 +309,12 @@
   <url>
     <loc>//arianv.com/tags/react/</loc>
     <lastmod>2017-08-24T10:25:27+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/port_tags/react.js/</loc>
+    <lastmod>2017-02-25T19:53:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
