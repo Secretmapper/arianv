@@ -30,6 +30,26 @@
                 <h2><a>{{ .Title }}</a></h2>
                 <h3>
                   {{ .Summary }}
+                  <div class="portfolio-card-actions">
+                    {{ if .Params.web_url }}
+                      <a
+                        class="portfolio-card-action"
+                        href="{{ .Params.web_url }}"
+                        target='_blank'
+                      >
+                        Link
+                      </a>
+                    {{ end }}
+                    {{ if .Params.github_url }}
+                      <a
+                        class="portfolio-card-action"
+                        href="{{ .Params.github_url }}"
+                        target='_blank'
+                      >
+                        Github
+                      </a>
+                    {{ end }}
+                  </div>
                 </h3>
               </div>
             </div>
