@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>//arianv.com/portfolio/json-viewer/</loc>
+    <lastmod>2017-08-22T19:53:25+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//arianv.com/portfolio/alttracker/</loc>
     <lastmod>2017-06-14T19:53:25+08:00</lastmod>
   </url>
@@ -205,14 +210,14 @@
   </url>
   
   <url>
-    <loc>//arianv.com/series/gsoc-2015/</loc>
-    <lastmod>2015-08-27T13:40:39+08:00</lastmod>
+    <loc>//arianv.com/series-desc/gsoc-2015/</loc>
+    <lastmod>2015-05-06T11:09:35+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//arianv.com/series-desc/gsoc-2015/</loc>
-    <lastmod>2015-05-06T11:09:35+00:00</lastmod>
+    <loc>//arianv.com/series/gsoc-2015/</loc>
+    <lastmod>2015-08-27T13:40:39+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -236,7 +241,7 @@
   
   <url>
     <loc>//arianv.com/port_tags/js/</loc>
-    <lastmod>2017-06-14T19:53:25+08:00</lastmod>
+    <lastmod>2017-08-22T19:53:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -260,7 +265,7 @@
   
   <url>
     <loc>//arianv.com/port_tags/oss/</loc>
-    <lastmod>2017-06-14T19:53:25+08:00</lastmod>
+    <lastmod>2017-08-22T19:53:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -284,7 +289,7 @@
   
   <url>
     <loc>//arianv.com/portfolio/</loc>
-    <lastmod>2017-06-14T19:53:25+08:00</lastmod>
+    <lastmod>2017-08-22T19:53:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
