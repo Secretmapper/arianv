@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//arianv.com/post/atlas-runs-a-ld41-postmortem/</loc>
+    <lastmod>2018-04-24T13:16:25+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//arianv.com/post/the-4r-framework-3-libraries-to-use-in-your-react-app/</loc>
     <lastmod>2017-08-24T10:25:27+08:00</lastmod>
   </url>
@@ -175,7 +180,7 @@
   
   <url>
     <loc>//arianv.com/</loc>
-    <lastmod>2017-08-24T10:25:27+08:00</lastmod>
+    <lastmod>2018-04-24T13:16:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -210,14 +215,20 @@
   </url>
   
   <url>
-    <loc>//arianv.com/series-desc/gsoc-2015/</loc>
-    <lastmod>2015-05-06T11:09:35+00:00</lastmod>
+    <loc>//arianv.com/tags/gamedev/</loc>
+    <lastmod>2018-04-24T13:16:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>//arianv.com/series/gsoc-2015/</loc>
     <lastmod>2015-08-27T13:40:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/series-desc/gsoc-2015/</loc>
+    <lastmod>2015-05-06T11:09:35+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -240,14 +251,14 @@
   </url>
   
   <url>
-    <loc>//arianv.com/port_tags/js/</loc>
-    <lastmod>2017-08-22T19:53:25+08:00</lastmod>
+    <loc>//arianv.com/tags/js/</loc>
+    <lastmod>2018-04-24T13:16:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//arianv.com/tags/js/</loc>
-    <lastmod>2017-08-24T10:25:27+08:00</lastmod>
+    <loc>//arianv.com/port_tags/js/</loc>
+    <lastmod>2017-08-22T19:53:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -295,7 +306,7 @@
   
   <url>
     <loc>//arianv.com/post/</loc>
-    <lastmod>2017-08-24T10:25:27+08:00</lastmod>
+    <lastmod>2018-04-24T13:16:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -337,7 +348,7 @@
   
   <url>
     <loc>//arianv.com/tags/</loc>
-    <lastmod>2015-08-27T13:40:39+08:00</lastmod>
+    <lastmod>2018-04-24T13:16:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   

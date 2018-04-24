@@ -32,7 +32,7 @@
 <meta name="twitter:description" content="You&#39;ll find it much easier to reuse components if you provide default HOCs for their logic"/>
  <meta name="twitter:label1" value="Reading time"><meta name="twitter:data1" value="11 min read">  </head><body><div class="content container"> <nav class="main-nav"><div class="ribbon-content"><div class="nav-inner"><ul><li> <a id="nav-home" data-page="home" href="//arianv.com/">Home</a></li><li> <a id="nav-articles" data-page="articles" href="//arianv.com/post">Articles</a></li></ul></div></div></nav><div class="post"><h1 id="post-title">Use Default HOCs for Component Logic</h1><div class="post-info"> <span class="post-date">Aug 23, 2017 &middot; 11 minute read &middot; <a href="//arianv.com/post/use-default-hocs-for-component-logic/#disqus_thread">Comments</a></span>   <span class="post-tags"><a class="label" href="//arianv.com//tags/js">JS</a><a class="label" href="//arianv.com//tags/react">React</a><a class="label" href="//arianv.com//tags/webdev">Webdev</a></span> </div><article> 
 
-<p>Perhaps one of the most useful patterns for writing React applications is the classic <a href="https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0">&ldquo;Container and Presentational Components&rdquo;</a> pattern. Even without knowledge of React, it makes sense - it decomposes concerns between component presentation and logic.</p>
+<p>Perhaps one of the most useful patterns for writing React applications is the classic <a href="https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0" target="_blank">&ldquo;Container and Presentational Components&rdquo;</a> pattern. Even without knowledge of React, it makes sense - it decomposes concerns between component presentation and logic.</p>
 
 <p>One very useful pattern I&rsquo;ve used to achieve this is by using Higher Order Components to inject default logic to components. This pattern drastically reduces component API boilerplate and more effectively separates implementation and presentational concerns of components.</p>
 
@@ -625,7 +625,7 @@ class App extends Component {
 
 <p>I&rsquo;m actually a bit surprised not to see it in the wild more often. It&rsquo;s such a useful pattern, and I wish it gets more adoption especially on open source components, as it solves a lot of tricky problems.</p>
 
-<p>If you are interested in implementing this pattern, you may find <a href="https://github.com/acdlite/recompose">recompose</a> useful.</p>
+<p>If you are interested in implementing this pattern, you may find <a href="https://github.com/acdlite/recompose" target="_blank">recompose</a> useful.</p>
  </article><footer class="article-footer"><h3>Arian Valdez <a href="//twitter.com/Secretmapper">@Secretmapper</a></h3><p>React.JS and Node.JS Software engineering consultant. Designer/Developer Unicorn. Created Alt Tracker, Combustion, Riyu, etc.</p></footer> <div id="disqus_thread"></div></div></div> <div id="disqus_thread"></div><script>
   
   var disqus_config = function () {

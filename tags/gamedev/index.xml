@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gamedev on Arian&#39;s Portfolio</title>
+    <link>//arianv.com/tags/gamedev/</link>
+    <description>Recent content in Gamedev on Arian&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Apr 2018 13:16:25 +0800</lastBuildDate>
+    
+	<atom:link href="//arianv.com/tags/gamedev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Atlas Runs: A LD41 Postmortem (with Phaser 3)</title>
+      <link>//arianv.com/post/atlas-runs-a-ld41-postmortem/</link>
+      <pubDate>Tue, 24 Apr 2018 13:16:25 +0800</pubDate>
+      
+      <guid>//arianv.com/post/atlas-runs-a-ld41-postmortem/</guid>
+      <description>Ludum Dare is a recurring accelerated video game development event. It is a hackathon-like competition where participants can join a compo (one person creating a game in 48 hours) or the more casual jam (72 hours with optional team members)
+I haven&amp;rsquo;t made games for quite some time now, focusing mainly on ReactJS and Web Development, so I thought it was a perfect time to join. While I have a lot of experience programming and joining accelerated development events (winning quite a few in the process), creating a game where I was responsible for everything (I usually work with a team of artists/musicians/etc) would be quite a challenge.</description>
+    </item>
+    
+  </channel>
+</rss>
