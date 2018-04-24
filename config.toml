@@ -14,3 +14,7 @@ disqusShortname = "arianv"
 
 [params]
   googleAnalytics = "UA-60507502-1"
+
+[blackfriday]
+   plainIDAnchors = true
+   hrefTargetBlank = true
