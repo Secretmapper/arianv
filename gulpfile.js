@@ -79,7 +79,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('images', function () {
-  return gulp.src('static/media/*.png')
+  return gulp.src('srcstatic/media/**/*.png')
     .pipe($.responsive({
       '**/*' : [{
         width: 270,
@@ -99,9 +99,10 @@ gulp.task('images', function () {
     }))
     .pipe($.cache($.imagemin({
       interlaced: true,
+
       use: [jpegtran(), pngquant()]
     })))
-    .pipe(gulp.dest('static/medias/'));
+    .pipe(gulp.dest('static/media/'));
 });
 
 gulp.task('clearcache', function() {
