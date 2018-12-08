@@ -6,10 +6,31 @@
     <description>Recent content in Js on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Apr 2018 13:16:25 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 01:09:26 +0800</lastBuildDate>
     
 	<atom:link href="//arianv.com/tags/js/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Atlas Runs</title>
+      <link>//arianv.com/ludum-dare/ld41/</link>
+      <pubDate>Sun, 09 Dec 2018 01:09:26 +0800</pubDate>
+      
+      <guid>//arianv.com/ludum-dare/ld41/</guid>
+      <description>At first Atlas Shrugged 🤷🏻‍♂️ But now Atlas Runs🏃🏻‍♂️
+Atlas Runs is an unconventional platformer/real-time-strategy hybrid where you control both Atlas as he braves the mountains of Thebes, and the townspeople as they manage the town.</description>
+    </item>
+    
+    <item>
+      <title>Satiate</title>
+      <link>//arianv.com/ludum-dare/ld43/</link>
+      <pubDate>Sun, 09 Dec 2018 00:44:10 +0800</pubDate>
+      
+      <guid>//arianv.com/ludum-dare/ld43/</guid>
+      <description>An alien with an insatiable appetiate has attacked your camp. Satiate its cravings using any means necessary&amp;hellip; Even if it means sacrificing your people
+ Space - follow (when near person) Z - assign to building (when near building) X - remove all current followers  TIPS:
+ Game ramps up in difficulty. Plan accordingly Make propaganda towers to increase human count, then dispensers to allow more to be processed, then hospitals to decrease effects of stress A dispenser produces 50 food and 10 seconds to process.</description>
+    </item>
     
     <item>
       <title>Atlas Runs: A LD41 Postmortem (with Phaser 3)</title>

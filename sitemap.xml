@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//arianv.com/ludum-dare/ld41/</loc>
+    <lastmod>2018-12-09T01:09:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/ludum-dare/ld43/</loc>
+    <lastmod>2018-12-09T00:44:10+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//arianv.com/post/atlas-runs-a-ld41-postmortem/</loc>
     <lastmod>2018-04-24T13:16:25+08:00</lastmod>
   </url>
@@ -40,6 +50,16 @@
   <url>
     <loc>//arianv.com/post/module-bundling-and-webpack-in-simple-terms/</loc>
     <lastmod>2016-12-29T21:22:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/portfolio/paintersguild/</loc>
+    <lastmod>2015-09-22T14:26:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/portfolio/iwin/</loc>
+    <lastmod>2015-09-22T14:26:18+08:00</lastmod>
   </url>
   
   <url>
@@ -180,7 +200,7 @@
   
   <url>
     <loc>//arianv.com/</loc>
-    <lastmod>2018-04-24T13:16:25+08:00</lastmod>
+    <lastmod>2018-12-09T01:09:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -216,7 +236,7 @@
   
   <url>
     <loc>//arianv.com/tags/gamedev/</loc>
-    <lastmod>2018-04-24T13:16:25+08:00</lastmod>
+    <lastmod>2018-12-09T01:09:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -233,8 +253,14 @@
   </url>
   
   <url>
+    <loc>//arianv.com/port_tags/html/</loc>
+    <lastmod>2015-09-22T14:26:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>//arianv.com/port_tags/html5/</loc>
-    <lastmod>2015-07-17T12:59:37+08:00</lastmod>
+    <lastmod>2015-09-22T14:26:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -252,13 +278,25 @@
   
   <url>
     <loc>//arianv.com/tags/js/</loc>
-    <lastmod>2018-04-24T13:16:25+08:00</lastmod>
+    <lastmod>2018-12-09T01:09:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>//arianv.com/port_tags/js/</loc>
     <lastmod>2017-08-22T19:53:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/tags/ludum-dare/</loc>
+    <lastmod>2018-12-09T01:09:26+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/ludum-dare/</loc>
+    <lastmod>2018-12-09T01:09:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -348,7 +386,7 @@
   
   <url>
     <loc>//arianv.com/tags/</loc>
-    <lastmod>2018-04-24T13:16:25+08:00</lastmod>
+    <lastmod>2018-12-09T01:09:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   

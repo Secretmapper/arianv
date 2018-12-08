@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Apr 2018 13:16:25 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 01:09:26 +0800</lastBuildDate>
     
 	<atom:link href="//arianv.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Gamedev</title>
       <link>//arianv.com/tags/gamedev/</link>
-      <pubDate>Tue, 24 Apr 2018 13:16:25 +0800</pubDate>
+      <pubDate>Sun, 09 Dec 2018 01:09:26 +0800</pubDate>
       
       <guid>//arianv.com/tags/gamedev/</guid>
       <description></description>
@@ -32,9 +32,18 @@
     <item>
       <title>Js</title>
       <link>//arianv.com/tags/js/</link>
-      <pubDate>Tue, 24 Apr 2018 13:16:25 +0800</pubDate>
+      <pubDate>Sun, 09 Dec 2018 01:09:26 +0800</pubDate>
       
       <guid>//arianv.com/tags/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ludum Dare</title>
+      <link>//arianv.com/tags/ludum-dare/</link>
+      <pubDate>Sun, 09 Dec 2018 01:09:26 +0800</pubDate>
+      
+      <guid>//arianv.com/tags/ludum-dare/</guid>
       <description></description>
     </item>
     

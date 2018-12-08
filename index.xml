@@ -6,10 +6,31 @@
     <description>Recent content on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Apr 2018 13:16:25 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 01:09:26 +0800</lastBuildDate>
     
 	<atom:link href="//arianv.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Atlas Runs</title>
+      <link>//arianv.com/ludum-dare/ld41/</link>
+      <pubDate>Sun, 09 Dec 2018 01:09:26 +0800</pubDate>
+      
+      <guid>//arianv.com/ludum-dare/ld41/</guid>
+      <description>At first Atlas Shrugged 🤷🏻‍♂️ But now Atlas Runs🏃🏻‍♂️
+Atlas Runs is an unconventional platformer/real-time-strategy hybrid where you control both Atlas as he braves the mountains of Thebes, and the townspeople as they manage the town.</description>
+    </item>
+    
+    <item>
+      <title>Satiate</title>
+      <link>//arianv.com/ludum-dare/ld43/</link>
+      <pubDate>Sun, 09 Dec 2018 00:44:10 +0800</pubDate>
+      
+      <guid>//arianv.com/ludum-dare/ld43/</guid>
+      <description>An alien with an insatiable appetiate has attacked your camp. Satiate its cravings using any means necessary&amp;hellip; Even if it means sacrificing your people
+ Space - follow (when near person) Z - assign to building (when near building) X - remove all current followers  TIPS:
+ Game ramps up in difficulty. Plan accordingly Make propaganda towers to increase human count, then dispensers to allow more to be processed, then hospitals to decrease effects of stress A dispenser produces 50 food and 10 seconds to process.</description>
+    </item>
     
     <item>
       <title>Atlas Runs: A LD41 Postmortem (with Phaser 3)</title>
@@ -85,6 +106,24 @@ One very useful pattern I&amp;rsquo;ve used to achieve this is by using Higher O
       
       <guid>//arianv.com/post/module-bundling-and-webpack-in-simple-terms/</guid>
       <description>#chapter-1, #chapter-2__scroll { display: none; position: relative; height: 100vh; width: 100%; } .chapter-1__heading { font-size: 2rem; margin-bottom: 0; margin-top: 0; max-width: none !important; position: absolute; text-align: center; width: 100%; } .chapter-1__heading-1 { opacity: 1; } .chapter-1__hider-1, .chapter-1__hider-2, .chapter-1__hider-3, .chapter-1__hider-4 { background-color: #002B36; height: 1rem; position: absolute; width: 100%; } .chapter-2__darkener { background-color: gray; opacity: 0.5; position: absolute; height: 30rem; width: 100%; } .chapter-2__code-file { position: absolute; width: 100%; } .</description>
+    </item>
+    
+    <item>
+      <title>Painter&#39;s Guild</title>
+      <link>//arianv.com/portfolio/paintersguild/</link>
+      <pubDate>Tue, 22 Sep 2015 14:26:18 +0800</pubDate>
+      
+      <guid>//arianv.com/portfolio/paintersguild/</guid>
+      <description>Crafted the website of Painter&amp;rsquo;s Guild, a sim game where you manage an art academy</description>
+    </item>
+    
+    <item>
+      <title>iWin</title>
+      <link>//arianv.com/portfolio/iwin/</link>
+      <pubDate>Tue, 22 Sep 2015 14:26:18 +0800</pubDate>
+      
+      <guid>//arianv.com/portfolio/iwin/</guid>
+      <description>Created games for iWin, an HTML5 Game company</description>
     </item>
     
     <item>
