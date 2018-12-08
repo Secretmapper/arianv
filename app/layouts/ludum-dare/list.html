@@ -1,0 +1,25 @@
+{{ partial "head.html" . }}
+  <div class="posts-info">
+    <p>Ludum Dare is an accelerated video game development competition. The games listed here are made in 48 hours completely by myself (programming, art, music, game design, etc)</p>
+  </div>
+  <div class="content container">
+    <section id="portfolio-projects">
+      <div class="portfolio-card-holder">
+        {{ range .Data.Pages.ByDate }}
+          <div class="portfolio-card-outer">
+            <a href="{{ .Permalink }}">
+              <div class="portfolio-card">
+                <div class="portfolio-card-inner">
+                  <img src="{{ .Params.image }}">
+                  <div class="portfolio-card-details">
+                    <h2>{{ .Title }}</h2>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  </div>
+{{ partial "foot.html" . }}

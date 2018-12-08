@@ -129,10 +129,12 @@
     @extend .material-shadow
       
 @media (min-width sm_size)
+  .portfolio-card-outer--lg,
   .portfolio-card-outer  
     column(1/2, cycle: 2, gutter: 1)
     
 @media (min-width md_size)
+  .portfolio-card-outer--lg,
   .portfolio-card-outer
     column(1/3, cycle: 3, uncycle:2, gutter: 1)
   .portfolio-about-item
@@ -141,3 +143,5 @@
 @media (min-width lg_size)
   .portfolio-card-outer
     column(1/4, cycle: 4, uncycle:3, gutter: 1)
+  .portfolio-card-outer--lg
+    column(1/3, cycle: 3, uncycle:2, gutter: 1)
