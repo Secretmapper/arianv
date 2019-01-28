@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>//arianv.com/post/satiate-a-ld43-postmortem/</loc>
+    <lastmod>2018-12-03T21:56:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//arianv.com/post/atlas-runs-a-ld41-postmortem/</loc>
     <lastmod>2018-04-24T13:16:25+08:00</lastmod>
   </url>
@@ -277,14 +282,14 @@
   </url>
   
   <url>
-    <loc>//arianv.com/tags/js/</loc>
-    <lastmod>2018-12-09T01:09:26+08:00</lastmod>
+    <loc>//arianv.com/port_tags/js/</loc>
+    <lastmod>2017-08-22T19:53:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//arianv.com/port_tags/js/</loc>
-    <lastmod>2017-08-22T19:53:25+08:00</lastmod>
+    <loc>//arianv.com/tags/js/</loc>
+    <lastmod>2018-12-09T01:09:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -344,7 +349,7 @@
   
   <url>
     <loc>//arianv.com/post/</loc>
-    <lastmod>2018-04-24T13:16:25+08:00</lastmod>
+    <lastmod>2018-12-03T21:56:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   

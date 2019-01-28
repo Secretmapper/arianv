@@ -1,0 +1,156 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us"><head><link href="http://gmpg.org/xfn/11" rel="profile"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><link href="https://arianv.com/post/satiate-a-ld43-postmortem/" rel="canonical"><title>Satiate: A LD43 Postmortem</title><link href='//fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'><link rel="stylesheet" href="//arianv.com//css/main.css"> <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//arianv.com/apple-touch-icon-144-precomposed.png"><link href="//arianv.com/favicon.png" rel="icon"><link href="" rel="alternate" type="application/rss+xml" title="Arian&#39;s Portfolio &middot; "/><meta name="description" content=""><meta name="keywords" content=""> <meta property="og:title" content="Satiate: A LD43 Postmortem" />
+<meta property="og:description" content="Just as I joined last April, I joined Ludum Dare this December for Ludum Dare 43.
+The Game  The theme for this LD was Sacrifices must be made. It&rsquo;s a pretty expansive theme and there was quite a lot of possible game mechanics to build around it, that, for a moment, I was hit by choice-paralysis.
+My brainstorm took me through the usual suspects - sacrificing X for Y (i." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//arianv.com/post/satiate-a-ld43-postmortem/" />
+
+
+
+<meta property="article:published_time" content="2018-12-03T21:56:00&#43;08:00"/>
+<meta property="article:modified_time" content="2018-12-03T21:56:00&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+  
+<meta itemprop="name" content="Satiate: A LD43 Postmortem">
+<meta itemprop="description" content="Just as I joined last April, I joined Ludum Dare this December for Ludum Dare 43.
+The Game  The theme for this LD was Sacrifices must be made. It&rsquo;s a pretty expansive theme and there was quite a lot of possible game mechanics to build around it, that, for a moment, I was hit by choice-paralysis.
+My brainstorm took me through the usual suspects - sacrificing X for Y (i.">
+
+
+<meta itemprop="dateModified" content="2018-12-03T21:56:00&#43;08:00" />
+<meta itemprop="wordCount" content="1204">
+
+
+
+<meta itemprop="keywords" content="JS,Gamedev," />
+ <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Satiate: A LD43 Postmortem"/>
+<meta name="twitter:description" content="Just as I joined last April, I joined Ludum Dare this December for Ludum Dare 43.
+The Game  The theme for this LD was Sacrifices must be made. It&rsquo;s a pretty expansive theme and there was quite a lot of possible game mechanics to build around it, that, for a moment, I was hit by choice-paralysis.
+My brainstorm took me through the usual suspects - sacrificing X for Y (i."/>
+ <meta name="twitter:label1" value="Reading time"><meta name="twitter:data1" value="6 min read">  </head><body><div class="content container"> <nav class="main-nav"><div class="ribbon-content"><div class="nav-inner"><ul><li> <a id="nav-home" data-page="home" href="//arianv.com/">Home</a></li><li> <a id="nav-articles" data-page="articles" href="//arianv.com/post">Articles</a></li><li> <a id="nav-articles" data-page="ludum-dare" href="//arianv.com/ludum-dare">Ludum Dare</a></li></ul></div></div></nav><div class="post"><h1 id="post-title">Satiate: A LD43 Postmortem</h1><div class="post-info"> <span class="post-date">Dec 3, 2018 &middot; 6 minute read &middot; <a href="//arianv.com/post/satiate-a-ld43-postmortem/#disqus_thread">Comments</a></span>   <span class="post-tags"><a class="label" href="//arianv.com//tags/js">JS</a><a class="label" href="//arianv.com//tags/gamedev">Gamedev</a></span> </div><article> 
+
+<p><a href="//arianv.com/post/atlas-runs-a-ld41-postmortem/">Just as I joined last April</a>, I joined Ludum Dare this December for Ludum Dare 43.</p>
+
+<h1 id="the-game">The Game</h1>
+
+<figure >  <img src="//arianv.com/media/images/ludumdare/43.gif"  style=" width:600px "/>  </figure>
+
+<p>The theme for this LD was <strong>Sacrifices must be made</strong>. It&rsquo;s a pretty expansive theme and there was quite a lot of possible game mechanics to build around it, that, for a moment, I was hit by choice-paralysis.</p>
+
+<p>My brainstorm took me through the usual suspects - sacrificing X for Y (i.e. health for bullets), sacrificing to appease a deity, sacrificing your own for survival, etc.</p>
+
+<figure >  <img src="//arianv.com/media/images/ludumdare/ld43mindmap.jpg"  style=" width:600px "/>  </figure>
+
+<p>The wording of the theme - &ldquo;Sacrifices MUST be made&rdquo; - as if an order, planted the idea of an oppressive, forceful, slave like routine, and a melody quite quickly hit my head.</p>
+
+<p><audio controls>
+  <source src="//arianv.com/media/audio/ludumdare/satiate.ogg" type="audio/ogg">
+  <source src="//arianv.com/media/audio/ludumdare/satiate.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio></p>
+
+<p>I fell in love and with it, envisioned a sim game where you are forced to manage a &lsquo;production line&rsquo; of people to sacrifice/kill to appease something. While I did spend quite a bit of time considering other possible ideas, the melody quickly became an ear worm and I found myself mouthing it as I brainstormed other ideas.</p>
+
+<p>While I had huge reservations (because it would be really tough to implemennt), I decided to go with the sim game.</p>
+
+<p>At first, an RTS with traditional, mouse based controls was what I thought of. Pondering about it however, I feared the &lsquo;removal&rsquo; of closeness would hurt the impact of the sacrificing, as well as make for a more boring gameplay loop.</p>
+
+<p>It was then that I decided to use a &lsquo;Tooth and Tail&rsquo; like approach, using a commander avatar and having people &lsquo;follow&rsquo; you. Initially, my idea was very similar to Tooth and Tail, where you have different &lsquo;unit groups&rsquo; - young, adult, elders, which you can pick through 1,2,3 - the idea being you have to properly micromanage these age groups to their correct production point.</p>
+
+<p>However, I decided to scrap this and go with a &lsquo;stress&rsquo; based system. The stress system makes the game more realistic (I mean, who goes from young-&gt;adult-&gt;elder that quickly!?) and also provides more avenue in terms of gameplay (waiting for a pawn to de-stress)</p>
+
+<p>Overall, I&rsquo;m really happy with the gameplay. It fits the theme very well, the mechanic was reasonably unique, and it was, if I may, actually quite addicting! Once I implemented it, I found myself spending quite a bit of time actually playing (which helped in tweaking the numbers for game progression)</p>
+
+<p>In terms of what I missed out on, the biggest would have to be the end game. Originally, I had planned for there to be a goal to craft towards to - a sort of &lsquo;radar beacon&rsquo; that would &lsquo;call in the cavalry&rsquo; to come save the day. However, I was too tired at the end and decided to drop it (interestingly enough, I still had ample time).</p>
+
+<p>The tutorial is pretty nifty, but it is still quite hard to learn. To be fair, the mechanics are pretty tricky to understand, and making a better on boarding experience would have taken way more time than I had.</p>
+
+<p>One thing I DID wish I didn&rsquo;t spend as much time on was the the &lsquo;boids&rsquo;/steering behaviors. I implemented quite a full flegged steering behavior built for the Followers/Pawns. While it made for some really dynamic looking npcs, it honestly took way too much time; time which I could have spent elsewhere (such as the tutorial).</p>
+
+<p>Phaser 3 Documentation was still spotty, and to be honest I am seriously consider dropping it and using another engine. I really would like IntelliSense support, and I&rsquo;m honestly thinking of using a typed language, and even not use vim (<em>gasp</em>) if necessary.</p>
+
+<p>One big surprise I had was to learn that Phaser 3 scenes can exist in parallel - and could be used for a &lsquo;shop scene&rsquo; that would automatically manage itself and pause/resume the main scene. It was a really great idea, but I learnt it way too late in the development process that it actually hindered me (as I had assumed scenes worked the same way as states in Phaser 2).</p>
+
+<h2 id="art">Art</h2>
+
+<p>In terms of Art, I disliked how it turned out. While it looks &lsquo;ok&rsquo;, and honestly looks quite good considering, I still have adequate trouble keeping the consistency together and making sure everything looks good together. The workflow is honestly terrible too, having to juggle multiple asperite files, exporting to pngs, etc. I feel like keeping it in separate files hurts the process, as it makes it harder to see tonal and/or visual incompatibilities. Looking at deepnight for example, which I am a huge fan of, he uses a single photoshop file sliced to generate the asset sheet, which probably helps in making sure everything looks together.</p>
+
+<p>One thing that honestly surprised me as to how it looked is the monster. It was one of the last assets I made, and I had HUGE trouble even thinking about how I want to portray it. Eventually, I used a ball as a base, and eventually got it to what is now in the game. I&rsquo;m really pleasantly surprised it worked (and players agree with me that it looks good!)</p>
+
+<h2 id="audio">Audio</h2>
+
+<p>One of the main reasons why I went for the idea was because of the melody that got stuck in to my head, so it should come to no surprise that the music really ties the game together (at least for me).</p>
+
+<p>Unlike my ld41 music, this one is significantly better, and even passes as acceptable. The main &lsquo;march&rsquo; is kept, keeping a really somber, mechanical, march-like trance throughout.</p>
+
+<p>While making it though, another melody came to me as I experimented, and I quite liked it as well.</p>
+
+<p><audio controls>
+  <source src="//arianv.com/media/audio/ludumdare/satiate_riff.ogg" type="audio/ogg">
+  <source src="//arianv.com/media/audio/ludumdare/satiate_riff.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio></p>
+
+<p>In the end, I incorporated the two together. In a way, this new one is even more &lsquo;urgent&rsquo; and serves quite well as a &lsquo;time is running out&rsquo; music. While there&rsquo;s no music changes, the idea as a feeling exists.</p>
+
+<p>Another thing that came together really well in the game are the sound effects. I previously downloaded a GDC sfx bundle, and it helped in getting some high quality sfx for the game, which players really liked! I also used my own voice for the unit sound effects, and since I didn&rsquo;t have my mic with me, so I just used my AirPods :D</p>
+
+<h2 id="feedback">Feedback</h2>
+
+<p>As I expected, people had huge trouble understanding how to play the game.</p>
+
+<figure >  <img src="//arianv.com/media/images/ludumdare/43/comm0.jpeg"  style=" width:600px "/>  </figure>
+
+<p>I had put in as much tutorials as I could, and even tips/instructions outside of the game (in the description) but the onboarding of my game was really not up to par.</p>
+
+<p>For those that could play the game though the feedback has been very positive!</p>
+
+<p><figure >  <img src="//arianv.com/media/images/ludumdare/43/comm1.jpeg"  style=" width:600px "/>  </figure>
+<figure >  <img src="//arianv.com/media/images/ludumdare/43/comm2.jpeg"  style=" width:600px "/>  </figure>
+<figure >  <img src="//arianv.com/media/images/ludumdare/43/comm3.jpeg"  style=" width:600px "/>  </figure>
+<figure >  <img src="//arianv.com/media/images/ludumdare/43/commnew.jpg"  style=" width:600px "/>  </figure></p>
+
+<p>It even got the frontpage at newgrounds which surprised me to be honest!</p>
+
+<figure >  <img src="//arianv.com/media/images/ludumdare/43/newfront.jpg"  style=" width:600px "/>  </figure>
+
+<p>&ldquo;Surprising amount of depth for a Ludum Dare entry&rdquo; &lt;3</p>
+
+<p>The game was itself quite challenging to implement, having boids, buildable structures, RTS systems, etc, but it was a legitimately fun exercise.</p>
+
+<p>Overall, I&rsquo;m really happy with how the game turned out. It&rsquo;s a marked improvement from my first Ludum Dare entry, and while I wish for more, the game itself is quite reasonably enjoyable!</p>
+
+<p>Till next time!</p>
+ </article> <footer class="article-footer"><h3>Arian Valdez <a href="//twitter.com/Secretmapper">@Secretmapper</a></h3><p>React.JS and Node.JS Software engineering consultant. Developer/Designer Hybrid. Author of Alt Tracker, Combustion, Riyu, etc.</p></footer> <div id="disqus_thread"></div></div></div> <div id="disqus_thread"></div><script>
+  
+  var disqus_config = function () {
+    
+      this.page.identifier = 'Satiate: A LD43 Postmortem';
+    
+    this.page.title = "Satiate: A LD43 Postmortem";
+    this.page.url = "https://arianv.com/post/satiate-a-ld43-postmortem/";
+  };
+  (function() {  
+    var d = document, s = d.createElement('script');
+    s.src = 'https://arianv.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>  </div><footer class="page-footer">Copyright &#169; Arian Allenson M. Valdez | CC-BY-SA</footer><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/solarized-dark.min.css"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script> <script id="dsq-count-scr" src="//arianv.disqus.com/count.js" async></script>  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', "UA-60507502-1", 'auto');
+  ga('send', 'pageview');
+</script> </body></html>

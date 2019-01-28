@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Apr 2018 13:16:25 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 03 Dec 2018 21:56:00 +0800</lastBuildDate>
     
 	<atom:link href="//arianv.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Satiate: A LD43 Postmortem</title>
+      <link>//arianv.com/post/satiate-a-ld43-postmortem/</link>
+      <pubDate>Mon, 03 Dec 2018 21:56:00 +0800</pubDate>
+      
+      <guid>//arianv.com/post/satiate-a-ld43-postmortem/</guid>
+      <description>Just as I joined last April, I joined Ludum Dare this December for Ludum Dare 43.
+The Game  The theme for this LD was Sacrifices must be made. It&amp;rsquo;s a pretty expansive theme and there was quite a lot of possible game mechanics to build around it, that, for a moment, I was hit by choice-paralysis.
+My brainstorm took me through the usual suspects - sacrificing X for Y (i.</description>
+    </item>
     
     <item>
       <title>Atlas Runs: A LD41 Postmortem (with Phaser 3)</title>
