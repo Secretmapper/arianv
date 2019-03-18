@@ -6,10 +6,19 @@
     <description>Recent content in Series-Desc on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 May 2015 11:09:35 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 Mar 2019 13:16:26 +0800</lastBuildDate>
     
 	<atom:link href="//arianv.com/series-desc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cs 180 Pathfinding</title>
+      <link>//arianv.com/series-desc/cs-180-pathfinding/</link>
+      <pubDate>Sun, 17 Mar 2019 13:16:26 +0800</pubDate>
+      
+      <guid>//arianv.com/series-desc/cs-180-pathfinding/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Gsoc 2015</title>

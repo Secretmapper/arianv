@@ -44,6 +44,17 @@ Implementing this is simple enough - let us keep a queue, add neighbors to it, a
     </item>
     
     <item>
+      <title>series cs-180-pathfinding</title>
+      <link>//arianv.com/desc/series-cs-180-pathfinding/</link>
+      <pubDate>Sun, 17 Mar 2019 13:16:26 +0800</pubDate>
+      
+      <guid>//arianv.com/desc/series-cs-180-pathfinding/</guid>
+      <description>In my CS 180 (Artificial Intelligence class), I was tasked to implement search algorithms for pathfinding. This post series is a direct conversion of the jupyter notebooks for that project.
+The jupyter notebooks can be found online here
+   In this machine problem, we are tasked with implementing search algorithms (BFS, DFS, A*) to find the shortest path (any path in the case of DFS) between two points on a plane that has polygonal obstacles.</description>
+    </item>
+    
+    <item>
       <title>Grid Search</title>
       <link>//arianv.com/post/pathfinding/grid-search/</link>
       <pubDate>Sun, 17 Mar 2019 13:03:25 +0800</pubDate>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Descs on Arian&#39;s Portfolio</title>
-    <link>//arianv.com/desc/</link>
-    <description>Recent content in Descs on Arian&#39;s Portfolio</description>
+    <title>Cs 180 Pathfinding on Arian&#39;s Portfolio</title>
+    <link>//arianv.com/series-desc/cs-180-pathfinding/</link>
+    <description>Recent content in Cs 180 Pathfinding on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Mar 2019 13:16:26 +0800</lastBuildDate>
     
-	<atom:link href="//arianv.com/desc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//arianv.com/series-desc/cs-180-pathfinding/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <description>In my CS 180 (Artificial Intelligence class), I was tasked to implement search algorithms for pathfinding. This post series is a direct conversion of the jupyter notebooks for that project.
 The jupyter notebooks can be found online here
    In this machine problem, we are tasked with implementing search algorithms (BFS, DFS, A*) to find the shortest path (any path in the case of DFS) between two points on a plane that has polygonal obstacles.</description>
-    </item>
-    
-    <item>
-      <title>series gsoc2015</title>
-      <link>//arianv.com/desc/series-gsoc-2015/</link>
-      <pubDate>Wed, 06 May 2015 11:09:35 +0000</pubDate>
-      
-      <guid>//arianv.com/desc/series-gsoc-2015/</guid>
-      <description>In 2015, I worked on the Overpass&amp;rsquo; Learning Platform for Google Summer Of Code 2015. This series details the creation of the project, from the initial project proposal, to the design, technical considerations, implementation, and user feedback.</description>
     </item>
     
   </channel>
