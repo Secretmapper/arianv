@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithms on Arian&#39;s Portfolio</title>
+    <link>//arianv.com/tags/algorithms/</link>
+    <description>Recent content in Algorithms on Arian&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Mar 2019 13:18:00 +0800</lastBuildDate>
+    
+	<atom:link href="//arianv.com/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CS 180 Pathfinding</title>
+      <link>//arianv.com/post/cs-180-pathfinding/</link>
+      <pubDate>Sun, 17 Mar 2019 13:18:00 +0800</pubDate>
+      
+      <guid>//arianv.com/post/cs-180-pathfinding/</guid>
+      <description>In my CS 180 (Artificial Intelligence class), I was tasked to implement search algorithms for pathfinding. This post series is a direct conversion of the jupyter notebooks for that project.
+The jupyter notebooks can be found online here
+CS 180 Artificial Intelligence&amp;#182;Machine Problem 1: Path Planning&amp;#182;In this machine problem, we are tasked with implementing search algorithms (BFS, DFS, A*) to find the shortest path (any path in the case of DFS) between two points on a plane that has polygonal obstacles.</description>
+    </item>
+    
+    <item>
+      <title>Grid</title>
+      <link>//arianv.com/post/pathfinding/grid/</link>
+      <pubDate>Sun, 17 Mar 2019 13:16:27 +0800</pubDate>
+      
+      <guid>//arianv.com/post/pathfinding/grid/</guid>
+      <description>Grid&amp;#182;To start off our project, we first need to generate a state space - in particular, a data structure that represents a plane with a bunch of polygons inside.
+The simplest way to represent this would be to use a binary two-dimensional array. Every element in the array would then have a corresponding 1-to-1 mapping with our plane. We can represent empty (or movable/traversable) spaces as a 1, and filled (i.</description>
+    </item>
+    
+    <item>
+      <title>Finders</title>
+      <link>//arianv.com/post/pathfinding/finders/</link>
+      <pubDate>Sun, 17 Mar 2019 13:16:26 +0800</pubDate>
+      
+      <guid>//arianv.com/post/pathfinding/finders/</guid>
+      <description>Finders&amp;#182;In this particular project, we are required to implement three search algorithms:
+ BFS DFS A*  BFS&amp;#182;BFS or breadth-first search traverses the graph by exploring all the neighbors of the root of the graph first, and then proceeds to the next depth of the graph until the end is found.
+Implementing this is simple enough - let us keep a queue, add neighbors to it, and iterate on the queue until we find our target.</description>
+    </item>
+    
+    <item>
+      <title>Grid Search</title>
+      <link>//arianv.com/post/pathfinding/grid-search/</link>
+      <pubDate>Sun, 17 Mar 2019 13:03:25 +0800</pubDate>
+      
+      <guid>//arianv.com/post/pathfinding/grid-search/</guid>
+      <description>Grid Search&amp;#182;Here, we will finally see our algorithms in action!
+Let&#39;s import the functions we have defined so far, as well as set some options to visualize our grid more clearly.
+   In&amp;nbsp;[88]: %reload_ext autoreload %autoreload 2 import sys import numpy as np from pathfinding import grid, utils, finder from pathfinding.grid import core, viz # we do this so np print won&amp;#39;t truncate np.set_printoptions(threshold=sys.maxsize) # let&amp;#39;s alias core.</description>
+    </item>
+    
+    <item>
+      <title>Test Cases</title>
+      <link>//arianv.com/post/pathfinding/test-cases/</link>
+      <pubDate>Sun, 17 Mar 2019 13:03:02 +0800</pubDate>
+      
+      <guid>//arianv.com/post/pathfinding/test-cases/</guid>
+      <description>Test Cases&amp;#182;The Problem Set requires a 100x200 grid (will be represented as 200x100/WxH here for visualization purposes).
+   In&amp;nbsp;[48]: %reload_ext autoreload %autoreload 2 from pathfinding import grid, utils from pathfinding.grid import viz      Test Case/Grid 1: The Random&amp;#182;    In&amp;nbsp;[43]: polygons = [ [(5, 32), (31, 64), (67, 65), (69, 33), (45, 8)], [(60, 3), (80, 1), (85, 7), (83, 14)], [(80, 32), (102, 12), (132, 8), (148, 45), (92, 28)], [(90, 35), (100, 70), (130, 40)], [(75, 60), (60, 80), (73, 94), (95, 80)], [(100, 80), (130, 97), (180, 70), (160, 40)], [(150, 30), (190, 30), (170, 45)], [(150, 10), (190, 5), (150, 5)], [(140, 20), (165, 18), (160, 25), (140, 25)], [(170, 20), (198, 10), (190, 28), (165, 25)], [(167, 50), (198, 45), (190, 60)], [(80, 50), (90, 50), (90, 40)], [(70, 50), (80, 50), (70, 40)], [(40, 80), (30, 99), (20, 50)] ] maze, start, end = grid.</description>
+    </item>
+    
+    <item>
+      <title>Running Test Cases</title>
+      <link>//arianv.com/post/pathfinding/running-test-cases/</link>
+      <pubDate>Sun, 17 Mar 2019 13:02:02 +0800</pubDate>
+      
+      <guid>//arianv.com/post/pathfinding/running-test-cases/</guid>
+      <description>Running Test Cases&amp;#182;Note that animation rendering might take a couple of seconds
+BFS&amp;#182;    In&amp;nbsp;[1]: %reload_ext autoreload %autoreload 2 from pathfinding import demo, grid, utils, finder from pathfinding.grid import core, viz      In&amp;nbsp;[5]: cases = demo.get_case_files()      In&amp;nbsp;[6]: start, end, polygons = cases[0] maze = grid.generate(200, 100, polygons) path, expansion = finder.bfs(maze, core.find_walkable_neighbors, start, end, with_expansion=True) utils.render_image(viz.generate_image(maze, start, end, path))           In&amp;nbsp;[21]: utils.</description>
+    </item>
+    
+    <item>
+      <title>Timing</title>
+      <link>//arianv.com/post/pathfinding/timing/</link>
+      <pubDate>Sun, 17 Mar 2019 13:01:01 +0800</pubDate>
+      
+      <guid>//arianv.com/post/pathfinding/timing/</guid>
+      <description>Timing code&amp;#182;    In&amp;nbsp;[14]: %reload_ext autoreload %autoreload 2 from pathfinding import demo, grid, utils, finder from pathfinding.grid import core, viz cases = demo.get_case_files()      In&amp;nbsp;[8]: def cost(p0, p1): return 1 def md(p0, p1): return abs(p1[0] - p0[0]) + abs(p1[1] - p0[1]) for i, case in enumerate(cases): start, end, polygons = case maze = grid.generate(200, 100, polygons) print(&amp;#39;Case: &amp;#39;, i + 1) print(&amp;#39;BFS&amp;#39;) %timeit -n 3 path, = finder.</description>
+    </item>
+    
+    <item>
+      <title>Viz</title>
+      <link>//arianv.com/post/pathfinding/viz/</link>
+      <pubDate>Sun, 17 Mar 2019 13:00:00 +0800</pubDate>
+      
+      <guid>//arianv.com/post/pathfinding/viz/</guid>
+      <description>Extra: Viz&amp;#182;There are a few utility functions used throughout this jupyter notebook to visualize our grid. We will discuss them briefly here.
+   In&amp;nbsp;[3]: %reload_ext autoreload %autoreload 2 import sys import numpy as np from pathfinding import grid, utils, finder from pathfinding.grid import core, viz # we do this so np print won&amp;#39;t truncate np.set_printoptions(threshold=sys.maxsize) # let&amp;#39;s alias core.find_walkable_neighbors to fwn for brevity fwn = core.find_walkable_neighbors      Text&amp;#182;The first one we see is generate_text, which pretty prints our grid.</description>
+    </item>
+    
+  </channel>
+</rss>

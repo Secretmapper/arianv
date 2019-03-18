@@ -85,7 +85,7 @@ To do this properly, we need to make use of, and expand, existing resources of t
       <guid>//arianv.com/post/embedding-overpass-turbo-weekly-update-2/</guid>
       <description>This is the second weekly update for the LearnOverpass Project.
 This week&amp;rsquo;s deliverable is to integrate Overpass Turbo inside the learning platform.
- From the get go, we knew we wanted to bring out a REPL-like interface to LearnOverpass - we want to encourage users to actively try and experiment with the Query Language.
+  From the get go, we knew we wanted to bring out a REPL-like interface to LearnOverpass - we want to encourage users to actively try and experiment with the Query Language.
 The Overpass API guide in the wiki already knew that seeing the results of the query is useful.</description>
     </item>
     

@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//arianv.com/post/cs-180-pathfinding/</loc>
+    <lastmod>2019-03-17T13:18:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/post/pathfinding/grid/</loc>
+    <lastmod>2019-03-17T13:16:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/post/pathfinding/finders/</loc>
+    <lastmod>2019-03-17T13:16:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/post/pathfinding/grid-search/</loc>
+    <lastmod>2019-03-17T13:03:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/post/pathfinding/test-cases/</loc>
+    <lastmod>2019-03-17T13:03:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/post/pathfinding/running-test-cases/</loc>
+    <lastmod>2019-03-17T13:02:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/post/pathfinding/timing/</loc>
+    <lastmod>2019-03-17T13:01:01+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/post/pathfinding/viz/</loc>
+    <lastmod>2019-03-17T13:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//arianv.com/ludum-dare/ld41/</loc>
     <lastmod>2018-12-09T01:09:26+08:00</lastmod>
   </url>
@@ -198,20 +238,37 @@
   </url>
   
   <url>
+    <loc>//arianv.com/post/pathfinding/</loc>
+    <lastmod>2019-03-17T13:16:27+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//arianv.com/about/</loc>
     <lastmod>2015-03-01T13:38:37+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>//arianv.com/tags/algorithms/</loc>
+    <lastmod>2019-03-17T13:18:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>//arianv.com/</loc>
-    <lastmod>2018-12-09T01:09:26+08:00</lastmod>
+    <lastmod>2019-03-17T13:18:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>//arianv.com/port_tags/as3/</loc>
     <lastmod>2015-01-30T19:54:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/series/cs-180-pathfinding/</loc>
+    <lastmod>2019-03-17T13:18:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -246,14 +303,14 @@
   </url>
   
   <url>
-    <loc>//arianv.com/series/gsoc-2015/</loc>
-    <lastmod>2015-08-27T13:40:39+08:00</lastmod>
+    <loc>//arianv.com/series-desc/gsoc-2015/</loc>
+    <lastmod>2015-05-06T11:09:35+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//arianv.com/series-desc/gsoc-2015/</loc>
-    <lastmod>2015-05-06T11:09:35+00:00</lastmod>
+    <loc>//arianv.com/series/gsoc-2015/</loc>
+    <lastmod>2015-08-27T13:40:39+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -290,6 +347,12 @@
   <url>
     <loc>//arianv.com/tags/js/</loc>
     <lastmod>2018-12-09T01:09:26+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/tags/jupyter/</loc>
+    <lastmod>2019-03-17T13:18:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -349,7 +412,7 @@
   
   <url>
     <loc>//arianv.com/post/</loc>
-    <lastmod>2018-12-03T21:56:00+08:00</lastmod>
+    <lastmod>2019-03-17T13:18:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -362,6 +425,12 @@
   <url>
     <loc>//arianv.com/port_tags/python/</loc>
     <lastmod>2015-01-30T19:55:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//arianv.com/tags/python/</loc>
+    <lastmod>2019-03-17T13:18:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -379,7 +448,7 @@
   
   <url>
     <loc>//arianv.com/series/</loc>
-    <lastmod>2015-08-27T13:40:39+08:00</lastmod>
+    <lastmod>2019-03-17T13:18:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -391,7 +460,7 @@
   
   <url>
     <loc>//arianv.com/tags/</loc>
-    <lastmod>2018-12-09T01:09:26+08:00</lastmod>
+    <lastmod>2019-03-17T13:18:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   

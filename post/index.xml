@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Dec 2018 21:56:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 17 Mar 2019 13:18:00 +0800</lastBuildDate>
     
 	<atom:link href="//arianv.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CS 180 Pathfinding</title>
+      <link>//arianv.com/post/cs-180-pathfinding/</link>
+      <pubDate>Sun, 17 Mar 2019 13:18:00 +0800</pubDate>
+      
+      <guid>//arianv.com/post/cs-180-pathfinding/</guid>
+      <description>In my CS 180 (Artificial Intelligence class), I was tasked to implement search algorithms for pathfinding. This post series is a direct conversion of the jupyter notebooks for that project.
+The jupyter notebooks can be found online here
+CS 180 Artificial Intelligence&amp;#182;Machine Problem 1: Path Planning&amp;#182;In this machine problem, we are tasked with implementing search algorithms (BFS, DFS, A*) to find the shortest path (any path in the case of DFS) between two points on a plane that has polygonal obstacles.</description>
+    </item>
     
     <item>
       <title>Satiate: A LD43 Postmortem</title>
@@ -106,7 +117,7 @@ To do this properly, we need to make use of, and expand, existing resources of t
       <guid>//arianv.com/post/embedding-overpass-turbo-weekly-update-2/</guid>
       <description>This is the second weekly update for the LearnOverpass Project.
 This week&amp;rsquo;s deliverable is to integrate Overpass Turbo inside the learning platform.
- From the get go, we knew we wanted to bring out a REPL-like interface to LearnOverpass - we want to encourage users to actively try and experiment with the Query Language.
+  From the get go, we knew we wanted to bring out a REPL-like interface to LearnOverpass - we want to encourage users to actively try and experiment with the Query Language.
 The Overpass API guide in the wiki already knew that seeing the results of the query is useful.</description>
     </item>
     

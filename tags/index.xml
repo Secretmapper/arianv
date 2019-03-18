@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Arian&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Dec 2018 01:09:26 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 17 Mar 2019 13:18:00 +0800</lastBuildDate>
     
 	<atom:link href="//arianv.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Algorithms</title>
+      <link>//arianv.com/tags/algorithms/</link>
+      <pubDate>Sun, 17 Mar 2019 13:18:00 +0800</pubDate>
+      
+      <guid>//arianv.com/tags/algorithms/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Gamedev</title>
@@ -39,11 +48,29 @@
     </item>
     
     <item>
+      <title>Jupyter</title>
+      <link>//arianv.com/tags/jupyter/</link>
+      <pubDate>Sun, 17 Mar 2019 13:18:00 +0800</pubDate>
+      
+      <guid>//arianv.com/tags/jupyter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ludum Dare</title>
       <link>//arianv.com/tags/ludum-dare/</link>
       <pubDate>Sun, 09 Dec 2018 01:09:26 +0800</pubDate>
       
       <guid>//arianv.com/tags/ludum-dare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>//arianv.com/tags/python/</link>
+      <pubDate>Sun, 17 Mar 2019 13:18:00 +0800</pubDate>
+      
+      <guid>//arianv.com/tags/python/</guid>
       <description></description>
     </item>
     
